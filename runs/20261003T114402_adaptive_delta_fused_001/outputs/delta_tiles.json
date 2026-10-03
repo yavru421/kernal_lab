@@ -1,0 +1,15 @@
+{
+  "kernel_id": "adaptive_delta_fused",
+  "input": "synthetic",
+  "golden_id": "",
+  "dimensions": { "width": 1920, "height": 1080 },
+  "tiles": { "tile_dim": 16, "tiles_x": 120, "tiles_y": 68, "total_tiles": 8160 },
+  "mse_threshold": 10,
+  "frames_processed": 2,
+  "max_mutated_frame": 0,
+  "max_mutated_tiles": 0,
+  "timeline": [
+    { "frame": 0, "mutated_tiles": 8160, "mutated_pct": 100 },
+    { "frame": 1, "mutated_tiles": 169, "mutated_pct": 2.07108 }
+  ]
+}

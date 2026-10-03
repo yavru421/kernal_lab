@@ -3,5 +3,6 @@
   "height": 1920,
   "max_frames": 120,
   "patch_radius": 10,
-  "search_radius": 24
+  "search_radius": 24,
+  "mse_threshold": 15.0
 }

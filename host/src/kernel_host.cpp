@@ -199,6 +199,16 @@ static void draw_reticle(unsigned char* bgr, int w, int h, int cx, int cy, int r
     draw_rect(bgr, w, h, cx - 2, cy - 2, cx + 2, cy + 2, 255, 255, 255);
 }
 
+static bool save_jpg(const std::string& path, const std::vector<unsigned char>& bgr, int w, int h) {
+    std::string cmd = "ffmpeg -y -hide_banner -loglevel error -f rawvideo -pix_fmt bgr24 -s " +
+                      std::to_string(w) + "x" + std::to_string(h) + " -i - -vframes 1 \"" + path + "\"";
+    FILE* fp = _popen(cmd.c_str(), "wb");
+    if (!fp) return false;
+    fwrite(bgr.data(), 1, bgr.size(), fp);
+    _pclose(fp);
+    return true;
+}
+
 // ---------------------------------------------------------------- Video Frame Streaming
 struct VideoStreamer {
     bool is_pipe = false;
@@ -811,6 +821,234 @@ int main(int argc, char** argv) {
         oi.kind = "telemetry_json";
         oi.bytes = (long long)tj.str().size();
         oi.sha256 = track_sha;
+        R.outputs.push_back(oi);
+
+        R.frames = processed_frames;
+        R.ok = true;
+        return finish("finished");
+    }
+
+    // ---- Shape: init_step_release (adaptive_delta_fused)
+    if (R.kernel_id == "adaptive_delta_fused") {
+        FARPROC p_init = sym[R.symbol_init];
+        FARPROC p_main = sym[R.symbol_main];
+        if (!p_init) return fail("symbol", "Missing symbol_init: " + R.symbol_init);
+        if (!p_main) return fail("symbol", "Missing symbol_main: " + R.symbol_main);
+
+        typedef int (*fn_screen_init_t)(int width, int height);
+        typedef int (*fn_adaptive_delta_fused_t)(
+            const unsigned char* d_curr_bgra,
+            float* d_out_rgb_chw,
+            uint32_t* h_out_bitmask,
+            int width, int height, int pitch,
+            float mse_threshold,
+            int* out_mutated_tile_count
+        );
+        auto fn_init = (fn_screen_init_t)p_init;
+        auto fn_delta = (fn_adaptive_delta_fused_t)p_main;
+
+        int width = jget_int(R.params_json, "width", (R.input == "synthetic" ? 1920 : 1080));
+        int height = jget_int(R.params_json, "height", (R.input == "synthetic" ? 1080 : 1920));
+        int max_frames = jget_int(R.params_json, "max_frames", (R.input == "synthetic" ? 2 : 120));
+        float mse_threshold = jget_float(R.params_json, "mse_threshold", 10.0f);
+
+        int tiles_x = (width + 15) / 16;
+        int tiles_y = (height + 15) / 16;
+        int total_tiles = tiles_x * tiles_y;
+        int num_words = (total_tiles + 31) / 32;
+        size_t bitmask_bytes = (size_t)num_words * sizeof(uint32_t);
+        size_t bgra_bytes = (size_t)width * height * 4;
+
+        int init_rc = fn_init(width, height);
+        if (init_rc != 0) return fail("kernel_init", "cu_init_screen_engine returned " + std::to_string(init_rc));
+
+        std::string out_video_path = (R.input == "synthetic") ? "" : (R.run_dir + "\\outputs\\delta_visualized.mp4");
+        VideoStreamer streamer;
+        if (!streamer.open(R.input, out_video_path, width, height)) {
+            return fail("input", streamer.err);
+        }
+
+        unsigned char* d_curr_bgra = nullptr;
+        cudaError_t ce = cudaMalloc((void**)&d_curr_bgra, bgra_bytes);
+        if (ce != cudaSuccess) return fail("cuda", cuda_err("cudaMalloc(d_curr_bgra)", ce));
+
+        std::vector<uint32_t> h_bitmask(num_words, 0);
+        std::vector<unsigned char> h_bgr, h_gray, h_bgra(bgra_bytes);
+
+        cudaEvent_t e0, e1; cudaEventCreate(&e0); cudaEventCreate(&e1);
+        size_t free0 = 0, free1 = 0, total = 0;
+        cudaMemGetInfo(&free0, &total);
+
+        // Pre-fill frame 0
+        if (R.input == "synthetic") {
+            std::fill(h_bgra.begin(), h_bgra.end(), 128);
+        } else {
+            if (!streamer.read_frame(h_bgr, h_gray, 0)) {
+                cudaFree(d_curr_bgra);
+                return fail("input", "failed to read frame 0 from: " + R.input);
+            }
+            for (int i = 0; i < width * height; ++i) {
+                h_bgra[i * 4 + 0] = h_bgr[i * 3 + 0];
+                h_bgra[i * 4 + 1] = h_bgr[i * 3 + 1];
+                h_bgra[i * 4 + 2] = h_bgr[i * 3 + 2];
+                h_bgra[i * 4 + 3] = 255;
+            }
+        }
+        cudaMemcpy(d_curr_bgra, h_bgra.data(), bgra_bytes, cudaMemcpyHostToDevice);
+
+        int init_mutated = 0;
+        fn_delta(d_curr_bgra, nullptr, h_bitmask.data(), width, height, width * 4, mse_threshold, &init_mutated);
+
+        if (!out_video_path.empty()) {
+            draw_rect(h_bgr.data(), width, height, 10, 10, width - 10, 60, 20, 11, 7);
+            streamer.write_frame(h_bgr);
+        }
+
+        struct DeltaStep {
+            int frame;
+            int mutated_tiles;
+            float mutated_pct;
+        };
+        std::vector<DeltaStep> timeline;
+        timeline.push_back({ 0, init_mutated, (float)init_mutated / (float)total_tiles * 100.0f });
+
+        int processed_frames = 1;
+        int max_mutated_frame = 0;
+        int max_mutated_count = 0;
+        std::vector<unsigned char> best_preview_bgr;
+        if (!h_bgr.empty()) best_preview_bgr = h_bgr;
+
+        cudaEventRecord(e0, 0);
+
+        for (int f = 1; f < max_frames; ++f) {
+            if (R.input == "synthetic") {
+                if (f >= 2) break;
+                std::fill(h_bgra.begin(), h_bgra.end(), 128);
+                // Mutate a 200x200 patch in frame 1
+                for (int y = 200; y < 400; ++y) {
+                    for (int x = 200; x < 400; ++x) {
+                        int idx = (y * width + x) * 4;
+                        h_bgra[idx + 0] = 255; h_bgra[idx + 1] = 0; h_bgra[idx + 2] = 0; h_bgra[idx + 3] = 255;
+                    }
+                }
+            } else {
+                if (!streamer.read_frame(h_bgr, h_gray, f)) break;
+                for (int i = 0; i < width * height; ++i) {
+                    h_bgra[i * 4 + 0] = h_bgr[i * 3 + 0];
+                    h_bgra[i * 4 + 1] = h_bgr[i * 3 + 1];
+                    h_bgra[i * 4 + 2] = h_bgr[i * 3 + 2];
+                    h_bgra[i * 4 + 3] = 255;
+                }
+            }
+
+            cudaMemcpy(d_curr_bgra, h_bgra.data(), bgra_bytes, cudaMemcpyHostToDevice);
+
+            int mutated_tiles = 0;
+            int rc = fn_delta(d_curr_bgra, nullptr, h_bitmask.data(), width, height, width * 4, mse_threshold, &mutated_tiles);
+            if (rc != 0) {
+                cudaFree(d_curr_bgra);
+                return fail("kernel_return", "cu_adaptive_delta_fused returned " + std::to_string(rc));
+            }
+
+            float pct = (float)mutated_tiles / (float)total_tiles * 100.0f;
+            timeline.push_back({ f, mutated_tiles, pct });
+
+            if (mutated_tiles > max_mutated_count && !h_bgr.empty()) {
+                max_mutated_count = mutated_tiles;
+                max_mutated_frame = f;
+            }
+
+            // Draw bounding boxes around mutated 16x16 tiles
+            if (!out_video_path.empty()) {
+                for (int ty = 0; ty < tiles_y; ++ty) {
+                    for (int tx = 0; tx < tiles_x; ++tx) {
+                        int tile_idx = ty * tiles_x + tx;
+                        int word = tile_idx / 32;
+                        int bit = tile_idx % 32;
+                        if ((h_bitmask[word] >> bit) & 1) {
+                            int x0 = tx * 16;
+                            int y0 = ty * 16;
+                            int x1 = std::min(width - 1, x0 + 15);
+                            int y1 = std::min(height - 1, y0 + 15);
+                            draw_box(h_bgr.data(), width, height, x0, y0, x1, y1, 1, 0, 230, 118);
+                        }
+                    }
+                }
+                draw_rect(h_bgr.data(), width, height, 10, 10, width - 10, 60, 20, 11, 7);
+                if (f == max_mutated_frame) best_preview_bgr = h_bgr;
+                streamer.write_frame(h_bgr);
+            }
+
+            processed_frames++;
+        }
+
+        cudaEventRecord(e1, 0);
+        cudaEventSynchronize(e1);
+        float ms = 0; cudaEventElapsedTime(&ms, e0, e1);
+        R.gpu_ms = ms;
+        cudaMemGetInfo(&free1, &total);
+        R.vram_peak_mb = free0 > free1 ? (double)(free0 - free1) / (1024.0 * 1024.0) : 0.0;
+
+        cudaFree(d_curr_bgra);
+        streamer.close();
+
+        // Save preview JPEG if available
+        if (!best_preview_bgr.empty()) {
+            std::string preview_path = R.run_dir + "\\outputs\\preview_delta.jpg";
+            if (save_jpg(preview_path, best_preview_bgr, width, height)) {
+                std::string psha; sha256_file(preview_path, psha, herr);
+                OutputItem oi_p;
+                oi_p.output_id = R.run_id + "_preview_delta";
+                oi_p.path = "outputs/preview_delta.jpg";
+                oi_p.kind = "image";
+                oi_p.bytes = (long long)fs::file_size(preview_path);
+                oi_p.sha256 = psha;
+                R.outputs.push_back(oi_p);
+            }
+        }
+
+        // Register video if produced
+        if (!out_video_path.empty() && fs::exists(out_video_path)) {
+            std::string video_sha; sha256_file(out_video_path, video_sha, herr);
+            OutputItem oi_v;
+            oi_v.output_id = R.run_id + "_delta_visualized_mp4";
+            oi_v.path = "outputs/delta_visualized.mp4";
+            oi_v.kind = "video";
+            oi_v.bytes = (long long)fs::file_size(out_video_path);
+            oi_v.sha256 = video_sha;
+            R.outputs.push_back(oi_v);
+        }
+
+        // Write outputs/delta_tiles.json
+        std::ostringstream tj;
+        tj << "{\n  \"kernel_id\": \"adaptive_delta_fused\",\n"
+           << "  \"input\": " << json_s(R.input) << ",\n"
+           << "  \"golden_id\": " << json_s(R.golden_id) << ",\n"
+           << "  \"dimensions\": { \"width\": " << width << ", \"height\": " << height << " },\n"
+           << "  \"tiles\": { \"tile_dim\": 16, \"tiles_x\": " << tiles_x << ", \"tiles_y\": " << tiles_y << ", \"total_tiles\": " << total_tiles << " },\n"
+           << "  \"mse_threshold\": " << mse_threshold << ",\n"
+           << "  \"frames_processed\": " << processed_frames << ",\n"
+           << "  \"max_mutated_frame\": " << max_mutated_frame << ",\n"
+           << "  \"max_mutated_tiles\": " << max_mutated_count << ",\n"
+           << "  \"timeline\": [\n";
+        for (size_t i = 0; i < timeline.size(); ++i) {
+            if (i > 0) tj << ",\n";
+            tj << "    { \"frame\": " << timeline[i].frame
+               << ", \"mutated_tiles\": " << timeline[i].mutated_tiles
+               << ", \"mutated_pct\": " << timeline[i].mutated_pct << " }";
+        }
+        tj << "\n  ]\n}\n";
+
+        std::string delta_path = R.run_dir + "\\outputs\\delta_tiles.json";
+        write_file(delta_path, tj.str());
+
+        std::string delta_sha; sha256_file(delta_path, delta_sha, herr);
+        OutputItem oi;
+        oi.output_id = R.run_id + "_delta_tiles_json";
+        oi.path = "outputs/delta_tiles.json";
+        oi.kind = "telemetry_json";
+        oi.bytes = (long long)tj.str().size();
+        oi.sha256 = delta_sha;
         R.outputs.push_back(oi);
 
         R.frames = processed_frames;

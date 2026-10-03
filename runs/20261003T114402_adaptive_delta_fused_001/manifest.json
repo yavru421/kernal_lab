@@ -1,0 +1,14 @@
+{
+  "schema": "kernel_lab.manifest/v1",
+  "run_id": "20261003T114402_adaptive_delta_fused_001", "status": "finished",
+  "host_version": "kernel_host/0.3.2",
+  "kernel": { "kernel_id": "adaptive_delta_fused", "dll_path": "c:\\dev\\screen_agent_cuda\\screen_agent_cuda_v2.dll", "dll_sha256": "55abedd936f5e550fa2cc965058dab279dfd2220a5b1fb074ccb311db01af0c4", "shape": "init_step_release", "symbol_init": "cu_init_screen_engine", "symbol_main": "cu_adaptive_delta_fused", "adapter": "c:\\dev\\kernel_lab\\host\\adapters\\adaptive_delta_fused.json", "adapter_sha256": "a5d64ae89ae7ed16bc232c91d38fa7c729fdaa0720f7ca2ba5e091de65cfd3ca" },
+  "invocation": { "caller": "test_harness", "subject": "synthetic_macroblocks", "params": {}, "golden_id": "" },
+  "input": { "path": "synthetic" },
+  "gpu": { "pre": "NVIDIA GeForce RTX 4060 Laptop GPU, 616.92, 8188 MiB, 2213 MiB, 49, 0 %, 8.9", "post": "NVIDIA GeForce RTX 4060 Laptop GPU, 616.92, 8188 MiB, 2329 MiB, 49, 0 %, 8.9" },
+  "timing": { "wall_ms": 186.101, "gpu_ms": 0.958208, "timing_mode": "internal_stream" },
+  "memory": { "vram_peak_mb": 0 },
+  "frames": 2,
+  "outputs": [{ "path": "outputs/delta_tiles.json", "kind": "telemetry_json", "bytes": 468, "sha256": "1cce279a156c90013340cec43e0a9ef3accefe4da570d465e45d30bc11403a1c" }],
+  "error": { "stage": "", "trace": "" }
+}

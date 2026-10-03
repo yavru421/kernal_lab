@@ -1,0 +1,22 @@
+{
+  "schema": "kernel_lab.manifest/v1",
+  "run_id": "20261003T114417_adaptive_delta_fused_001", "status": "finished",
+  "host_version": "kernel_host/0.3.2",
+  "kernel": { "kernel_id": "adaptive_delta_fused", "dll_path": "c:\\dev\\screen_agent_cuda\\screen_agent_cuda_v2.dll", "dll_sha256": "55abedd936f5e550fa2cc965058dab279dfd2220a5b1fb074ccb311db01af0c4", "shape": "init_step_release", "symbol_init": "cu_init_screen_engine", "symbol_main": "cu_adaptive_delta_fused", "adapter": "c:\\dev\\kernel_lab\\host\\adapters\\adaptive_delta_fused.json", "adapter_sha256": "a5d64ae89ae7ed16bc232c91d38fa7c729fdaa0720f7ca2ba5e091de65cfd3ca" },
+  "invocation": { "caller": "operator_eval", "subject": "bowling_macroblock_deltas", "params": {
+  "width": 1080,
+  "height": 1920,
+  "max_frames": 120,
+  "patch_radius": 10,
+  "search_radius": 24,
+  "mse_threshold": 15.0
+}
+, "golden_id": "" },
+  "input": { "path": "C:\\Users\\John\\Downloads\\prahl_outings\\bowling.MOV" },
+  "gpu": { "pre": "NVIDIA GeForce RTX 4060 Laptop GPU, 616.92, 8188 MiB, 2217 MiB, 48, 0 %, 8.9", "post": "NVIDIA GeForce RTX 4060 Laptop GPU, 616.92, 8188 MiB, 2323 MiB, 49, 20 %, 8.9" },
+  "timing": { "wall_ms": 2029.22, "gpu_ms": 1245.88, "timing_mode": "internal_stream" },
+  "memory": { "vram_peak_mb": 0 },
+  "frames": 120,
+  "outputs": [{ "path": "outputs/preview_delta.jpg", "kind": "image", "bytes": 587397, "sha256": "dc6ea24caf5a432a24c450b28619f7935dfb4590465fbc810f2c4171a82f3b82" }, { "path": "outputs/delta_visualized.mp4", "kind": "video", "bytes": 4136805, "sha256": "bc01237fd260751cf5cb08d790c3578f179e11bb8be116281c5641cdc882b5d7" }, { "path": "outputs/delta_tiles.json", "kind": "telemetry_json", "bytes": 8546, "sha256": "4db017aa8909cad771a40fd54d950ab48640ed94d841968af512e9459c58a352" }],
+  "error": { "stage": "", "trace": "" }
+}
