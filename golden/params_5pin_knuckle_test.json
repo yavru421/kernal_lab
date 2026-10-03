@@ -1,0 +1,14 @@
+{
+  "width": 1280,
+  "height": 720,
+  "max_frames": 60,
+  "patch_radius": 10,
+  "search_radius": 24,
+  "pins": [
+    {"label": "FLOAT_TL", "x": 708, "y": 240},
+    {"label": "FLOAT_TR", "x": 754, "y": 236},
+    {"label": "FLOAT_BR", "x": 760, "y": 256},
+    {"label": "FLOAT_BL", "x": 714, "y": 260},
+    {"label": "KNUCKLE",  "x": 730, "y": 247}
+  ]
+}

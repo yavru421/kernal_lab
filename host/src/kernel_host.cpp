@@ -310,6 +310,46 @@ struct PinSpec {
     std::vector<std::pair<float, float>> trail;
 };
 
+static std::vector<PinSpec> parse_pins_json(const std::string& j, int w, int h) {
+    std::vector<PinSpec> pins;
+    auto pos = j.find("\"pins\"");
+    if (pos != std::string::npos) {
+        auto b_open = j.find('[', pos);
+        auto b_close = j.find(']', b_open);
+        if (b_open != std::string::npos && b_close != std::string::npos) {
+            std::string sub = j.substr(b_open, b_close - b_open + 1);
+            size_t cur = 0;
+            int idx = 0;
+            while ((cur = sub.find('{', cur)) != std::string::npos) {
+                auto end_obj = sub.find('}', cur);
+                if (end_obj == std::string::npos) break;
+                std::string obj = sub.substr(cur, end_obj - cur + 1);
+                std::string label = jget(obj, "label");
+                if (label.empty()) label = jget(obj, "name");
+                if (label.empty()) label = "pin_" + std::to_string(idx);
+                float px = jget_float(obj, "x", 0.0f);
+                float py = jget_float(obj, "y", 0.0f);
+                PinSpec p;
+                p.idx = idx++;
+                p.name = label;
+                p.init_x = px;
+                p.init_y = py;
+                p.curr_x = px;
+                p.curr_y = py;
+                pins.push_back(p);
+                cur = end_obj + 1;
+            }
+        }
+    }
+    if (pins.empty()) {
+        pins = {
+            { 0, "pin_0", (float)w * 0.35f, (float)h * 0.35f, (float)w * 0.35f, (float)h * 0.35f },
+            { 1, "pin_1", (float)w * 0.65f, (float)h * 0.65f, (float)w * 0.65f, (float)h * 0.65f }
+        };
+    }
+    return pins;
+}
+
 // ---------------------------------------------------------------- ledger (DuckDB C API, in-process)
 struct Ledger {
     duckdb_database db = nullptr; duckdb_connection con = nullptr; std::string err;
@@ -594,20 +634,7 @@ int main(int argc, char** argv) {
         int patch_radius = jget_int(R.params_json, "patch_radius", 10);
         int search_radius = jget_int(R.params_json, "search_radius", 24);
 
-        std::vector<PinSpec> pins;
-        if (width == 1080 && height == 1920) {
-            pins = {
-                { 0, "ball_return_top",   770.0f,  750.0f, 770.0f,  750.0f },
-                { 1, "foul_marker_right", 700.0f, 1240.0f, 700.0f, 1240.0f },
-                { 2, "foul_marker_left",  330.0f, 1240.0f, 330.0f, 1240.0f },
-                { 3, "bowler_calf_tattoo",485.0f,  835.0f, 485.0f,  835.0f }
-            };
-        } else {
-            pins = {
-                { 0, "pin_0", 400.0f, 300.0f, 400.0f, 300.0f },
-                { 1, "pin_1", 800.0f, 500.0f, 800.0f, 500.0f }
-            };
-        }
+        std::vector<PinSpec> pins = parse_pins_json(R.params_json, width, height);
         int num_pins = (int)pins.size();
 
         std::string out_video_path = (R.input == "synthetic") ? "" : (R.run_dir + "\\outputs\\tracked.mp4");
