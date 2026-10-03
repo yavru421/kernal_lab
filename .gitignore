@@ -1,0 +1,19 @@
+kernel_lab.duckdb.wal
+host/bin/
+host/third_party/*.zip
+*.nsys-rep
+*.mp4
+*.MOV
+*.mov
+
+# Golden inputs: keep configs, ignore large video/binary inputs
+golden/*
+!golden/.gitkeep
+!golden/*.json
+
+# Runs: ignore heavy media outputs, keep manifests and JSON summaries
+runs/**/outputs/*.mp4
+runs/**/outputs/*.mov
+runs/**/outputs/*.MOV
+runs/*.jpg
+

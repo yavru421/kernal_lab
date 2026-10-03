@@ -1,0 +1,7 @@
+{
+  "width": 1080,
+  "height": 1920,
+  "max_frames": 120,
+  "patch_radius": 10,
+  "search_radius": 24
+}

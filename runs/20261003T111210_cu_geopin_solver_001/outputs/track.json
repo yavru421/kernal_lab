@@ -1,0 +1,15 @@
+{
+  "kernel_id": "cu_geopin_solver",
+  "input": "synthetic",
+  "golden_id": "",
+  "dimensions": { "width": 1920, "height": 1080 },
+  "frames_processed": 2,
+  "num_pins": 2,
+  "pins": [
+    { "idx": 0, "name": "pin_0", "init_x": 400, "init_y": 300, "final_x": 403, "final_y": 302, "min_confidence": 1, "max_confidence": 1, "mean_confidence": 1, "locked_frames": 1, "drift_frames": 0, "lost_frames": 0 },
+    { "idx": 1, "name": "pin_1", "init_x": 800, "init_y": 500, "final_x": 776, "final_y": 476, "min_confidence": 0, "max_confidence": 0, "mean_confidence": 0, "locked_frames": 0, "drift_frames": 1, "lost_frames": 0 }
+  ],
+  "timeline_samples": [
+    { "frame": 1, "pins": [{ "x": 403, "y": 302, "conf": 1, "status": 1 }, { "x": 776, "y": 476, "conf": 0, "status": 2 }] }
+  ]
+}

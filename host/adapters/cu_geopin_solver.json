@@ -1,0 +1,16 @@
+{
+  "kernel_id": "cu_geopin_solver",
+  "order": "1",
+  "shape": "init_step_release",
+  "symbol_init": "cu_geopin_init",
+  "init_args": "none",
+  "symbol_main": "cu_geopin_track_step",
+  "symbol_aux": "cu_geopin_extract_patches,cu_geopin_bidirectional_solve_pair",
+  "signature_source": "c:\\dev\\cu_vision_lite\\csrc\\cu_geopin_solver.cu:292 (init), :297 (extract_patches), :338 (track_step), :397 (bidirectional_solve_pair)",
+  "signature_main": "int cu_geopin_track_step(const unsigned char* d_curr_gray, int width, int height, int pitch, const float* d_template_patches, const float* in_pin_x, const float* in_pin_y, float* out_pin_x, float* out_pin_y, float* out_confidence, int* out_status, int num_pins, int patch_radius, int search_radius)",
+  "decoder": "nvdec_bgr24",
+  "per": "frame",
+  "timing_mode": "default_stream",
+  "outputs": "track.json:telemetry_json,tracked.mp4:video",
+  "known_defects": "20261003_cu_geopin_solver_stub_merge,20261003_cu_geopin_solver_alloc_thrash"
+}

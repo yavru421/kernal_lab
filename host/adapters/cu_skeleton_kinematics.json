@@ -1,0 +1,16 @@
+{
+  "kernel_id": "cu_skeleton_kinematics",
+  "order": "2",
+  "shape": "per_buffer",
+  "symbol_init": "",
+  "init_args": "none",
+  "symbol_main": "cu_solve_kinematic_telemetry_device",
+  "symbol_aux": "cu_solve_kinematic_telemetry",
+  "signature_source": "c:\\dev\\cu_vision_lite\\csrc\\cu_skeleton_kinematics.cu:336 (host-pointer variant), :404 (device variant)",
+  "signature_main": "int cu_solve_kinematic_telemetry_device(const float* d_keypoints, int num_persons, float meters_per_pixel, float load_mass_kg, float torso_mass_kg, float deck_x_min, float deck_x_max, float critical_margin_meters, float min_conf_thresh, KinematicErgoTelemetry* d_out_telemetry, cudaStream_t stream)",
+  "decoder": "device_buffer",
+  "per": "frame",
+  "timing_mode": "host_stream",
+  "outputs": "kinematics.json:telemetry_json",
+  "note": "Use the _device variant: host variant takes h_keypoints and would hide an H2D copy inside the kernel call."
+}

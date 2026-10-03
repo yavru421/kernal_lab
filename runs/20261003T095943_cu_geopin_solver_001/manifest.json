@@ -1,0 +1,13 @@
+{
+  "schema": "kernel_lab.manifest/v1",
+  "run_id": "20261003T095943_cu_geopin_solver_001", "status": "failed",
+  "host_version": "kernel_host/0.1.0-skeleton",
+  "kernel": { "kernel_id": "cu_geopin_solver", "dll_path": "c:\\dev\\cu_vision_lite\\cu_vision_lite_sm89.dll", "dll_sha256": "7a422d5cf99bed37c81cfa2b3ad9490849973997a1ef46167fe42be93428f8fa", "shape": "init_step_release", "symbol_init": "cu_geopin_init", "symbol_main": "cu_geopin_track_step", "adapter": "c:\\dev\\kernel_lab\\host\\adapters\\cu_geopin_solver.json", "adapter_sha256": "ecaa597fa6528ea0cdcf1e5805d9461871bc1ec08d7bbbba8234ece144c5a173" },
+  "invocation": { "caller": "harness_probe", "subject": "calibration", "params": {}, "golden_id": "" },
+  "input": { "path": "dummy.raw" },
+  "gpu": { "pre": "NVIDIA GeForce RTX 4060 Laptop GPU, 616.92, 8188 MiB, 1840 MiB, 46, 6 %, 8.9", "post": "NVIDIA GeForce RTX 4060 Laptop GPU, 616.92, 8188 MiB, 1919 MiB, 46, 2 %, 8.9" },
+  "timing": { "wall_ms": 248.27, "gpu_ms": 0.086016, "timing_mode": "default_stream" },
+  "memory": { "vram_peak_mb": 0 },
+  "frames": 0,
+  "error": { "stage": "resolve", "trace": "shape 'init_step_release': init ok, main call not implemented in kernel_host/0.1.0-skeleton" }
+}

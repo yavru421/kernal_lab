@@ -1,0 +1,16 @@
+{
+  "kernel_id": "adaptive_delta_fused",
+  "order": "3",
+  "shape": "init_step_release",
+  "symbol_init": "cu_init_screen_engine",
+  "init_args": "int width, int height",
+  "symbol_main": "cu_adaptive_delta_fused",
+  "symbol_aux": "cu_eval_stalled_cadence,cu_get_internal_rgb_chw_ptr",
+  "signature_source": "c:\\dev\\screen_agent_cuda\\csrc\\adaptive_delta_fused.cu:120 (init), :153 (main), :247 (stalled_cadence)",
+  "signature_main": "int cu_adaptive_delta_fused(const unsigned char* d_curr_bgra, float* d_out_rgb_chw, uint32_t* h_out_bitmask, int width, int height, int pitch, float mse_threshold, int* out_mutated_tile_count)",
+  "decoder": "nvdec_bgra",
+  "per": "frame",
+  "timing_mode": "internal_stream",
+  "outputs": "delta_tiles.json:telemetry_json",
+  "known_defects": "20261003_adaptive_delta_fused_internal_stream"
+}

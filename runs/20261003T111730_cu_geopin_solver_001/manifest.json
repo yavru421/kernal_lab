@@ -1,0 +1,21 @@
+{
+  "schema": "kernel_lab.manifest/v1",
+  "run_id": "20261003T111730_cu_geopin_solver_001", "status": "finished",
+  "host_version": "kernel_host/0.3.2",
+  "kernel": { "kernel_id": "cu_geopin_solver", "dll_path": "c:\\dev\\cu_vision_lite\\cu_vision_lite_sm89.dll", "dll_sha256": "7a422d5cf99bed37c81cfa2b3ad9490849973997a1ef46167fe42be93428f8fa", "shape": "init_step_release", "symbol_init": "cu_geopin_init", "symbol_main": "cu_geopin_track_step", "adapter": "c:\\dev\\kernel_lab\\host\\adapters\\cu_geopin_solver.json", "adapter_sha256": "d43bd01ff0a74d1b2903d7aec2c408820b51acbadee154da5ad5fd19420b2a5e" },
+  "invocation": { "caller": "operator_eval", "subject": "bowling_lane_tracking", "params": {
+  "width": 1080,
+  "height": 1920,
+  "max_frames": 120,
+  "patch_radius": 10,
+  "search_radius": 24
+}
+, "golden_id": "golden_cu_geopin_bowling_v1" },
+  "input": { "path": "C:\\Users\\John\\Downloads\\prahl_outings\\bowling.MOV" },
+  "gpu": { "pre": "NVIDIA GeForce RTX 4060 Laptop GPU, 616.92, 8188 MiB, 2063 MiB, 48, 0 %, 8.9", "post": "NVIDIA GeForce RTX 4060 Laptop GPU, 616.92, 8188 MiB, 2135 MiB, 50, 94 %, 8.9" },
+  "timing": { "wall_ms": 18956.2, "gpu_ms": 18349.6, "timing_mode": "default_stream" },
+  "memory": { "vram_peak_mb": 0 },
+  "frames": 120,
+  "outputs": [{ "path": "outputs/tracked.mp4", "kind": "video", "bytes": 3482872, "sha256": "ef2ff0048b7f17fe5d80d5d486678d1f95985d9880db3d2c5615af8da1795719" }, { "path": "outputs/track.json", "kind": "telemetry_json", "bytes": 8097, "sha256": "a1a62f482d538a68e2af769322bb21fdf47086d45d818cb2c58a960eab2129c6" }],
+  "error": { "stage": "", "trace": "" }
+}

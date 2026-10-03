@@ -1,0 +1,31 @@
+{
+  "source_video": "C:\\Users\\John\\Downloads\\prahl_outings\\bowling.MOV",
+  "aspect_ratio": "9:16 Portrait",
+  "dimensions": "720x1280",
+  "total_frames_evaluated": 519,
+  "duration_seconds": 8.66,
+  "fps": 59.94,
+  "hardware_target": "NVIDIA GeForce RTX 4060 Laptop GPU (AD107 / SM_89)",
+  "cuda_kernel": "cu_solve_kinematic_telemetry (cu_skeleton_kinematics.dll)",
+  "mean_cuda_kernel_latency_ms": 0.9631,
+  "peak_cuda_kernel_latency_ms": 3.924,
+  "kinematics_summary": {
+    "peak_l5_s1_moment_nm": 168.4,
+    "peak_l5_s1_time_s": 5.022,
+    "max_trunk_flexion_deg": 31.9,
+    "max_trunk_flexion_time_s": 5.672,
+    "deepest_knee_flexion_deg": 148.5,
+    "deepest_knee_time_s": 2.186,
+    "stoop_hazard_frames_count": 0,
+    "stoop_hazard_percent": 0.0,
+    "mean_kinetic_chain_score": 93.1,
+    "min_kinetic_chain_score": 85.0
+  },
+  "deliverables": {
+    "hud_video": "C:\\dev\\cu_vision_lite\\exports\\kinematics\\bowling\\bowling_kinematics_hud.mp4",
+    "json_timeline": "C:\\dev\\cu_vision_lite\\exports\\kinematics\\bowling\\kinematics_timeline.json",
+    "skeleton_2d_tracks": "C:\\dev\\cu_vision_lite\\exports\\kinematics\\bowling\\skeleton_2d_tracks.json",
+    "keentools_pins": "C:\\dev\\cu_vision_lite\\exports\\kinematics\\bowling\\keentools_pins.json",
+    "viewer_html": "C:\\dev\\cu_vision_lite\\exports\\kinematics\\bowling\\kinematics_viewer.html"
+  }
+}

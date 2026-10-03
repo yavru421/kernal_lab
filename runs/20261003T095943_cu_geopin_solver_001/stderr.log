@@ -1,0 +1,2 @@
+stage=resolve
+shape 'init_step_release': init ok, main call not implemented in kernel_host/0.1.0-skeleton

@@ -1,0 +1,9 @@
+{
+  "kernel_id": "cu_geopin_solver",
+  "frames": 2,
+  "num_pins": 2,
+  "tracks": [
+    { "pin_idx": 0, "in_x": 400, "in_y": 300, "out_x": 403, "out_y": 302, "confidence": 1, "status": 1 },
+    { "pin_idx": 1, "in_x": 800, "in_y": 500, "out_x": 803, "out_y": 502, "confidence": 1, "status": 1 }
+  ]
+}
