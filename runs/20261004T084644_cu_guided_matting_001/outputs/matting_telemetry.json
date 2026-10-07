@@ -1,0 +1,13 @@
+{
+  "kernel_id": "cu_guided_matting",
+  "input": "C:\\Users\\John\\Downloads\\prahl_outings\\bowling.MOV",
+  "golden_id": "",
+  "dimensions": { "width": 720, "height": 1280 },
+  "guided_filter_radius": 4,
+  "guided_filter_eps": 0.0001,
+  "inner_scale": 1.1,
+  "outer_scale": 1.5,
+  "frames_processed": 180,
+  "gpu_total_ms": 997.889,
+  "gpu_fps": 180.381
+}

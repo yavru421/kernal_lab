@@ -11,6 +11,6 @@
   "decoder": "device_buffer",
   "per": "frame",
   "timing_mode": "host_stream",
-  "outputs": "kinematics.json:telemetry_json",
+  "outputs": "kinematics.json:telemetry_json,tracked_skeleton.mp4:video,skeleton_blank.mp4:video",
   "note": "Use the _device variant: host variant takes h_keypoints and would hide an H2D copy inside the kernel call."
 }

@@ -1,0 +1,38 @@
+{
+  "schema": "kernel_lab.manifest/v1",
+  "run_id": "20261004T184222_cu_guided_matting_001", "status": "finished",
+  "host_version": "kernel_host/0.3.2",
+  "kernel": { "kernel_id": "cu_guided_matting", "dll_path": "c:\\dev\\cu_vision_lite\\cu_guided_matting.dll", "dll_sha256": "70b8abccfc53137b43933b8c22d230f3e7495824f33878e2f71ecd4de636e519", "shape": "per_buffer", "symbol_init": "", "symbol_main": "cu_sandwich_composite", "adapter": "c:\\dev\\kernel_lab\\host\\adapters\\cu_guided_matting.json", "adapter_sha256": "be5ae4e2f3b9bedc8ce86ca1cc40754150918dfc4cc1221a0e3fbaafab9f2c3d" },
+  "invocation": { "caller": "Antigravity", "subject": "bowling", "params": {
+  "max_frames": 180,
+  "width": 720,
+  "height": 1280,
+  "radius": 8,
+  "eps": 0.001,
+  "inner_scale": 1.0,
+  "outer_scale": 1.8,
+  "clamp_trimap_bounds": 1,
+  "temporal_alpha_momentum": 0.0,
+  "preview_frames": [45, 90, 135],
+  "skeleton_tracks_path": "c:\\dev\\cu_vision_lite\\exports\\kinematics\\bowling\\skeleton_2d_tracks.json",
+  "texture_path": "c:\\dev\\cu_vision_lite\\csrc\\graffiti_plate_1024x1024.bgra",
+  "texture_width": 1024,
+  "texture_height": 1024,
+  "opacity": 0.98,
+  "specular_mix": 0.25,
+  "plane_corners": [
+    [120.0, 370.0],
+    [600.0, 370.0],
+    [690.0, 740.0],
+    [30.0, 740.0]
+  ]
+}
+, "golden_id": "" },
+  "input": { "path": "C:\\\\Users\\\\John\\\\Downloads\\\\prahl_outings\\\\bowling.MOV" },
+  "gpu": { "pre": "NVIDIA GeForce RTX 4060 Laptop GPU, 616.92, 8188 MiB, 1607 MiB, 49, 9 %, 8.9", "post": "NVIDIA GeForce RTX 4060 Laptop GPU, 616.92, 8188 MiB, 1692 MiB, 52, 19 %, 8.9" },
+  "timing": { "wall_ms": 1711.56, "gpu_ms": 1016.02, "timing_mode": "host_stream" },
+  "memory": { "vram_peak_mb": 30 },
+  "frames": 180,
+  "outputs": [{ "path": "outputs/preview_sandwich_f45.jpg", "kind": "image", "bytes": 90397, "sha256": "2f135891fecedc9fc48dd7b5eba29b2794a233a5319d78da33500e5b49ba5f44" }, { "path": "outputs/preview_sandwich_f90.jpg", "kind": "image", "bytes": 101418, "sha256": "65322170b00e7be97080e19ed80d1857a39754a22af9110d8ae672da58cf21f3" }, { "path": "outputs/preview_sandwich_f135.jpg", "kind": "image", "bytes": 101477, "sha256": "dd88c8db7d543f52bab3ad84d09893a8664502cbb3dc830a038b1e7f1a33e3bb" }, { "path": "outputs/preview_sandwich.jpg", "kind": "image", "bytes": 101418, "sha256": "65322170b00e7be97080e19ed80d1857a39754a22af9110d8ae672da58cf21f3" }, { "path": "outputs/sandwich_composite.mp4", "kind": "video", "bytes": 4895487, "sha256": "1a99982da6c79c3838bed8d5ac205d872436a4a80ccd9dac22532a0a69bfcf4f" }, { "path": "outputs/matting_telemetry.json", "kind": "telemetry_json", "bytes": 364, "sha256": "efbd4475fd8dc316b7996c4d520f8cc2a214d948a5591f060340efc44e4b9c20" }],
+  "error": { "stage": "", "trace": "" }
+}

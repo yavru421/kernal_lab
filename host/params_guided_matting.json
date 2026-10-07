@@ -1,0 +1,24 @@
+{
+  "max_frames": 180,
+  "width": 720,
+  "height": 1280,
+  "radius": 8,
+  "eps": 0.001,
+  "inner_scale": 1.0,
+  "outer_scale": 1.8,
+  "clamp_trimap_bounds": 1,
+  "temporal_alpha_momentum": 0.0,
+  "preview_frames": [45, 90, 135],
+  "skeleton_tracks_path": "c:\\dev\\cu_vision_lite\\exports\\kinematics\\bowling\\skeleton_2d_tracks.json",
+  "texture_path": "c:\\dev\\cu_vision_lite\\csrc\\graffiti_plate_1024x1024.bgra",
+  "texture_width": 1024,
+  "texture_height": 1024,
+  "opacity": 0.98,
+  "specular_mix": 0.25,
+  "plane_corners": [
+    [120.0, 370.0],
+    [600.0, 370.0],
+    [690.0, 740.0],
+    [30.0, 740.0]
+  ]
+}

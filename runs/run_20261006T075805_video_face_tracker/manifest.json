@@ -1,0 +1,64 @@
+{
+  "schema": "kernel_lab.manifest/v1",
+  "run_id": "run_20261006T075805_video_face_tracker",
+  "status": "finished",
+  "host_version": "video_face_tracker/1.1.0",
+  "kernel": {
+    "kernel_id": "cu_video_face_tracker",
+    "binary": "C:\\dev\\faceswap_engine\\video_face_tracker.exe",
+    "build_id": "build_20261006T075746_video_face_tracker"
+  },
+  "invocation": {
+    "caller": "kernel_lab",
+    "subject": "stosh_mexico_crossing_border_face_tracking",
+    "params": {
+      "fps": 30.0,
+      "max_frames": 0,
+      "width": 1920,
+      "height": 1080,
+      "aspect_ratio": "16:9"
+    }
+  },
+  "input": {
+    "path": "B:\\stosh\\stosh_south\\stosh_mexico_crossing_border.mp4"
+  },
+  "gpu": {
+    "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "temperature": 51,
+    "encoder": "NVENC H.264 (hardware)"
+  },
+  "timing": {
+    "wall_ms": 48873.3,
+    "mean_frame_latency_ms": 109.071,
+    "fps_throughput": 9.17
+  },
+  "frames": 404,
+  "metrics": {
+    "pure_facial_kps_pct": 99.50,
+    "facial_kps_blend_pct": 0.50,
+    "fallback_frame_center_pct": 0.00,
+    "mean_confidence": 0.857,
+    "min_pitch": 24.32,
+    "max_pitch": 48.24,
+    "min_yaw": 2.77,
+    "max_yaw": 90.00,
+    "min_roll": -30.90,
+    "max_roll": 39.91
+  },
+  "outputs": [
+    {
+      "path": "C:\\dev\\kernel_lab\\runs\\run_20261006T075805_video_face_tracker\\outputs\\tracked_face.mp4",
+      "kind": "video",
+      "bytes": 27727696,
+      "sha256": "d73c9e800b6cd0fd109a298baf34edc5f3d277c7b4bc4355f1f997c3123143bc"
+    },
+    {
+      "path": "C:\\dev\\kernel_lab\\runs\\run_20261006T075805_video_face_tracker\\outputs\\face_tracks.json",
+      "kind": "trajectory_json"
+    }
+  ],
+  "error": {
+    "stage": "ort_cuda_provider",
+    "trace": "OrtSessionOptionsAppendExecutionProvider_Cuda: Failed to load shared library onnxruntime_providers_cuda.dll (Error 127: The specified procedure could not be found). Fallback to CPU execution."
+  }
+}

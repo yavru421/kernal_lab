@@ -1,0 +1,25 @@
+{
+  "schema": "kernel_lab.manifest/v1",
+  "run_id": "20261004T082129_cu_z_occlusion_001", "status": "finished",
+  "host_version": "kernel_host/0.3.2",
+  "kernel": { "kernel_id": "cu_z_occlusion", "dll_path": "c:\\dev\\cu_vision_lite\\cu_z_occlusion.dll", "dll_sha256": "c1a913673f861a4cf1587c5466c709b314c04fcee33405d4b5dc1816c2f832f3", "shape": "per_buffer", "symbol_init": "", "symbol_main": "cu_composite_z_occlusion", "adapter": "c:\\dev\\kernel_lab\\host\\adapters\\cu_z_occlusion.json", "adapter_sha256": "769190d7f16b9ee152295a19c70115d33b2d345b9215fc5fec3356a529f8d725" },
+  "invocation": { "caller": "operator_eval", "subject": "bowling_z_occlusion", "params": {
+  "width": 720,
+  "height": 1280,
+  "max_frames": 180,
+  "graphic_depth_m": 3.5,
+  "subject_base_z_m": 2.2,
+  "feather_radius_m": 0.05,
+  "meters_per_pixel": 0.0028,
+  "graphic_plate_path": "C:\\dev\\kernel_lab\\runs\\graphic_plate.raw",
+  "skeleton_tracks_path": "c:\\dev\\cu_vision_lite\\exports\\kinematics\\bowling\\skeleton_2d_tracks.json"
+}
+, "golden_id": "golden_z_occlusion_bowling_v1" },
+  "input": { "path": "C:\\Users\\John\\Downloads\\prahl_outings\\bowling.MOV" },
+  "gpu": { "pre": "NVIDIA GeForce RTX 4060 Laptop GPU, 616.92, 8188 MiB, 1854 MiB, 49, 5 %, 8.9", "post": "NVIDIA GeForce RTX 4060 Laptop GPU, 616.92, 8188 MiB, 1933 MiB, 49, 8 %, 8.9" },
+  "timing": { "wall_ms": 1283.74, "gpu_ms": 895.778, "timing_mode": "host_stream" },
+  "memory": { "vram_peak_mb": 0 },
+  "frames": 180,
+  "outputs": [{ "path": "outputs/preview_occlusion.jpg", "kind": "image", "bytes": 42823, "sha256": "2d07407f7c20e7d78f18ea35d05d111df03b26cf16d91c5344b6c97dbdd572db" }, { "path": "outputs/occlusion_composite.mp4", "kind": "video", "bytes": 2524638, "sha256": "242dfc7c90bfc237933d8bc058041ab8810a29c771798163629281c2648a4120" }, { "path": "outputs/occlusion_telemetry.json", "kind": "telemetry_json", "bytes": 360, "sha256": "0a69f3c063594baad680370f3b9f384cf3f3d94a47ad3e0f040246efb694240f" }],
+  "error": { "stage": "", "trace": "" }
+}

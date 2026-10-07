@@ -1,0 +1,18 @@
+{
+  "run_id": "run_20261007T074638_stosh_graphic_novel",
+  "kernel_id": "cu_puppet_engine",
+  "caller": "kernel_lab",
+  "subject": "stosh_cel_shaded_graphic_novel",
+  "status": "success",
+  "ok": true,
+  "frames": 404,
+  "fps": 30,
+  "gpu_ms": 1617.93,
+  "wall_ms": 1617.95,
+  "fps_throughput": 249.699,
+  "outputs": [
+    "C:\dev\kernel_lab\runs\run_20261007T074638_stosh_graphic_novel\outputs\stosh_graphic_novel_with_audio_404f.mp4",
+    "C:\dev\kernel_lab\runs\run_20261007T074638_stosh_graphic_novel\outputs\stosh_graphic_novel_side_by_side_404f.mp4",
+    "C:\dev\kernel_lab\runs\run_20261007T074638_stosh_graphic_novel\outputs\stosh_graphic_novel_contact_sheet.png"
+  ]
+}

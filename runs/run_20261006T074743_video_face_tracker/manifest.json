@@ -1,0 +1,48 @@
+{
+  "schema": "kernel_lab.manifest/v1",
+  "run_id": "run_20261006T074743_video_face_tracker",
+  "status": "finished",
+  "host_version": "video_face_tracker/1.0.0",
+  "kernel": {
+    "kernel_id": "cu_video_face_tracker",
+    "binary": "C:\\dev\\faceswap_engine\\video_face_tracker.exe"
+  },
+  "invocation": {
+    "caller": "kernel_lab",
+    "subject": "stosh_mexico_crossing_border_face_tracking",
+    "params": {
+      "fps": 30.0,
+      "max_frames": 0
+    }
+  },
+  "input": {
+    "path": "B:\\stosh\\stosh_south\\stosh_mexico_crossing_border.mp4"
+  },
+  "gpu": {
+    "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "temperature": 46,
+    "encoder": "NVENC H.264 (hardware)"
+  },
+  "timing": {
+    "wall_ms": 39089.0,
+    "mean_frame_latency_ms": 89.0623,
+    "fps_throughput": 11.23
+  },
+  "frames": 404,
+  "outputs": [
+    {
+      "path": "C:\\dev\\kernel_lab\\runs\\run_20261006T074743_video_face_tracker\\outputs\\tracked_face.mp4",
+      "kind": "video",
+      "bytes": 27397209,
+      "sha256": "01625b434ee9f6cffe7575424d82270e9d559a015aa4929be295fa37418e0b8c"
+    },
+    {
+      "path": "C:\\dev\\kernel_lab\\runs\\run_20261006T074743_video_face_tracker\\outputs\\face_tracks.json",
+      "kind": "trajectory_json"
+    }
+  ],
+  "error": {
+    "stage": "ort_cuda_provider",
+    "trace": "OrtSessionOptionsAppendExecutionProvider_Cuda: Failed to load shared library onnxruntime_providers_cuda.dll (Error 127: The specified procedure could not be found). Fallback to CPU execution."
+  }
+}

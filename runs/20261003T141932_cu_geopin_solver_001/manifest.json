@@ -1,0 +1,28 @@
+{
+  "schema": "kernel_lab.manifest/v1",
+  "run_id": "20261003T141932_cu_geopin_solver_001", "status": "finished",
+  "host_version": "kernel_host/0.3.2",
+  "kernel": { "kernel_id": "cu_geopin_solver", "dll_path": "c:\\dev\\cu_vision_lite\\cu_vision_lite_sm89.dll", "dll_sha256": "7a422d5cf99bed37c81cfa2b3ad9490849973997a1ef46167fe42be93428f8fa", "shape": "init_step_release", "symbol_init": "cu_geopin_init", "symbol_main": "cu_geopin_track_step", "adapter": "c:\\dev\\kernel_lab\\host\\adapters\\cu_geopin_solver.json", "adapter_sha256": "d43bd01ff0a74d1b2903d7aec2c408820b51acbadee154da5ad5fd19420b2a5e" },
+  "invocation": { "caller": "operator_nlp", "subject": "person_walking", "params": {
+  "width": 1920,
+  "height": 1080,
+  "max_frames": 156,
+  "patch_radius": 10,
+  "search_radius": 24,
+  "pins": [
+    { "label": "PERSON_CENTER", "x": 1340.0, "y": 460.0 },
+    { "label": "PERSON_TOP",    "x": 1345.0, "y": 385.0 },
+    { "label": "PERSON_BASE",   "x": 1346.0, "y": 665.0 },
+    { "label": "PERSON_LEFT",   "x": 1288.0, "y": 465.0 },
+    { "label": "PERSON_RIGHT",  "x": 1392.0, "y": 465.0 }
+  ]
+}
+, "golden_id": "" },
+  "input": { "path": "C:\\Users\\John\\Downloads\\camera_skeleton_test.mp4" },
+  "gpu": { "pre": "NVIDIA GeForce RTX 4060 Laptop GPU, 616.92, 8188 MiB, 1754 MiB, 49, 0 %, 8.9", "post": "NVIDIA GeForce RTX 4060 Laptop GPU, 616.92, 8188 MiB, 1809 MiB, 51, 96 %, 8.9" },
+  "timing": { "wall_ms": 24138, "gpu_ms": 23710.1, "timing_mode": "default_stream" },
+  "memory": { "vram_peak_mb": 0 },
+  "frames": 156,
+  "outputs": [{ "path": "outputs/tracked.mp4", "kind": "video", "bytes": 3772408, "sha256": "8c89bee30ca3ea627cfada25cf97febdb8fd890e573612aa6dd03745e72c74bc" }, { "path": "outputs/track.json", "kind": "telemetry_json", "bytes": 12239, "sha256": "cb1f92c792c32a3942314bb3f0fca72bcebd5c77bc81cdea59f5b213376745b9" }],
+  "error": { "stage": "", "trace": "" }
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "kernel_lab.manifest/v1",
+  "run_id": "20261004T172612_cu_guided_matting_001", "status": "finished",
+  "host_version": "kernel_host/0.3.2",
+  "kernel": { "kernel_id": "cu_guided_matting", "dll_path": "c:\\dev\\cu_vision_lite\\cu_guided_matting.dll", "dll_sha256": "f821a069fce3ea0c9e78b9efe71ee9ec09572a039a826752de9bd60048936a88", "shape": "per_buffer", "symbol_init": "", "symbol_main": "cu_sandwich_composite", "adapter": "c:\\dev\\kernel_lab\\host\\adapters\\cu_guided_matting.json", "adapter_sha256": "be5ae4e2f3b9bedc8ce86ca1cc40754150918dfc4cc1221a0e3fbaafab9f2c3d" },
+  "invocation": { "caller": "agent", "subject": "backup", "params": {
+  "max_frames": 415,
+  "width": 720,
+  "height": 1280,
+  "radius": 8,
+  "eps": 0.001,
+  "inner_scale": 1.0,
+  "outer_scale": 1.8,
+  "clamp_trimap_bounds": 1,
+  "temporal_alpha_momentum": 0.0,
+  "preview_frames": [45, 90, 150, 250, 350],
+  "skeleton_tracks_path": "c:\\dev\\cu_vision_lite\\exports\\kinematics\\backup\\skeleton_2d_tracks.json"
+}
+, "golden_id": "" },
+  "input": { "path": "C:\\Users\\John\\Downloads\\backup.MOV" },
+  "gpu": { "pre": "NVIDIA GeForce RTX 4060 Laptop GPU, 616.92, 8188 MiB, 1688 MiB, 45, 1 %, 8.9", "post": "NVIDIA GeForce RTX 4060 Laptop GPU, 616.92, 8188 MiB, 1766 MiB, 47, 0 %, 8.9" },
+  "timing": { "wall_ms": 2765.44, "gpu_ms": 2027.25, "timing_mode": "host_stream" },
+  "memory": { "vram_peak_mb": 30 },
+  "frames": 415,
+  "outputs": [{ "path": "outputs/preview_sandwich_f45.jpg", "kind": "image", "bytes": 74386, "sha256": "1c124854a559701c78cb76aba565e470da8837af5509c3369b09649ce60da753" }, { "path": "outputs/preview_sandwich_f90.jpg", "kind": "image", "bytes": 78672, "sha256": "64760d9fcd1662597081589eec52a056df837dac6d9f298be4007cb3e7795297" }, { "path": "outputs/preview_sandwich_f150.jpg", "kind": "image", "bytes": 77853, "sha256": "a097267b2906961565f25d9cac828bcd10089c41c9ecdae9fcf723cfebf8ac42" }, { "path": "outputs/preview_sandwich_f250.jpg", "kind": "image", "bytes": 77844, "sha256": "cb3d9494c694c843d6510d1a23c66a1ad433cda063dc60149e35ee34311b47d4" }, { "path": "outputs/preview_sandwich_f350.jpg", "kind": "image", "bytes": 76164, "sha256": "58e203a2b021098edefb1a6df4829cebf4dd12810c484b6c0a8562e05b564daa" }, { "path": "outputs/preview_sandwich.jpg", "kind": "image", "bytes": 78672, "sha256": "64760d9fcd1662597081589eec52a056df837dac6d9f298be4007cb3e7795297" }, { "path": "outputs/sandwich_composite.mp4", "kind": "video", "bytes": 10470573, "sha256": "865931ddad7bbc0605299e74d8ed1f7894a53b1061e6f4d0aaa874db91378907" }, { "path": "outputs/matting_telemetry.json", "kind": "telemetry_json", "bytes": 338, "sha256": "9daa59261a7d7c71e323e56a8a375c731e6d8d3cfc85e44bd52b6125d9d40f99" }],
+  "error": { "stage": "", "trace": "" }
+}

@@ -1,0 +1,14 @@
+{
+  "schema": "kernel_lab.manifest/v1",
+  "run_id": "20261006T061920_faceswap_kernels_001", "status": "finished",
+  "host_version": "kernel_host/0.3.2",
+  "kernel": { "kernel_id": "faceswap_kernels", "dll_path": "c:\\dev\\faceswap_engine\\faceswap_engine_cuda.dll", "dll_sha256": "1cde21292e362065e05b499e1364bf4303f0a13b50d04d2d4617578180d49211", "shape": "init_only", "symbol_init": "faceswap_init", "symbol_main": "cu_parallel_jacobi_poisson_blend", "adapter": "c:\\dev\\kernel_lab\\host\\adapters\\faceswap_kernels.json", "adapter_sha256": "cf515ee506a8efc74a104e185df125a6c0e0f8205c4cb4b684290867d26c63b8" },
+  "invocation": { "caller": "antigravity", "subject": "faceswap_engine", "params": {}, "golden_id": "" },
+  "input": { "path": "synthetic" },
+  "gpu": { "pre": "NVIDIA GeForce RTX 4060 Laptop GPU, 616.92, 8188 MiB, 1895 MiB, 46, 0 %, 8.9", "post": "NVIDIA GeForce RTX 4060 Laptop GPU, 616.92, 8188 MiB, 1977 MiB, 46, 0 %, 8.9" },
+  "timing": { "wall_ms": 170.199, "gpu_ms": 1.46432, "timing_mode": "cuda_event" },
+  "memory": { "vram_peak_mb": 0 },
+  "frames": 0,
+  "outputs": [],
+  "error": { "stage": "", "trace": "" }
+}

@@ -1,0 +1,16 @@
+{
+  "kernel_id": "faceswap_kernels",
+  "order": "6",
+  "shape": "init_only",
+  "symbol_init": "faceswap_init",
+  "init_args": "none",
+  "symbol_main": "cu_parallel_jacobi_poisson_blend",
+  "symbol_aux": "cu_fused_affine_warp_preprocess,cu_fused_affine_warp_preprocess_v2,cu_fused_mask_morphology,cu_fused_reinhard_color_transfer,cu_inverse_affine_composite",
+  "signature_source": "c:\\dev\\faceswap_engine\\cuda\\faceswap_kernels.cu:280 (init), :201 (affine_warp), :240 (morphology), :255 (reinhard), :268 (composite)",
+  "signature_main": "int cu_parallel_jacobi_poisson_blend(uint8_t* d_target_frame_bgra, int frame_width, int frame_height, int frame_pitch_bytes, const half* d_swapped_bgr_fp16, const float* d_soft_mask, int crop_size, const float* d_fwd_matrix_2x3, int num_jacobi_iters, cudaStream_t stream)",
+  "decoder": "nvdec_bgra",
+  "per": "frame",
+  "timing_mode": "cuda_event",
+  "outputs": "faceswap_telemetry.json:telemetry_json",
+  "note": "Native AD107 SM_89 CUDA faceswap kernel suite with hole-free inverse bilinear composite, Reinhard color transfer, and elliptical morphology"
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "kernel_lab.manifest/v1",
+  "run_id": "20261004T171052_cu_guided_matting_001", "status": "finished",
+  "host_version": "kernel_host/0.3.2",
+  "kernel": { "kernel_id": "cu_guided_matting", "dll_path": "c:\\dev\\cu_vision_lite\\cu_guided_matting.dll", "dll_sha256": "b2cdc10fc0ea1b903e736d7c45c86bafcff417840176073a433adbd22d14bddb", "shape": "per_buffer", "symbol_init": "", "symbol_main": "cu_sandwich_composite", "adapter": "c:\\dev\\kernel_lab\\host\\adapters\\cu_guided_matting.json", "adapter_sha256": "be5ae4e2f3b9bedc8ce86ca1cc40754150918dfc4cc1221a0e3fbaafab9f2c3d" },
+  "invocation": { "caller": "agent", "subject": "bowling", "params": {
+  "max_frames": 180,
+  "width": 720,
+  "height": 1280,
+  "radius": 8,
+  "eps": 0.001,
+  "inner_scale": 1.0,
+  "outer_scale": 1.8,
+  "clamp_trimap_bounds": 1,
+  "temporal_alpha_momentum": 0.0,
+  "preview_frames": [45, 90, 135],
+  "skeleton_tracks_path": "c:\\dev\\cu_vision_lite\\exports\\kinematics\\bowling\\skeleton_2d_tracks.json"
+}
+, "golden_id": "" },
+  "input": { "path": "C:\\Users\\John\\Downloads\\prahl_outings\\bowling.MOV" },
+  "gpu": { "pre": "NVIDIA GeForce RTX 4060 Laptop GPU, 616.92, 8188 MiB, 1627 MiB, 47, 1 %, 8.9", "post": "NVIDIA GeForce RTX 4060 Laptop GPU, 616.92, 8188 MiB, 1707 MiB, 48, 30 %, 8.9" },
+  "timing": { "wall_ms": 2143.23, "gpu_ms": 1530.01, "timing_mode": "host_stream" },
+  "memory": { "vram_peak_mb": 30 },
+  "frames": 180,
+  "outputs": [{ "path": "outputs/preview_sandwich_f45.jpg", "kind": "image", "bytes": 79784, "sha256": "fc771d32e05e0f0bd9f82889fcdecd724c81c1886a088843c406ba807750d721" }, { "path": "outputs/preview_sandwich_f90.jpg", "kind": "image", "bytes": 84323, "sha256": "7b0fbe635c4a5d379d86938fa6897bee781c16a30f2bef7aaf5562b9b2b00a24" }, { "path": "outputs/preview_sandwich_f135.jpg", "kind": "image", "bytes": 83003, "sha256": "087126dbb2368617ba3f76465e3b390fd5ef79b1dcb00dfaee0ff58b05902154" }, { "path": "outputs/preview_sandwich.jpg", "kind": "image", "bytes": 84323, "sha256": "7b0fbe635c4a5d379d86938fa6897bee781c16a30f2bef7aaf5562b9b2b00a24" }, { "path": "outputs/sandwich_composite.mp4", "kind": "video", "bytes": 4892544, "sha256": "51c3e2aa5e920332f71ba81f8ba788341598232c3157814f286c3c1ce04d91b7" }, { "path": "outputs/matting_telemetry.json", "kind": "telemetry_json", "bytes": 354, "sha256": "c39643ab9e1e2c0c3a9c2f9bf7d1f5934de6cebbebb6ab03f2fa24fced1de149" }],
+  "error": { "stage": "", "trace": "" }
+}

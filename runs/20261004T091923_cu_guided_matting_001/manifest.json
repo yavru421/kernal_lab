@@ -1,0 +1,26 @@
+{
+  "schema": "kernel_lab.manifest/v1",
+  "run_id": "20261004T091923_cu_guided_matting_001", "status": "finished",
+  "host_version": "kernel_host/0.3.2",
+  "kernel": { "kernel_id": "cu_guided_matting", "dll_path": "c:\\dev\\cu_vision_lite\\cu_guided_matting.dll", "dll_sha256": "00d0496292729ce70499148deaa6e2e767785a186de85836c41fe2fd78467f1f", "shape": "per_buffer", "symbol_init": "", "symbol_main": "cu_sandwich_composite", "adapter": "c:\\dev\\kernel_lab\\host\\adapters\\cu_guided_matting.json", "adapter_sha256": "be5ae4e2f3b9bedc8ce86ca1cc40754150918dfc4cc1221a0e3fbaafab9f2c3d" },
+  "invocation": { "caller": "agent", "subject": "bowling", "params": {
+  "max_frames": 180,
+  "width": 720,
+  "height": 1280,
+  "radius": 8,
+  "eps": 0.001,
+  "inner_scale": 1.0,
+  "outer_scale": 1.8,
+  "clamp_trimap_bounds": 1,
+  "temporal_alpha_momentum": 0.0,
+  "skeleton_tracks_path": "c:\\dev\\cu_vision_lite\\exports\\kinematics\\bowling\\skeleton_2d_tracks.json"
+}
+, "golden_id": "" },
+  "input": { "path": "C:\\Users\\John\\Downloads\\prahl_outings\\bowling.MOV" },
+  "gpu": { "pre": "NVIDIA GeForce RTX 4060 Laptop GPU, 616.92, 8188 MiB, 1919 MiB, 50, 7 %, 8.9", "post": "NVIDIA GeForce RTX 4060 Laptop GPU, 616.92, 8188 MiB, 2002 MiB, 52, 43 %, 8.9" },
+  "timing": { "wall_ms": 1432.19, "gpu_ms": 1029.97, "timing_mode": "host_stream" },
+  "memory": { "vram_peak_mb": 30 },
+  "frames": 180,
+  "outputs": [{ "path": "outputs/preview_sandwich.jpg", "kind": "image", "bytes": 82374, "sha256": "a61b7dcdbbcd628451b7f36cabffcb0461877b9cbdbbdb8c48eed37006e8812f" }, { "path": "outputs/sandwich_composite.mp4", "kind": "video", "bytes": 4905688, "sha256": "a5b20c577b7cde5ec96e5f5c332ce93c2db0a44dce1b1708ed5f4c3fab8aab72" }, { "path": "outputs/matting_telemetry.json", "kind": "telemetry_json", "bytes": 354, "sha256": "46ecc8d2ad768b63cd03501d4cac022b86a90caeb1c5f4ae9fc46aa64f93aee6" }],
+  "error": { "stage": "", "trace": "" }
+}

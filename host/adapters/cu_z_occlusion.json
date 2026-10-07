@@ -1,0 +1,16 @@
+{
+  "kernel_id": "cu_z_occlusion",
+  "order": "4",
+  "shape": "per_buffer",
+  "symbol_init": "",
+  "init_args": "none",
+  "symbol_main": "cu_composite_z_occlusion",
+  "symbol_aux": "cu_render_graphic_banner,cu_synthesize_kinematic_depth",
+  "signature_source": "c:\\dev\\cu_vision_lite\\csrc\\cu_z_occlusion.cu:140",
+  "signature_main": "int cu_composite_z_occlusion(const unsigned char* d_video_bgr, const float* d_depth_map, const unsigned char* d_graphic_bgra, unsigned char* d_out_composite, unsigned char* d_out_depth_vis, int width, int height, const OcclusionConfig* config, cudaStream_t stream)",
+  "decoder": "nvdec_bgr24",
+  "per": "frame",
+  "timing_mode": "host_stream",
+  "outputs": "occlusion_composite.mp4:video,depth_pass.mp4:video,preview_occlusion.jpg:image,occlusion_telemetry.json:telemetry_json",
+  "note": "Native AD107 monocular depth synthesis and Z-occlusion compositing engine"
+}

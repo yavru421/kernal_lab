@@ -1,0 +1,3238 @@
+{
+  "run_id": "run_20261006T074743_video_face_tracker",
+  "video": "B:\stosh\stosh_south\stosh_mexico_crossing_border.mp4",
+  "frames": [
+    {
+      "frame": 0,
+      "timestamp_s": 0,
+      "head_box": [419.772, 531.013, 120.592],
+      "prior": "skeleton_clavicle",
+      "pose": { "pitch": 37.2522, "yaw": 41.1843, "roll": 24.2786 },
+      "gpu_ms": 35.209
+    },
+    {
+      "frame": 1,
+      "timestamp_s": 0.0333333,
+      "head_box": [412.957, 527.072, 120.931],
+      "prior": "skeleton_clavicle",
+      "pose": { "pitch": 35.4267, "yaw": 42.3357, "roll": 40.2708 },
+      "gpu_ms": 51.4517
+    },
+    {
+      "frame": 2,
+      "timestamp_s": 0.0666667,
+      "head_box": [406.657, 524.171, 122.604],
+      "prior": "skeleton_clavicle",
+      "pose": { "pitch": 34.9689, "yaw": 40.027, "roll": 53.7333 },
+      "gpu_ms": 119.929
+    },
+    {
+      "frame": 3,
+      "timestamp_s": 0.1,
+      "head_box": [401.593, 521.698, 126.306],
+      "prior": "skeleton_clavicle",
+      "pose": { "pitch": 34.9719, "yaw": 43.6856, "roll": 45.0899 },
+      "gpu_ms": 23.7463
+    },
+    {
+      "frame": 4,
+      "timestamp_s": 0.133333,
+      "head_box": [398.572, 520.476, 127.827],
+      "prior": "skeleton_clavicle",
+      "pose": { "pitch": 37.5564, "yaw": 42.6316, "roll": 48.1832 },
+      "gpu_ms": 46.1731
+    },
+    {
+      "frame": 5,
+      "timestamp_s": 0.166667,
+      "head_box": [397.645, 518.992, 127.005],
+      "prior": "skeleton_clavicle",
+      "pose": { "pitch": 39.9295, "yaw": 35.8734, "roll": 30.6692 },
+      "gpu_ms": 94.6676
+    },
+    {
+      "frame": 6,
+      "timestamp_s": 0.2,
+      "head_box": [398.997, 514.404, 125.935],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 40.0338, "yaw": 36.6643, "roll": 31.3943 },
+      "gpu_ms": 63.3563
+    },
+    {
+      "frame": 7,
+      "timestamp_s": 0.233333,
+      "head_box": [400.268, 510.251, 127.189],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 40.2829, "yaw": 39.2797, "roll": 17.8508 },
+      "gpu_ms": 62.4538
+    },
+    {
+      "frame": 8,
+      "timestamp_s": 0.266667,
+      "head_box": [399.692, 511.801, 129.837],
+      "prior": "skeleton_clavicle",
+      "pose": { "pitch": 39.5205, "yaw": 39.7605, "roll": 23.1734 },
+      "gpu_ms": 58.6226
+    },
+    {
+      "frame": 9,
+      "timestamp_s": 0.3,
+      "head_box": [399.434, 513.096, 130.172],
+      "prior": "skeleton_clavicle",
+      "pose": { "pitch": 39.0492, "yaw": 39.1273, "roll": 31.359 },
+      "gpu_ms": 64.9967
+    },
+    {
+      "frame": 10,
+      "timestamp_s": 0.333333,
+      "head_box": [400.367, 513.613, 128.46],
+      "prior": "skeleton_clavicle",
+      "pose": { "pitch": 37.9555, "yaw": 41.0269, "roll": 26.499 },
+      "gpu_ms": 86.696
+    },
+    {
+      "frame": 11,
+      "timestamp_s": 0.366667,
+      "head_box": [402.293, 509.739, 128.395],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 39.7906, "yaw": 36.1539, "roll": 18.157 },
+      "gpu_ms": 74.2634
+    },
+    {
+      "frame": 12,
+      "timestamp_s": 0.4,
+      "head_box": [402.433, 506.843, 129.942],
+      "prior": "skeleton_clavicle",
+      "pose": { "pitch": 39.3476, "yaw": 39.2675, "roll": 21.056 },
+      "gpu_ms": 99.1452
+    },
+    {
+      "frame": 13,
+      "timestamp_s": 0.433333,
+      "head_box": [406.2, 501.567, 129.467],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 39.0976, "yaw": 40.4605, "roll": 7.54277 },
+      "gpu_ms": 93.8857
+    },
+    {
+      "frame": 14,
+      "timestamp_s": 0.466667,
+      "head_box": [413.051, 497.602, 127.814],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 38.7354, "yaw": 38.1451, "roll": -1.06 },
+      "gpu_ms": 89.3407
+    },
+    {
+      "frame": 15,
+      "timestamp_s": 0.5,
+      "head_box": [414.311, 496.764, 127.275],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 39.4459, "yaw": 35.8976, "roll": -3.91679 },
+      "gpu_ms": 160.595
+    },
+    {
+      "frame": 16,
+      "timestamp_s": 0.533333,
+      "head_box": [412.317, 498.016, 129.067],
+      "prior": "skeleton_clavicle",
+      "pose": { "pitch": 39.4011, "yaw": 37.1603, "roll": -0.761924 },
+      "gpu_ms": 107.968
+    },
+    {
+      "frame": 17,
+      "timestamp_s": 0.566667,
+      "head_box": [411.386, 498.086, 128.945],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 39.0976, "yaw": 40.2627, "roll": 2.68061 },
+      "gpu_ms": 112.454
+    },
+    {
+      "frame": 18,
+      "timestamp_s": 0.6,
+      "head_box": [411.763, 495.683, 128.663],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 40.018, "yaw": 36.8893, "roll": -4.3678 },
+      "gpu_ms": 125.937
+    },
+    {
+      "frame": 19,
+      "timestamp_s": 0.633333,
+      "head_box": [413.241, 504.915, 130.446],
+      "prior": "skeleton_clavicle",
+      "pose": { "pitch": 38.5841, "yaw": 32.9203, "roll": 1.05104 },
+      "gpu_ms": 83.8323
+    },
+    {
+      "frame": 20,
+      "timestamp_s": 0.666667,
+      "head_box": [407.186, 513.592, 133.096],
+      "prior": "skeleton_clavicle",
+      "pose": { "pitch": 36.0688, "yaw": 35.5079, "roll": 32.3361 },
+      "gpu_ms": 35.9918
+    },
+    {
+      "frame": 21,
+      "timestamp_s": 0.7,
+      "head_box": [407.935, 503.571, 137.873],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 40.7423, "yaw": 28.0733, "roll": 3.47413 },
+      "gpu_ms": 74.2833
+    },
+    {
+      "frame": 22,
+      "timestamp_s": 0.733333,
+      "head_box": [405.804, 495.068, 142.8],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 47.1886, "yaw": 13.3025, "roll": -15.6127 },
+      "gpu_ms": 137.633
+    },
+    {
+      "frame": 23,
+      "timestamp_s": 0.766667,
+      "head_box": [405.392, 479.861, 149.434],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 51.3606, "yaw": 8.96912, "roll": -33.0972 },
+      "gpu_ms": 79.8519
+    },
+    {
+      "frame": 24,
+      "timestamp_s": 0.8,
+      "head_box": [402.458, 474.462, 154.186],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 50.1272, "yaw": 10.6013, "roll": -27.8319 },
+      "gpu_ms": 28.997
+    },
+    {
+      "frame": 25,
+      "timestamp_s": 0.833333,
+      "head_box": [396.355, 491.876, 150.742],
+      "prior": "skeleton_clavicle",
+      "pose": { "pitch": 46.277, "yaw": 16.4384, "roll": -8.11887 },
+      "gpu_ms": 91.8452
+    },
+    {
+      "frame": 26,
+      "timestamp_s": 0.866667,
+      "head_box": [390.812, 504.159, 149.448],
+      "prior": "skeleton_clavicle",
+      "pose": { "pitch": 41.0105, "yaw": 30.4282, "roll": 31.2046 },
+      "gpu_ms": 70.8964
+    },
+    {
+      "frame": 27,
+      "timestamp_s": 0.9,
+      "head_box": [387.236, 512.699, 146.319],
+      "prior": "skeleton_clavicle",
+      "pose": { "pitch": 37.9114, "yaw": 38.7702, "roll": 43.9504 },
+      "gpu_ms": 46.1755
+    },
+    {
+      "frame": 28,
+      "timestamp_s": 0.933333,
+      "head_box": [385.798, 516.682, 143.559],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 37.2084, "yaw": 39.6558, "roll": 37.9984 },
+      "gpu_ms": 127.877
+    },
+    {
+      "frame": 29,
+      "timestamp_s": 0.966667,
+      "head_box": [385.655, 516.627, 140.986],
+      "prior": "skeleton_clavicle",
+      "pose": { "pitch": 37.9084, "yaw": 37.6999, "roll": 38.1106 },
+      "gpu_ms": 46.7087
+    },
+    {
+      "frame": 30,
+      "timestamp_s": 1,
+      "head_box": [387.345, 513.525, 137.893],
+      "prior": "skeleton_clavicle",
+      "pose": { "pitch": 37.5229, "yaw": 40.0217, "roll": 43.0328 },
+      "gpu_ms": 132.989
+    },
+    {
+      "frame": 31,
+      "timestamp_s": 1.03333,
+      "head_box": [391.322, 510.609, 132.648],
+      "prior": "skeleton_clavicle",
+      "pose": { "pitch": 38.4656, "yaw": 35.2462, "roll": 39.8324 },
+      "gpu_ms": 123.29
+    },
+    {
+      "frame": 32,
+      "timestamp_s": 1.06667,
+      "head_box": [394.524, 508.355, 128.804],
+      "prior": "skeleton_clavicle",
+      "pose": { "pitch": 38.5729, "yaw": 32.5822, "roll": 40.8517 },
+      "gpu_ms": 64.1607
+    },
+    {
+      "frame": 33,
+      "timestamp_s": 1.1,
+      "head_box": [399.81, 506.12, 124.121],
+      "prior": "skeleton_clavicle",
+      "pose": { "pitch": 40.1045, "yaw": 24.0407, "roll": 15.0108 },
+      "gpu_ms": 106.917
+    },
+    {
+      "frame": 34,
+      "timestamp_s": 1.13333,
+      "head_box": [403.838, 506.807, 121.092],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 42.0808, "yaw": 18.7263, "roll": -5.55167 },
+      "gpu_ms": 80.9931
+    },
+    {
+      "frame": 35,
+      "timestamp_s": 1.16667,
+      "head_box": [403.447, 508.553, 121.29],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 41.1916, "yaw": 22.1259, "roll": 10.2624 },
+      "gpu_ms": 61.7109
+    },
+    {
+      "frame": 36,
+      "timestamp_s": 1.2,
+      "head_box": [404.398, 514.254, 120.76],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 36.8206, "yaw": 27.8271, "roll": 23.7022 },
+      "gpu_ms": 59.1203
+    },
+    {
+      "frame": 37,
+      "timestamp_s": 1.23333,
+      "head_box": [402.98, 521.387, 125.844],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 35.7405, "yaw": 37.0187, "roll": 35.4794 },
+      "gpu_ms": 99.067
+    },
+    {
+      "frame": 38,
+      "timestamp_s": 1.26667,
+      "head_box": [410.03, 516.473, 129.958],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 42.4118, "yaw": 19.0619, "roll": -10.2157 },
+      "gpu_ms": 107.823
+    },
+    {
+      "frame": 39,
+      "timestamp_s": 1.3,
+      "head_box": [418.525, 500.023, 140.7],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 46.8173, "yaw": 14.5265, "roll": -27.6541 },
+      "gpu_ms": 67.4808
+    },
+    {
+      "frame": 40,
+      "timestamp_s": 1.33333,
+      "head_box": [429.398, 483.783, 148.533],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 43.0323, "yaw": 27.8136, "roll": -1.15131 },
+      "gpu_ms": 127.011
+    },
+    {
+      "frame": 41,
+      "timestamp_s": 1.36667,
+      "head_box": [446.193, 481.578, 152.643],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 39.3651, "yaw": 34.8523, "roll": -9.91123 },
+      "gpu_ms": 57.0779
+    },
+    {
+      "frame": 42,
+      "timestamp_s": 1.4,
+      "head_box": [457.781, 471.933, 160.29],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 35.5927, "yaw": 37.7537, "roll": -6.63478 },
+      "gpu_ms": 42.5803
+    },
+    {
+      "frame": 43,
+      "timestamp_s": 1.43333,
+      "head_box": [463.744, 451.59, 165.685],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 37.1515, "yaw": 43.4897, "roll": 8.77233 },
+      "gpu_ms": 99.9811
+    },
+    {
+      "frame": 44,
+      "timestamp_s": 1.46667,
+      "head_box": [463.951, 417.236, 165.878],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 39.5815, "yaw": 36.1347, "roll": 38.787 },
+      "gpu_ms": 70.3839
+    },
+    {
+      "frame": 45,
+      "timestamp_s": 1.5,
+      "head_box": [463.473, 427.455, 165.134],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 40.4118, "yaw": 38.6436, "roll": 39.5819 },
+      "gpu_ms": 164.36
+    },
+    {
+      "frame": 46,
+      "timestamp_s": 1.53333,
+      "head_box": [452.22, 430.659, 151.947],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 39.0784, "yaw": 36.7249, "roll": 34.4565 },
+      "gpu_ms": 66.8841
+    },
+    {
+      "frame": 47,
+      "timestamp_s": 1.56667,
+      "head_box": [455.264, 452.588, 149.887],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 35.7795, "yaw": 44.8756, "roll": 8.16173 },
+      "gpu_ms": 82.6139
+    },
+    {
+      "frame": 48,
+      "timestamp_s": 1.6,
+      "head_box": [463.549, 447.018, 161.671],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 40.4771, "yaw": 35.353, "roll": 15.5349 },
+      "gpu_ms": 113.466
+    },
+    {
+      "frame": 49,
+      "timestamp_s": 1.63333,
+      "head_box": [466.726, 433.778, 162.224],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 41.047, "yaw": 33.0016, "roll": 13.8787 },
+      "gpu_ms": 152.373
+    },
+    {
+      "frame": 50,
+      "timestamp_s": 1.66667,
+      "head_box": [468.838, 417.345, 157.905],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 43.1787, "yaw": 36.1061, "roll": 9.85301 },
+      "gpu_ms": 129.284
+    },
+    {
+      "frame": 51,
+      "timestamp_s": 1.7,
+      "head_box": [467.078, 414.175, 159.916],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 44.2956, "yaw": 32.7229, "roll": 2.64143 },
+      "gpu_ms": 73.2882
+    },
+    {
+      "frame": 52,
+      "timestamp_s": 1.73333,
+      "head_box": [464.005, 413.715, 162.877],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 44.7956, "yaw": 32.2919, "roll": -5.28848 },
+      "gpu_ms": 103.676
+    },
+    {
+      "frame": 53,
+      "timestamp_s": 1.76667,
+      "head_box": [460.613, 415.309, 165.223],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 44.8987, "yaw": 30.0655, "roll": 0.567738 },
+      "gpu_ms": 80.992
+    },
+    {
+      "frame": 54,
+      "timestamp_s": 1.8,
+      "head_box": [457.565, 414.787, 170.495],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 43.9248, "yaw": 31.7483, "roll": 3.60377 },
+      "gpu_ms": 64.0348
+    },
+    {
+      "frame": 55,
+      "timestamp_s": 1.83333,
+      "head_box": [453.242, 417.075, 170.001],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 43.4588, "yaw": 30.1275, "roll": 3.07447 },
+      "gpu_ms": 57.1869
+    },
+    {
+      "frame": 56,
+      "timestamp_s": 1.86667,
+      "head_box": [446.993, 411.467, 165.872],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 44.6581, "yaw": 31.2302, "roll": 3.09065 },
+      "gpu_ms": 76.9913
+    },
+    {
+      "frame": 57,
+      "timestamp_s": 1.9,
+      "head_box": [441.575, 409.101, 162.475],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 44.1602, "yaw": 31.4771, "roll": 5.52188 },
+      "gpu_ms": 101.293
+    },
+    {
+      "frame": 58,
+      "timestamp_s": 1.93333,
+      "head_box": [434.674, 402.198, 156.229],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 45.5446, "yaw": 34.5694, "roll": -7.3618 },
+      "gpu_ms": 91.8624
+    },
+    {
+      "frame": 59,
+      "timestamp_s": 1.96667,
+      "head_box": [426.814, 403.91, 142.728],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 45.202, "yaw": 35.4445, "roll": -4.28929 },
+      "gpu_ms": 123.061
+    },
+    {
+      "frame": 60,
+      "timestamp_s": 2,
+      "head_box": [418.619, 397.542, 133.231],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 45.3214, "yaw": 38.9829, "roll": -12.3513 },
+      "gpu_ms": 123.216
+    },
+    {
+      "frame": 61,
+      "timestamp_s": 2.03333,
+      "head_box": [416.896, 396.928, 147.569],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 43.1051, "yaw": 47.3297, "roll": -6.90555 },
+      "gpu_ms": 176.238
+    },
+    {
+      "frame": 62,
+      "timestamp_s": 2.06667,
+      "head_box": [408.092, 394.757, 152.521],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 39.4537, "yaw": 50.1868, "roll": -9.96012 },
+      "gpu_ms": 62.1353
+    },
+    {
+      "frame": 63,
+      "timestamp_s": 2.1,
+      "head_box": [397.041, 404.058, 151.42],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 39.3221, "yaw": 46.6263, "roll": 10.7597 },
+      "gpu_ms": 155.132
+    },
+    {
+      "frame": 64,
+      "timestamp_s": 2.13333,
+      "head_box": [385.956, 392.574, 159.024],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 36.6162, "yaw": 56.86, "roll": -2.40114 },
+      "gpu_ms": 99.8961
+    },
+    {
+      "frame": 65,
+      "timestamp_s": 2.16667,
+      "head_box": [373.878, 410.534, 158.739],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 38.5588, "yaw": 46.7439, "roll": 31.5864 },
+      "gpu_ms": 40.4721
+    },
+    {
+      "frame": 66,
+      "timestamp_s": 2.2,
+      "head_box": [364.297, 398.832, 164.004],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 39.7638, "yaw": 45.2278, "roll": 13.7188 },
+      "gpu_ms": 162.601
+    },
+    {
+      "frame": 67,
+      "timestamp_s": 2.23333,
+      "head_box": [354.144, 383.928, 158.067],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 38.0148, "yaw": 60.8847, "roll": -1.84068 },
+      "gpu_ms": 26.5565
+    },
+    {
+      "frame": 68,
+      "timestamp_s": 2.26667,
+      "head_box": [346.785, 370.07, 154.537],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 35.3134, "yaw": 65.1331, "roll": -6.0708 },
+      "gpu_ms": 115.84
+    },
+    {
+      "frame": 69,
+      "timestamp_s": 2.3,
+      "head_box": [339.089, 365.284, 156.558],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 34.0754, "yaw": 69.9724, "roll": -3.97943 },
+      "gpu_ms": 65.1595
+    },
+    {
+      "frame": 70,
+      "timestamp_s": 2.33333,
+      "head_box": [333.296, 361.764, 153.315],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 32.645, "yaw": 67.0887, "roll": -3.28904 },
+      "gpu_ms": 77.0603
+    },
+    {
+      "frame": 71,
+      "timestamp_s": 2.36667,
+      "head_box": [328.345, 377.399, 148.114],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 34.9246, "yaw": 70.0699, "roll": -10.1411 },
+      "gpu_ms": 81.3092
+    },
+    {
+      "frame": 72,
+      "timestamp_s": 2.4,
+      "head_box": [323.926, 384.146, 145.803],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 39.2944, "yaw": 54.2741, "roll": -9.82933 },
+      "gpu_ms": 124.151
+    },
+    {
+      "frame": 73,
+      "timestamp_s": 2.43333,
+      "head_box": [322.928, 391.622, 139.561],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 43.3907, "yaw": 32.3698, "roll": -15.5663 },
+      "gpu_ms": 107.457
+    },
+    {
+      "frame": 74,
+      "timestamp_s": 2.46667,
+      "head_box": [320.769, 384.227, 134.863],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 41.1198, "yaw": 47.7304, "roll": -19.6544 },
+      "gpu_ms": 93.2185
+    },
+    {
+      "frame": 75,
+      "timestamp_s": 2.5,
+      "head_box": [321.525, 374.456, 133.455],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 35.0074, "yaw": 69.1648, "roll": -14.3948 },
+      "gpu_ms": 109.951
+    },
+    {
+      "frame": 76,
+      "timestamp_s": 2.53333,
+      "head_box": [323.443, 366.428, 134.952],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 33.0195, "yaw": 72.5458, "roll": -11.1455 },
+      "gpu_ms": 78.8679
+    },
+    {
+      "frame": 77,
+      "timestamp_s": 2.56667,
+      "head_box": [326.679, 360.446, 133.35],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 32.7695, "yaw": 62.7916, "roll": -6.73598 },
+      "gpu_ms": 145.127
+    },
+    {
+      "frame": 78,
+      "timestamp_s": 2.6,
+      "head_box": [331.787, 377.717, 126.123],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 39.4238, "yaw": 46.1551, "roll": -21.1971 },
+      "gpu_ms": 155.412
+    },
+    {
+      "frame": 79,
+      "timestamp_s": 2.63333,
+      "head_box": [338.922, 387.796, 129.235],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 41.3563, "yaw": 37.6813, "roll": -24.4513 },
+      "gpu_ms": 144.85
+    },
+    {
+      "frame": 80,
+      "timestamp_s": 2.66667,
+      "head_box": [345.093, 389.522, 121.934],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 42.9351, "yaw": 30.5908, "roll": -20.0793 },
+      "gpu_ms": 84.43
+    },
+    {
+      "frame": 81,
+      "timestamp_s": 2.7,
+      "head_box": [349.308, 391.525, 126.349],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 43.7741, "yaw": 28.7789, "roll": -25.9852 },
+      "gpu_ms": 136.798
+    },
+    {
+      "frame": 82,
+      "timestamp_s": 2.73333,
+      "head_box": [356.811, 380.653, 145.448],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 38.0893, "yaw": 48.3607, "roll": -17.1447 },
+      "gpu_ms": 113.641
+    },
+    {
+      "frame": 83,
+      "timestamp_s": 2.76667,
+      "head_box": [363.879, 370.632, 146.702],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 36.4561, "yaw": 55.6529, "roll": -21.2149 },
+      "gpu_ms": 70.4477
+    },
+    {
+      "frame": 84,
+      "timestamp_s": 2.8,
+      "head_box": [372.01, 386.627, 153.059],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 39.9548, "yaw": 41.1358, "roll": -24.4103 },
+      "gpu_ms": 88.67
+    },
+    {
+      "frame": 85,
+      "timestamp_s": 2.83333,
+      "head_box": [380.466, 405.052, 153.789],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 40.5819, "yaw": 32.0067, "roll": -7.26549 },
+      "gpu_ms": 63.5909
+    },
+    {
+      "frame": 86,
+      "timestamp_s": 2.86667,
+      "head_box": [386.19, 405.172, 147.194],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 40.7104, "yaw": 30.0476, "roll": -6.76451 },
+      "gpu_ms": 102.957
+    },
+    {
+      "frame": 87,
+      "timestamp_s": 2.9,
+      "head_box": [379.82, 425.597, 168.191],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 39.076, "yaw": 28.3985, "roll": 2.92175 },
+      "gpu_ms": 85.6159
+    },
+    {
+      "frame": 88,
+      "timestamp_s": 2.93333,
+      "head_box": [388.403, 429.745, 155.265],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 38.2879, "yaw": 32.9002, "roll": 8.07981 },
+      "gpu_ms": 89.1669
+    },
+    {
+      "frame": 89,
+      "timestamp_s": 2.96667,
+      "head_box": [399.829, 440.029, 145.064],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 39.5328, "yaw": 37.5763, "roll": -16.5439 },
+      "gpu_ms": 101.66
+    },
+    {
+      "frame": 90,
+      "timestamp_s": 3,
+      "head_box": [405.385, 415.333, 142.71],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 37.5165, "yaw": 39.6823, "roll": 1.63201 },
+      "gpu_ms": 181.089
+    },
+    {
+      "frame": 91,
+      "timestamp_s": 3.03333,
+      "head_box": [410.336, 393.046, 140.349],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 42.6579, "yaw": 25.9101, "roll": -24.7439 },
+      "gpu_ms": 42.6133
+    },
+    {
+      "frame": 92,
+      "timestamp_s": 3.06667,
+      "head_box": [417.937, 371.234, 136.676],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 35.9487, "yaw": 55.5635, "roll": -13.521 },
+      "gpu_ms": 100.06
+    },
+    {
+      "frame": 93,
+      "timestamp_s": 3.1,
+      "head_box": [429.447, 555.757, 143.099],
+      "prior": "skeleton_clavicle",
+      "pose": { "pitch": 33.5568, "yaw": 47.1051, "roll": -4.46422 },
+      "gpu_ms": 127.266
+    },
+    {
+      "frame": 94,
+      "timestamp_s": 3.13333,
+      "head_box": [430.255, 697.074, 145.838],
+      "prior": "skeleton_clavicle",
+      "pose": { "pitch": 39.7583, "yaw": 46.9256, "roll": 3.47814 },
+      "gpu_ms": 70.4211
+    },
+    {
+      "frame": 95,
+      "timestamp_s": 3.16667,
+      "head_box": [436.602, 808.107, 141.423],
+      "prior": "skeleton_clavicle",
+      "pose": { "pitch": 34.5145, "yaw": 46.1018, "roll": -0.407078 },
+      "gpu_ms": 114.046
+    },
+    {
+      "frame": 96,
+      "timestamp_s": 3.2,
+      "head_box": [442.17, 689.081, 140.102],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 40.1811, "yaw": 48.3557, "roll": 2.35352 },
+      "gpu_ms": 101.288
+    },
+    {
+      "frame": 97,
+      "timestamp_s": 3.23333,
+      "head_box": [449.028, 778.494, 137.674],
+      "prior": "skeleton_clavicle",
+      "pose": { "pitch": 32.5118, "yaw": 50.4707, "roll": 15.3946 },
+      "gpu_ms": 103.552
+    },
+    {
+      "frame": 98,
+      "timestamp_s": 3.26667,
+      "head_box": [459.867, 674.801, 147.016],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 42.6212, "yaw": 40.4404, "roll": 7.00489 },
+      "gpu_ms": 68.242
+    },
+    {
+      "frame": 99,
+      "timestamp_s": 3.3,
+      "head_box": [460.677, 547.644, 149.714],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 32.054, "yaw": 48.7344, "roll": -0.100209 },
+      "gpu_ms": 147.392
+    },
+    {
+      "frame": 100,
+      "timestamp_s": 3.33333,
+      "head_box": [462.065, 442.783, 154.519],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 42.4703, "yaw": 30.8769, "roll": -8.38208 },
+      "gpu_ms": 48.5076
+    },
+    {
+      "frame": 101,
+      "timestamp_s": 3.36667,
+      "head_box": [472.477, 408.738, 161.299],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 40.0536, "yaw": 29.4818, "roll": -6.11417 },
+      "gpu_ms": 28.1401
+    },
+    {
+      "frame": 102,
+      "timestamp_s": 3.4,
+      "head_box": [477.533, 407.158, 170.111],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 38.2669, "yaw": 38.8603, "roll": -4.99085 },
+      "gpu_ms": 50.7992
+    },
+    {
+      "frame": 103,
+      "timestamp_s": 3.43333,
+      "head_box": [471.364, 396.19, 177.226],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 36.1818, "yaw": 37.8631, "roll": -5.96508 },
+      "gpu_ms": 77.9201
+    },
+    {
+      "frame": 104,
+      "timestamp_s": 3.46667,
+      "head_box": [464.93, 384.109, 180.165],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 34.5958, "yaw": 43.976, "roll": -6.9884 },
+      "gpu_ms": 78.9841
+    },
+    {
+      "frame": 105,
+      "timestamp_s": 3.5,
+      "head_box": [459.586, 381.411, 184.025],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 36.0511, "yaw": 40.4983, "roll": -3.75201 },
+      "gpu_ms": 82.5096
+    },
+    {
+      "frame": 106,
+      "timestamp_s": 3.53333,
+      "head_box": [458.229, 408.441, 186.66],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 37.6299, "yaw": 35.4464, "roll": -7.77514 },
+      "gpu_ms": 90.3338
+    },
+    {
+      "frame": 107,
+      "timestamp_s": 3.56667,
+      "head_box": [457.761, 408.294, 192.378],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 38.4173, "yaw": 37.902, "roll": -7.69325 },
+      "gpu_ms": 51.8151
+    },
+    {
+      "frame": 108,
+      "timestamp_s": 3.6,
+      "head_box": [461.411, 400.567, 196.609],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 37.7371, "yaw": 37.3791, "roll": -8.79161 },
+      "gpu_ms": 55.534
+    },
+    {
+      "frame": 109,
+      "timestamp_s": 3.63333,
+      "head_box": [464.567, 393.062, 200.505],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 36.5422, "yaw": 43.3936, "roll": -5.1867 },
+      "gpu_ms": 98.2125
+    },
+    {
+      "frame": 110,
+      "timestamp_s": 3.66667,
+      "head_box": [467.322, 388.304, 203.915],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 35.6324, "yaw": 43.8673, "roll": -4.15701 },
+      "gpu_ms": 91.0803
+    },
+    {
+      "frame": 111,
+      "timestamp_s": 3.7,
+      "head_box": [470.319, 386.99, 204.674],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 35.896, "yaw": 44.5302, "roll": -4.83899 },
+      "gpu_ms": 120.633
+    },
+    {
+      "frame": 112,
+      "timestamp_s": 3.73333,
+      "head_box": [470.477, 387.071, 197.975],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 34.9353, "yaw": 45.94, "roll": -5.46945 },
+      "gpu_ms": 97.5469
+    },
+    {
+      "frame": 113,
+      "timestamp_s": 3.76667,
+      "head_box": [469.82, 387.754, 192.383],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 34.6588, "yaw": 47.6065, "roll": -4.94348 },
+      "gpu_ms": 87.1257
+    },
+    {
+      "frame": 114,
+      "timestamp_s": 3.8,
+      "head_box": [468.15, 389.651, 188.758],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 35.2766, "yaw": 47.2108, "roll": -5.73629 },
+      "gpu_ms": 89.1547
+    },
+    {
+      "frame": 115,
+      "timestamp_s": 3.83333,
+      "head_box": [466.22, 393.392, 181.218],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 34.5776, "yaw": 47.6122, "roll": -6.99953 },
+      "gpu_ms": 134.158
+    },
+    {
+      "frame": 116,
+      "timestamp_s": 3.86667,
+      "head_box": [463.703, 396.903, 176.083],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 35.0675, "yaw": 48.0581, "roll": -6.70369 },
+      "gpu_ms": 52.0832
+    },
+    {
+      "frame": 117,
+      "timestamp_s": 3.9,
+      "head_box": [463.47, 397.701, 179.569],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 34.8307, "yaw": 48.8916, "roll": -7.95427 },
+      "gpu_ms": 87.5174
+    },
+    {
+      "frame": 118,
+      "timestamp_s": 3.93333,
+      "head_box": [462.429, 432.687, 177.792],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 41.6013, "yaw": 41.9425, "roll": -12.1697 },
+      "gpu_ms": 59.2668
+    },
+    {
+      "frame": 119,
+      "timestamp_s": 3.96667,
+      "head_box": [462.518, 429.128, 179.45],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 39.4343, "yaw": 48.8733, "roll": -11.4364 },
+      "gpu_ms": 100.391
+    },
+    {
+      "frame": 120,
+      "timestamp_s": 4,
+      "head_box": [463.539, 421.508, 182.405],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 37.6821, "yaw": 47.582, "roll": -10.8007 },
+      "gpu_ms": 38.7176
+    },
+    {
+      "frame": 121,
+      "timestamp_s": 4.03333,
+      "head_box": [463.283, 414.285, 184.727],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 36.6026, "yaw": 48.9267, "roll": -10.9938 },
+      "gpu_ms": 76.4064
+    },
+    {
+      "frame": 122,
+      "timestamp_s": 4.06667,
+      "head_box": [464.073, 406.48, 186.971],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 34.617, "yaw": 49.2683, "roll": -12.0645 },
+      "gpu_ms": 79.6433
+    },
+    {
+      "frame": 123,
+      "timestamp_s": 4.1,
+      "head_box": [465.327, 400.992, 189.907],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 35.0685, "yaw": 46.3552, "roll": -7.97119 },
+      "gpu_ms": 175.868
+    },
+    {
+      "frame": 124,
+      "timestamp_s": 4.13333,
+      "head_box": [465.6, 411.043, 191.364],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 36.207, "yaw": 43.5931, "roll": -9.08261 },
+      "gpu_ms": 64.6291
+    },
+    {
+      "frame": 125,
+      "timestamp_s": 4.16667,
+      "head_box": [464.909, 412.708, 189.69],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 37.1113, "yaw": 48.3947, "roll": -10.4819 },
+      "gpu_ms": 90.2709
+    },
+    {
+      "frame": 126,
+      "timestamp_s": 4.2,
+      "head_box": [464.563, 405.846, 191.053],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 37.3305, "yaw": 52.1758, "roll": -9.10335 },
+      "gpu_ms": 111.206
+    },
+    {
+      "frame": 127,
+      "timestamp_s": 4.23333,
+      "head_box": [465.724, 419.261, 190.232],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 38.5583, "yaw": 41.7959, "roll": -9.84179 },
+      "gpu_ms": 123.862
+    },
+    {
+      "frame": 128,
+      "timestamp_s": 4.26667,
+      "head_box": [469.357, 442.915, 189.889],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 36.4616, "yaw": 40.5524, "roll": 3.26191 },
+      "gpu_ms": 63.7664
+    },
+    {
+      "frame": 129,
+      "timestamp_s": 4.3,
+      "head_box": [467.143, 442.283, 191.282],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 36.809, "yaw": 35.3534, "roll": 8.08317 },
+      "gpu_ms": 78.5345
+    },
+    {
+      "frame": 130,
+      "timestamp_s": 4.33333,
+      "head_box": [462.931, 426.078, 196.319],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 40.2578, "yaw": 38.6016, "roll": -6.65564 },
+      "gpu_ms": 107.652
+    },
+    {
+      "frame": 131,
+      "timestamp_s": 4.36667,
+      "head_box": [461.128, 448.46, 197.025],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 39.4803, "yaw": 32.8461, "roll": 5.51338 },
+      "gpu_ms": 65.8404
+    },
+    {
+      "frame": 132,
+      "timestamp_s": 4.4,
+      "head_box": [461.026, 474.489, 193.535],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 38.9916, "yaw": 37.6935, "roll": -7.73345 },
+      "gpu_ms": 77.8328
+    },
+    {
+      "frame": 133,
+      "timestamp_s": 4.43333,
+      "head_box": [460.206, 481.239, 183.839],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 34.4757, "yaw": 56.6743, "roll": -7.15922 },
+      "gpu_ms": 91.6422
+    },
+    {
+      "frame": 134,
+      "timestamp_s": 4.46667,
+      "head_box": [456.115, 468.851, 168.195],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 35.833, "yaw": 49.7576, "roll": -4.70717 },
+      "gpu_ms": 78.3629
+    },
+    {
+      "frame": 135,
+      "timestamp_s": 4.5,
+      "head_box": [455.913, 461.636, 165.548],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 38.4477, "yaw": 44.1646, "roll": 0.234625 },
+      "gpu_ms": 85.0038
+    },
+    {
+      "frame": 136,
+      "timestamp_s": 4.53333,
+      "head_box": [454.331, 448.258, 163.105],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 40.0594, "yaw": 32.8966, "roll": 17.4683 },
+      "gpu_ms": 62.458
+    },
+    {
+      "frame": 137,
+      "timestamp_s": 4.56667,
+      "head_box": [453.081, 441.189, 157.015],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 39.2432, "yaw": 33.5961, "roll": 24.5063 },
+      "gpu_ms": 57.4366
+    },
+    {
+      "frame": 138,
+      "timestamp_s": 4.6,
+      "head_box": [450.978, 435.232, 146.342],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 40.8347, "yaw": 29.2403, "roll": 23.2875 },
+      "gpu_ms": 41.8945
+    },
+    {
+      "frame": 139,
+      "timestamp_s": 4.63333,
+      "head_box": [450.577, 425.793, 142.964],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 42.0004, "yaw": 27.7795, "roll": 13.3569 },
+      "gpu_ms": 34.6911
+    },
+    {
+      "frame": 140,
+      "timestamp_s": 4.66667,
+      "head_box": [449.817, 415.717, 137.343],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 44.8207, "yaw": 24.5672, "roll": -27.9187 },
+      "gpu_ms": 57.3299
+    },
+    {
+      "frame": 141,
+      "timestamp_s": 4.7,
+      "head_box": [449.632, 400.286, 146.561],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 35.0112, "yaw": 67.4555, "roll": -16.5043 },
+      "gpu_ms": 91.7252
+    },
+    {
+      "frame": 142,
+      "timestamp_s": 4.73333,
+      "head_box": [449.586, 387.487, 157.719],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 32.6075, "yaw": 68.2207, "roll": -13.4385 },
+      "gpu_ms": 105.043
+    },
+    {
+      "frame": 143,
+      "timestamp_s": 4.76667,
+      "head_box": [452.892, 392.335, 165.719],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 31.5414, "yaw": 61.4345, "roll": -15.753 },
+      "gpu_ms": 88.6819
+    },
+    {
+      "frame": 144,
+      "timestamp_s": 4.8,
+      "head_box": [455.13, 410.2, 180.106],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 32.9537, "yaw": 52.666, "roll": -17.3683 },
+      "gpu_ms": 60.1065
+    },
+    {
+      "frame": 145,
+      "timestamp_s": 4.83333,
+      "head_box": [458.504, 441.507, 178.012],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 35.6753, "yaw": 43.7234, "roll": 9.36423 },
+      "gpu_ms": 90.7246
+    },
+    {
+      "frame": 146,
+      "timestamp_s": 4.86667,
+      "head_box": [457.766, 440.345, 187.635],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 34.4629, "yaw": 45.3783, "roll": 0.820651 },
+      "gpu_ms": 93.9258
+    },
+    {
+      "frame": 147,
+      "timestamp_s": 4.9,
+      "head_box": [463.506, 456.311, 193.075],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 34.9954, "yaw": 43.7993, "roll": 2.86611 },
+      "gpu_ms": 40.3175
+    },
+    {
+      "frame": 148,
+      "timestamp_s": 4.93333,
+      "head_box": [466.38, 452.534, 201.834],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 36.2594, "yaw": 44.723, "roll": 18.6561 },
+      "gpu_ms": 131.448
+    },
+    {
+      "frame": 149,
+      "timestamp_s": 4.96667,
+      "head_box": [468.467, 447.049, 212.81],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 33.8664, "yaw": 50.8808, "roll": 12.6332 },
+      "gpu_ms": 104.952
+    },
+    {
+      "frame": 150,
+      "timestamp_s": 5,
+      "head_box": [464.542, 428.025, 218.913],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 34.295, "yaw": 53.5947, "roll": -2.0682 },
+      "gpu_ms": 79.9732
+    },
+    {
+      "frame": 151,
+      "timestamp_s": 5.03333,
+      "head_box": [460.507, 409.216, 219.082],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 33.186, "yaw": 55.6058, "roll": -5.0565 },
+      "gpu_ms": 142.678
+    },
+    {
+      "frame": 152,
+      "timestamp_s": 5.06667,
+      "head_box": [456.222, 396.917, 216.694],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 32.8111, "yaw": 60.6825, "roll": -10.4396 },
+      "gpu_ms": 46.6254
+    },
+    {
+      "frame": 153,
+      "timestamp_s": 5.1,
+      "head_box": [453.242, 392.096, 216.573],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 31.0076, "yaw": 57.5555, "roll": -10.7716 },
+      "gpu_ms": 77.6128
+    },
+    {
+      "frame": 154,
+      "timestamp_s": 5.13333,
+      "head_box": [451.866, 393.815, 215.659],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 29.651, "yaw": 59.1071, "roll": -12.7867 },
+      "gpu_ms": 120.001
+    },
+    {
+      "frame": 155,
+      "timestamp_s": 5.16667,
+      "head_box": [452.115, 398.093, 210.595],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 28.9752, "yaw": 58.4358, "roll": -6.81252 },
+      "gpu_ms": 100.922
+    },
+    {
+      "frame": 156,
+      "timestamp_s": 5.2,
+      "head_box": [452.499, 404.824, 204.37],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 28.1941, "yaw": 58.3188, "roll": -8.60779 },
+      "gpu_ms": 78.1794
+    },
+    {
+      "frame": 157,
+      "timestamp_s": 5.23333,
+      "head_box": [454.452, 431.608, 196.724],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 29.8807, "yaw": 58.2168, "roll": -12.9265 },
+      "gpu_ms": 61.0857
+    },
+    {
+      "frame": 158,
+      "timestamp_s": 5.26667,
+      "head_box": [456.253, 453.698, 191.46],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 36.7305, "yaw": 43.3066, "roll": -7.65111 },
+      "gpu_ms": 48.2822
+    },
+    {
+      "frame": 159,
+      "timestamp_s": 5.3,
+      "head_box": [459.664, 474.81, 185.15],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 35.7491, "yaw": 36.7262, "roll": 1.83993 },
+      "gpu_ms": 133.834
+    },
+    {
+      "frame": 160,
+      "timestamp_s": 5.33333,
+      "head_box": [457.885, 466.33, 186.995],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 36.452, "yaw": 41.4019, "roll": 3.21223 },
+      "gpu_ms": 64.545
+    },
+    {
+      "frame": 161,
+      "timestamp_s": 5.36667,
+      "head_box": [461.225, 472.594, 186.994],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 40.3837, "yaw": 39.0703, "roll": -5.27078 },
+      "gpu_ms": 141.51
+    },
+    {
+      "frame": 162,
+      "timestamp_s": 5.4,
+      "head_box": [464.642, 488.03, 189.477],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 36.2583, "yaw": 49.4125, "roll": -24.2987 },
+      "gpu_ms": 106.942
+    },
+    {
+      "frame": 163,
+      "timestamp_s": 5.43333,
+      "head_box": [465.323, 502.343, 187.792],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 34.4507, "yaw": 54.8192, "roll": -20.5604 },
+      "gpu_ms": 110.108
+    },
+    {
+      "frame": 164,
+      "timestamp_s": 5.46667,
+      "head_box": [424.191, 487.676, 192.24],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 35.5906, "yaw": 56.948, "roll": -10.4677 },
+      "gpu_ms": 64.1405
+    },
+    {
+      "frame": 165,
+      "timestamp_s": 5.5,
+      "head_box": [389.883, 472.923, 196.072],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 39.3676, "yaw": 38.2103, "roll": -6.60976 },
+      "gpu_ms": 57.3464
+    },
+    {
+      "frame": 166,
+      "timestamp_s": 5.53333,
+      "head_box": [407.575, 482.2, 189.906],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 39.0194, "yaw": 36.0782, "roll": -7.48251 },
+      "gpu_ms": 100.059
+    },
+    {
+      "frame": 167,
+      "timestamp_s": 5.56667,
+      "head_box": [384.33, 468.969, 193.379],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 38.0709, "yaw": 38.6583, "roll": -2.86007 },
+      "gpu_ms": 94.3031
+    },
+    {
+      "frame": 168,
+      "timestamp_s": 5.6,
+      "head_box": [366.733, 457.886, 196.457],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 38.1, "yaw": 36.2152, "roll": -4.14986 },
+      "gpu_ms": 99.8664
+    },
+    {
+      "frame": 169,
+      "timestamp_s": 5.63333,
+      "head_box": [355.165, 449.753, 198.835],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 35.7632, "yaw": 40.7298, "roll": -5.13136 },
+      "gpu_ms": 56.6313
+    },
+    {
+      "frame": 170,
+      "timestamp_s": 5.66667,
+      "head_box": [348.949, 444.61, 200.436],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 35.8785, "yaw": 38.3418, "roll": -7.42064 },
+      "gpu_ms": 68.6396
+    },
+    {
+      "frame": 171,
+      "timestamp_s": 5.7,
+      "head_box": [346.878, 442.033, 201.332],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 35.313, "yaw": 41.0454, "roll": -8.85916 },
+      "gpu_ms": 75.5813
+    },
+    {
+      "frame": 172,
+      "timestamp_s": 5.73333,
+      "head_box": [347.603, 441.382, 201.669],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 35.6162, "yaw": 41.245, "roll": -6.42673 },
+      "gpu_ms": 85.8742
+    },
+    {
+      "frame": 173,
+      "timestamp_s": 5.76667,
+      "head_box": [349.898, 441.984, 201.621],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 35.5494, "yaw": 39.3791, "roll": -0.166497 },
+      "gpu_ms": 48.8618
+    },
+    {
+      "frame": 174,
+      "timestamp_s": 5.8,
+      "head_box": [352.79, 443.247, 201.349],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 37.1259, "yaw": 38.6912, "roll": -3.83207 },
+      "gpu_ms": 119.971
+    },
+    {
+      "frame": 175,
+      "timestamp_s": 5.83333,
+      "head_box": [355.607, 444.718, 200.984],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 35.2086, "yaw": 44.4005, "roll": 4.61953 },
+      "gpu_ms": 71.7033
+    },
+    {
+      "frame": 176,
+      "timestamp_s": 5.86667,
+      "head_box": [357.956, 446.093, 200.617],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 38.8157, "yaw": 37.7746, "roll": -4.83702 },
+      "gpu_ms": 100.267
+    },
+    {
+      "frame": 177,
+      "timestamp_s": 5.9,
+      "head_box": [359.672, 447.204, 200.304],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 36.4706, "yaw": 43.0397, "roll": 1.50948 },
+      "gpu_ms": 96.3198
+    },
+    {
+      "frame": 178,
+      "timestamp_s": 5.93333,
+      "head_box": [403.939, 451.538, 189.076],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 34.9995, "yaw": 50.8898, "roll": 4.18487 },
+      "gpu_ms": 83.0026
+    },
+    {
+      "frame": 179,
+      "timestamp_s": 5.96667,
+      "head_box": [451.49, 492.14, 178.938],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 35.6527, "yaw": 45.8758, "roll": -9.26014 },
+      "gpu_ms": 73.1641
+    },
+    {
+      "frame": 180,
+      "timestamp_s": 6,
+      "head_box": [478.25, 519.268, 171.856],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 47.9626, "yaw": 20.7157, "roll": -26.8897 },
+      "gpu_ms": 81.6816
+    },
+    {
+      "frame": 181,
+      "timestamp_s": 6.03333,
+      "head_box": [502.973, 521.63, 173.514],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 44.5228, "yaw": 29.7768, "roll": -1.52507 },
+      "gpu_ms": 32.1659
+    },
+    {
+      "frame": 182,
+      "timestamp_s": 6.06667,
+      "head_box": [512.612, 537.026, 175.918],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 41.343, "yaw": 41.1367, "roll": 15.7283 },
+      "gpu_ms": 130.497
+    },
+    {
+      "frame": 183,
+      "timestamp_s": 6.1,
+      "head_box": [500.145, 531.5, 169.203],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 40.6904, "yaw": 44.2177, "roll": 4.89426 },
+      "gpu_ms": 63.2922
+    },
+    {
+      "frame": 184,
+      "timestamp_s": 6.13333,
+      "head_box": [482.008, 511.239, 167.75],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 41.6411, "yaw": 33.6828, "roll": -9.10883 },
+      "gpu_ms": 81.6062
+    },
+    {
+      "frame": 185,
+      "timestamp_s": 6.16667,
+      "head_box": [478.465, 517.2, 159.695],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 38.5473, "yaw": 36.7779, "roll": -14.7395 },
+      "gpu_ms": 43.4581
+    },
+    {
+      "frame": 186,
+      "timestamp_s": 6.2,
+      "head_box": [429.618, 489.627, 173.014],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 49.2112, "yaw": 19.8172, "roll": -37.6477 },
+      "gpu_ms": 45.0612
+    },
+    {
+      "frame": 187,
+      "timestamp_s": 6.23333,
+      "head_box": [389.868, 466.839, 185.054],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 38.8335, "yaw": 40.1619, "roll": 24.296 },
+      "gpu_ms": 80.106
+    },
+    {
+      "frame": 188,
+      "timestamp_s": 6.26667,
+      "head_box": [361.538, 450.341, 194.52],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 39.5447, "yaw": 38.3482, "roll": 3.30337 },
+      "gpu_ms": 73.4879
+    },
+    {
+      "frame": 189,
+      "timestamp_s": 6.3,
+      "head_box": [344.309, 440.09, 201.021],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 37.3753, "yaw": 44.2128, "roll": -7.04067 },
+      "gpu_ms": 76.4843
+    },
+    {
+      "frame": 190,
+      "timestamp_s": 6.33333,
+      "head_box": [336.325, 435.127, 204.769],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 36.8452, "yaw": 44.6772, "roll": -5.82778 },
+      "gpu_ms": 131.431
+    },
+    {
+      "frame": 191,
+      "timestamp_s": 6.36667,
+      "head_box": [389.805, 499.212, 169.703],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 40.9258, "yaw": 32.92, "roll": 2.35283 },
+      "gpu_ms": 59.0241
+    },
+    {
+      "frame": 192,
+      "timestamp_s": 6.4,
+      "head_box": [444.078, 556.533, 128.854],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 49.3826, "yaw": 14.5149, "roll": -12.9215 },
+      "gpu_ms": 64.7237
+    },
+    {
+      "frame": 193,
+      "timestamp_s": 6.43333,
+      "head_box": [498.914, 606.701, 97.4847],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 37.9997, "yaw": 58.5589, "roll": 4.79171 },
+      "gpu_ms": 109.204
+    },
+    {
+      "frame": 194,
+      "timestamp_s": 6.46667,
+      "head_box": [526.367, 619.125, 76.7214],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 40.5077, "yaw": 38.3939, "roll": 3.39152 },
+      "gpu_ms": 44.7983
+    },
+    {
+      "frame": 195,
+      "timestamp_s": 6.5,
+      "head_box": [547.206, 625.61, 62.6971],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 44.1737, "yaw": 34.3917, "roll": 13.2291 },
+      "gpu_ms": 135.661
+    },
+    {
+      "frame": 196,
+      "timestamp_s": 6.53333,
+      "head_box": [553.709, 619.061, 58.8828],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 44.421, "yaw": 28.0963, "roll": 23.3169 },
+      "gpu_ms": 46.99
+    },
+    {
+      "frame": 197,
+      "timestamp_s": 6.56667,
+      "head_box": [552.229, 616.133, 57.1151],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 42.0052, "yaw": 43.4066, "roll": 23.2456 },
+      "gpu_ms": 113.383
+    },
+    {
+      "frame": 198,
+      "timestamp_s": 6.6,
+      "head_box": [542.544, 608.43, 57.1194],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 38.4079, "yaw": 41.9207, "roll": 26.6762 },
+      "gpu_ms": 159.713
+    },
+    {
+      "frame": 199,
+      "timestamp_s": 6.63333,
+      "head_box": [471.901, 544.558, 110.771],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 43.4174, "yaw": 32.3052, "roll": 3.86448 },
+      "gpu_ms": 72.7057
+    },
+    {
+      "frame": 200,
+      "timestamp_s": 6.66667,
+      "head_box": [461.647, 505.264, 103.828],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 47.2816, "yaw": 14.5033, "roll": -2.66147 },
+      "gpu_ms": 67.2807
+    },
+    {
+      "frame": 201,
+      "timestamp_s": 6.7,
+      "head_box": [409.674, 464.653, 146.912],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 39.6241, "yaw": 36.4981, "roll": 5.82221 },
+      "gpu_ms": 115.925
+    },
+    {
+      "frame": 202,
+      "timestamp_s": 6.73333,
+      "head_box": [371.04, 437.788, 180.725],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 43.5002, "yaw": 34.1611, "roll": -20.6645 },
+      "gpu_ms": 71.1483
+    },
+    {
+      "frame": 203,
+      "timestamp_s": 6.76667,
+      "head_box": [346.203, 423.201, 203.905],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 36.4132, "yaw": 46.037, "roll": -7.38026 },
+      "gpu_ms": 82.2316
+    },
+    {
+      "frame": 204,
+      "timestamp_s": 6.8,
+      "head_box": [399.157, 465.93, 169.095],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 41.1366, "yaw": 40.5679, "roll": 4.65726 },
+      "gpu_ms": 130.841
+    },
+    {
+      "frame": 205,
+      "timestamp_s": 6.83333,
+      "head_box": [450.085, 509.313, 142.96],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 47.5273, "yaw": 24.6074, "roll": -1.85678 },
+      "gpu_ms": 48.2911
+    },
+    {
+      "frame": 206,
+      "timestamp_s": 6.86667,
+      "head_box": [425.788, 494.717, 160.814],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 42.5516, "yaw": 34.1016, "roll": -1.78699 },
+      "gpu_ms": 125.834
+    },
+    {
+      "frame": 207,
+      "timestamp_s": 6.9,
+      "head_box": [476.337, 524.403, 131.24],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 50.1501, "yaw": 5.2887, "roll": -28.5592 },
+      "gpu_ms": 107.88
+    },
+    {
+      "frame": 208,
+      "timestamp_s": 6.93333,
+      "head_box": [501.462, 518.093, 109.751],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 43.0743, "yaw": 33.176, "roll": -13.5036 },
+      "gpu_ms": 101.704
+    },
+    {
+      "frame": 209,
+      "timestamp_s": 6.96667,
+      "head_box": [521.927, 512.535, 91.85],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 39.6258, "yaw": 62.3653, "roll": -8.73413 },
+      "gpu_ms": 77.0555
+    },
+    {
+      "frame": 210,
+      "timestamp_s": 7,
+      "head_box": [534.836, 507.102, 79.0833],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 41.102, "yaw": 59.9849, "roll": -4.43036 },
+      "gpu_ms": 119.166
+    },
+    {
+      "frame": 211,
+      "timestamp_s": 7.03333,
+      "head_box": [543.928, 509.172, 73.2542],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 41.9731, "yaw": 56.4351, "roll": 0.796367 },
+      "gpu_ms": 51.2924
+    },
+    {
+      "frame": 212,
+      "timestamp_s": 7.06667,
+      "head_box": [546.598, 534.663, 74.7722],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 39.7632, "yaw": 62.2867, "roll": -7.44877 },
+      "gpu_ms": 99.4184
+    },
+    {
+      "frame": 213,
+      "timestamp_s": 7.1,
+      "head_box": [546.693, 563.35, 78.4978],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 40.1622, "yaw": 62.6125, "roll": -6.3355 },
+      "gpu_ms": 81.9171
+    },
+    {
+      "frame": 214,
+      "timestamp_s": 7.13333,
+      "head_box": [535.476, 573.205, 93.5239],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 40.3427, "yaw": 60.514, "roll": -12.6653 },
+      "gpu_ms": 130.865
+    },
+    {
+      "frame": 215,
+      "timestamp_s": 7.16667,
+      "head_box": [525.709, 559.474, 102.026],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 38.5476, "yaw": 58.5364, "roll": -29.81 },
+      "gpu_ms": 67.6588
+    },
+    {
+      "frame": 216,
+      "timestamp_s": 7.2,
+      "head_box": [516.381, 543.995, 114.806],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 42.1528, "yaw": 34.7219, "roll": -3.8889 },
+      "gpu_ms": 70.4351
+    },
+    {
+      "frame": 217,
+      "timestamp_s": 7.23333,
+      "head_box": [505.859, 508.851, 123.549],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 46.1107, "yaw": 17.9212, "roll": -5.77013 },
+      "gpu_ms": 47.5182
+    },
+    {
+      "frame": 218,
+      "timestamp_s": 7.26667,
+      "head_box": [496.346, 488.768, 136.482],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 52.0889, "yaw": 6.89829, "roll": -42.1286 },
+      "gpu_ms": 114.81
+    },
+    {
+      "frame": 219,
+      "timestamp_s": 7.3,
+      "head_box": [490.11, 478.652, 157.482],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 49.6179, "yaw": 14.4085, "roll": -44.9093 },
+      "gpu_ms": 80.0288
+    },
+    {
+      "frame": 220,
+      "timestamp_s": 7.33333,
+      "head_box": [493.605, 510.898, 147.683],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 50.2765, "yaw": 9.44492, "roll": -39.0764 },
+      "gpu_ms": 101.05
+    },
+    {
+      "frame": 221,
+      "timestamp_s": 7.36667,
+      "head_box": [493.685, 523.703, 128.267],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 46.6548, "yaw": 14.2675, "roll": -10.0086 },
+      "gpu_ms": 73.9377
+    },
+    {
+      "frame": 222,
+      "timestamp_s": 7.4,
+      "head_box": [496.658, 539.056, 120.898],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 43.6512, "yaw": 29.5196, "roll": -21.9066 },
+      "gpu_ms": 119.11
+    },
+    {
+      "frame": 223,
+      "timestamp_s": 7.43333,
+      "head_box": [441.878, 508.599, 149.373],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 48.1004, "yaw": 6.83241, "roll": -35.1458 },
+      "gpu_ms": 84.4824
+    },
+    {
+      "frame": 224,
+      "timestamp_s": 7.46667,
+      "head_box": [448.249, 532.701, 120.007],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 51.2085, "yaw": 9.54504, "roll": -40.6906 },
+      "gpu_ms": 58.3452
+    },
+    {
+      "frame": 225,
+      "timestamp_s": 7.5,
+      "head_box": [406.634, 502.291, 148.164],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 44.1675, "yaw": 25.5654, "roll": -22.793 },
+      "gpu_ms": 92.3592
+    },
+    {
+      "frame": 226,
+      "timestamp_s": 7.53333,
+      "head_box": [374.67, 475.901, 172.834],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 30.9285, "yaw": 63.4547, "roll": 12.2039 },
+      "gpu_ms": 41.8312
+    },
+    {
+      "frame": 227,
+      "timestamp_s": 7.56667,
+      "head_box": [389.902, 512.554, 150.813],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 45.676, "yaw": 25.017, "roll": -41.7178 },
+      "gpu_ms": 154.9
+    },
+    {
+      "frame": 228,
+      "timestamp_s": 7.6,
+      "head_box": [399.272, 545.318, 126.756],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 50.7386, "yaw": 10.094, "roll": -38.2148 },
+      "gpu_ms": 120.613
+    },
+    {
+      "frame": 229,
+      "timestamp_s": 7.63333,
+      "head_box": [402.906, 582.174, 94.6925],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 39.4591, "yaw": 53.3645, "roll": -20.5117 },
+      "gpu_ms": 44.1114
+    },
+    {
+      "frame": 230,
+      "timestamp_s": 7.66667,
+      "head_box": [385.431, 542.463, 126.238],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 49.7984, "yaw": 24.3764, "roll": -24.948 },
+      "gpu_ms": 78.1972
+    },
+    {
+      "frame": 231,
+      "timestamp_s": 7.7,
+      "head_box": [371.131, 504.467, 156.23],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 49.9901, "yaw": 3.91452, "roll": -30.3221 },
+      "gpu_ms": 97.4441
+    },
+    {
+      "frame": 232,
+      "timestamp_s": 7.73333,
+      "head_box": [360.882, 473.2, 180.791],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 40.7547, "yaw": 31.5808, "roll": -14.7831 },
+      "gpu_ms": 136.794
+    },
+    {
+      "frame": 233,
+      "timestamp_s": 7.76667,
+      "head_box": [354.6, 450.659, 198.408],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 33.5636, "yaw": 47.9349, "roll": -6.60437 },
+      "gpu_ms": 83.2449
+    },
+    {
+      "frame": 234,
+      "timestamp_s": 7.8,
+      "head_box": [351.641, 436.736, 209.218],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 32.2521, "yaw": 51.9472, "roll": -4.93694 },
+      "gpu_ms": 92.5048
+    },
+    {
+      "frame": 235,
+      "timestamp_s": 7.83333,
+      "head_box": [351.119, 430.072, 214.321],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 33.2994, "yaw": 57.057, "roll": -2.64242 },
+      "gpu_ms": 120.939
+    },
+    {
+      "frame": 236,
+      "timestamp_s": 7.86667,
+      "head_box": [352.138, 428.762, 215.234],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 35.9206, "yaw": 48.2091, "roll": -4.30941 },
+      "gpu_ms": 112.191
+    },
+    {
+      "frame": 237,
+      "timestamp_s": 7.9,
+      "head_box": [353.929, 430.862, 213.497],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 33.7852, "yaw": 58.8438, "roll": 2.42115 },
+      "gpu_ms": 49.4427
+    },
+    {
+      "frame": 238,
+      "timestamp_s": 7.93333,
+      "head_box": [355.914, 434.693, 210.431],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 33.2082, "yaw": 53.2462, "roll": 6.2893 },
+      "gpu_ms": 42.4497
+    },
+    {
+      "frame": 239,
+      "timestamp_s": 7.96667,
+      "head_box": [357.718, 438.987, 207.026],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 32.526, "yaw": 52.3146, "roll": 9.4049 },
+      "gpu_ms": 105.123
+    },
+    {
+      "frame": 240,
+      "timestamp_s": 8,
+      "head_box": [315.768, 469.492, 153.284],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 37.0913, "yaw": 43.2648, "roll": 20.3295 },
+      "gpu_ms": 100.968
+    },
+    {
+      "frame": 241,
+      "timestamp_s": 8.03333,
+      "head_box": [279.37, 485.465, 115.467],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 42.1178, "yaw": 44.6911, "roll": -3.23936 },
+      "gpu_ms": 124.501
+    },
+    {
+      "frame": 242,
+      "timestamp_s": 8.06667,
+      "head_box": [256.973, 498.259, 88.308],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 36.237, "yaw": 73.7251, "roll": -42.7827 },
+      "gpu_ms": 110.714
+    },
+    {
+      "frame": 243,
+      "timestamp_s": 8.1,
+      "head_box": [238.333, 468.562, 77.405],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 35.3723, "yaw": 57.7812, "roll": -3.99621 },
+      "gpu_ms": 94.5472
+    },
+    {
+      "frame": 244,
+      "timestamp_s": 8.13333,
+      "head_box": [226.104, 430.811, 86.6092],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 37.9044, "yaw": 46.1936, "roll": -47.8197 },
+      "gpu_ms": 84.744
+    },
+    {
+      "frame": 245,
+      "timestamp_s": 8.16667,
+      "head_box": [223.92, 404.211, 96.8175],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 43.4241, "yaw": 25.2075, "roll": -8.12749 },
+      "gpu_ms": 84.6562
+    },
+    {
+      "frame": 246,
+      "timestamp_s": 8.2,
+      "head_box": [222.3, 376.496, 109.314],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 37.5321, "yaw": 49.9797, "roll": -9.44146 },
+      "gpu_ms": 49.7868
+    },
+    {
+      "frame": 247,
+      "timestamp_s": 8.23333,
+      "head_box": [222.335, 357.976, 110.944],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 26.1859, "yaw": 68.3368, "roll": -3.81571 },
+      "gpu_ms": 89.4769
+    },
+    {
+      "frame": 248,
+      "timestamp_s": 8.26667,
+      "head_box": [233.197, 412.186, 83.9694],
+      "prior": "skeleton_clavicle",
+      "pose": { "pitch": 38.6632, "yaw": 38.8629, "roll": -0.893041 },
+      "gpu_ms": 71.732
+    },
+    {
+      "frame": 249,
+      "timestamp_s": 8.3,
+      "head_box": [284.467, 430.744, 125.316],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 39.9351, "yaw": 34.8575, "roll": -1.1747 },
+      "gpu_ms": 48.5531
+    },
+    {
+      "frame": 250,
+      "timestamp_s": 8.33333,
+      "head_box": [269.494, 410.175, 131.918],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 38.76, "yaw": 38.8103, "roll": -15.3923 },
+      "gpu_ms": 155.694
+    },
+    {
+      "frame": 251,
+      "timestamp_s": 8.36667,
+      "head_box": [309.752, 424.94, 164.472],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 41.8961, "yaw": 30.1269, "roll": 2.72337 },
+      "gpu_ms": 102.176
+    },
+    {
+      "frame": 252,
+      "timestamp_s": 8.4,
+      "head_box": [341.444, 437.258, 189.333],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 36.0581, "yaw": 47.1158, "roll": 14.5614 },
+      "gpu_ms": 70.4205
+    },
+    {
+      "frame": 253,
+      "timestamp_s": 8.43333,
+      "head_box": [363.242, 446.26, 205.85],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 32.0563, "yaw": 48.817, "roll": 26.2684 },
+      "gpu_ms": 110.423
+    },
+    {
+      "frame": 254,
+      "timestamp_s": 8.46667,
+      "head_box": [306.425, 430.534, 193.221],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 38.3274, "yaw": 39.2805, "roll": -7.04015 },
+      "gpu_ms": 58.9115
+    },
+    {
+      "frame": 255,
+      "timestamp_s": 8.5,
+      "head_box": [248.749, 425.003, 191.047],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 29.447, "yaw": 50.8293, "roll": 7.00204 },
+      "gpu_ms": 91.3944
+    },
+    {
+      "frame": 256,
+      "timestamp_s": 8.53333,
+      "head_box": [200.402, 467.815, 174.497],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 40.6003, "yaw": 30.062, "roll": -36.8953 },
+      "gpu_ms": 119.931
+    },
+    {
+      "frame": 257,
+      "timestamp_s": 8.56667,
+      "head_box": [243.65, 468.574, 182.335],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 38.8904, "yaw": 45.0904, "roll": -13.5184 },
+      "gpu_ms": 68.5355
+    },
+    {
+      "frame": 258,
+      "timestamp_s": 8.6,
+      "head_box": [287.051, 465.943, 189.688],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 37.2199, "yaw": 54.6759, "roll": -11.0345 },
+      "gpu_ms": 136.494
+    },
+    {
+      "frame": 259,
+      "timestamp_s": 8.63333,
+      "head_box": [324.034, 461.674, 195.646],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 39.9599, "yaw": 47.3026, "roll": -21.9914 },
+      "gpu_ms": 122.153
+    },
+    {
+      "frame": 260,
+      "timestamp_s": 8.66667,
+      "head_box": [351.619, 457.061, 199.874],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 43.4633, "yaw": 29.1061, "roll": -1.53332 },
+      "gpu_ms": 82.7081
+    },
+    {
+      "frame": 261,
+      "timestamp_s": 8.7,
+      "head_box": [272.214, 472.692, 169.661],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 39.0342, "yaw": 48.5635, "roll": -22.2715 },
+      "gpu_ms": 52.5318
+    },
+    {
+      "frame": 262,
+      "timestamp_s": 8.73333,
+      "head_box": [298.497, 466.019, 176.564],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 37.4975, "yaw": 54.1147, "roll": -22.5957 },
+      "gpu_ms": 80.0935
+    },
+    {
+      "frame": 263,
+      "timestamp_s": 8.76667,
+      "head_box": [323.492, 459.311, 184.222],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 37.1848, "yaw": 56.4725, "roll": -7.86581 },
+      "gpu_ms": 120.031
+    },
+    {
+      "frame": 264,
+      "timestamp_s": 8.8,
+      "head_box": [244.426, 446.16, 144.13],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 40.9096, "yaw": 44.2196, "roll": -30.1796 },
+      "gpu_ms": 138.404
+    },
+    {
+      "frame": 265,
+      "timestamp_s": 8.83333,
+      "head_box": [178.5, 469.585, 109.169],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 38.9418, "yaw": 35.8576, "roll": 16.7957 },
+      "gpu_ms": 160.503
+    },
+    {
+      "frame": 266,
+      "timestamp_s": 8.86667,
+      "head_box": [227.441, 463.905, 132.251],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 41.9054, "yaw": 40.781, "roll": 7.86832 },
+      "gpu_ms": 111.54
+    },
+    {
+      "frame": 267,
+      "timestamp_s": 8.9,
+      "head_box": [276.69, 458.111, 156.263],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 39.4328, "yaw": 45.4737, "roll": -16.725 },
+      "gpu_ms": 104.924
+    },
+    {
+      "frame": 268,
+      "timestamp_s": 8.93333,
+      "head_box": [318.735, 453.118, 177.23],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 35.6314, "yaw": 57.4491, "roll": 0.66337 },
+      "gpu_ms": 52.0723
+    },
+    {
+      "frame": 269,
+      "timestamp_s": 8.96667,
+      "head_box": [350.152, 449.355, 193.226],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 37.2103, "yaw": 47.0598, "roll": -6.20044 },
+      "gpu_ms": 62.3478
+    },
+    {
+      "frame": 270,
+      "timestamp_s": 9,
+      "head_box": [275.18, 462.899, 164.105],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 36.898, "yaw": 51.5442, "roll": -2.154 },
+      "gpu_ms": 69.3083
+    },
+    {
+      "frame": 271,
+      "timestamp_s": 9.03333,
+      "head_box": [302.482, 458.788, 176.851],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 35.6163, "yaw": 57.8194, "roll": -3.74168 },
+      "gpu_ms": 97.5603
+    },
+    {
+      "frame": 272,
+      "timestamp_s": 9.06667,
+      "head_box": [228.571, 438.139, 138.834],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 39.5456, "yaw": 35.7595, "roll": 21.2406 },
+      "gpu_ms": 136.308
+    },
+    {
+      "frame": 273,
+      "timestamp_s": 9.1,
+      "head_box": [265.764, 437.581, 155.909],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 34.7594, "yaw": 61.36, "roll": -0.0641774 },
+      "gpu_ms": 62.8392
+    },
+    {
+      "frame": 274,
+      "timestamp_s": 9.13333,
+      "head_box": [302.215, 438.809, 172.768],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 32.4408, "yaw": 65.3449, "roll": 5.13632 },
+      "gpu_ms": 52.1065
+    },
+    {
+      "frame": 275,
+      "timestamp_s": 9.16667,
+      "head_box": [332.753, 440.925, 186.968],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 33.5625, "yaw": 60.9511, "roll": 6.84306 },
+      "gpu_ms": 64.1948
+    },
+    {
+      "frame": 276,
+      "timestamp_s": 9.2,
+      "head_box": [261.414, 450.757, 154.443],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 39.281, "yaw": 42.9563, "roll": 0.357783 },
+      "gpu_ms": 99.1147
+    },
+    {
+      "frame": 277,
+      "timestamp_s": 9.23333,
+      "head_box": [291.991, 451.554, 168.637],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 36.754, "yaw": 55.5686, "roll": -7.63776 },
+      "gpu_ms": 99.222
+    },
+    {
+      "frame": 278,
+      "timestamp_s": 9.26667,
+      "head_box": [320.539, 451.499, 181.857],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 33.711, "yaw": 59.495, "roll": -0.75811 },
+      "gpu_ms": 89.8256
+    },
+    {
+      "frame": 279,
+      "timestamp_s": 9.3,
+      "head_box": [343.587, 450.942, 192.511],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 31.725, "yaw": 61.9352, "roll": 8.18765 },
+      "gpu_ms": 100.379
+    },
+    {
+      "frame": 280,
+      "timestamp_s": 9.33333,
+      "head_box": [276.384, 466.757, 183.779],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 36.0573, "yaw": 53.1547, "roll": 8.64332 },
+      "gpu_ms": 110.763
+    },
+    {
+      "frame": 281,
+      "timestamp_s": 9.36667,
+      "head_box": [225.503, 467.415, 166.102],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 37.3793, "yaw": 43.7313, "roll": -6.72277 },
+      "gpu_ms": 37.9133
+    },
+    {
+      "frame": 282,
+      "timestamp_s": 9.4,
+      "head_box": [262.202, 462.178, 176.222],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 38.1409, "yaw": 39.8943, "roll": 10.9031 },
+      "gpu_ms": 111.625
+    },
+    {
+      "frame": 283,
+      "timestamp_s": 9.43333,
+      "head_box": [298.891, 456.909, 185.86],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 38.4885, "yaw": 50.6426, "roll": -4.0811 },
+      "gpu_ms": 147.363
+    },
+    {
+      "frame": 284,
+      "timestamp_s": 9.46667,
+      "head_box": [330.071, 452.411, 193.764],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 34.2916, "yaw": 52.8817, "roll": 1.33471 },
+      "gpu_ms": 96.5014
+    },
+    {
+      "frame": 285,
+      "timestamp_s": 9.5,
+      "head_box": [305.454, 439.868, 176.577],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 34.6724, "yaw": 46.2501, "roll": -4.9704 },
+      "gpu_ms": 134.288
+    },
+    {
+      "frame": 286,
+      "timestamp_s": 9.53333,
+      "head_box": [290.361, 463.5, 162.08],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 40.0255, "yaw": 35.141, "roll": -23.6575 },
+      "gpu_ms": 89.9771
+    },
+    {
+      "frame": 287,
+      "timestamp_s": 9.56667,
+      "head_box": [289.725, 464.455, 159.727],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 30.1341, "yaw": 44.0816, "roll": -8.08912 },
+      "gpu_ms": 112.537
+    },
+    {
+      "frame": 288,
+      "timestamp_s": 9.6,
+      "head_box": [299.631, 458.348, 161.881],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 32.2753, "yaw": 53.2064, "roll": 7.34319 },
+      "gpu_ms": 117.804
+    },
+    {
+      "frame": 289,
+      "timestamp_s": 9.63333,
+      "head_box": [318.53, 476.033, 157.934],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 35.0562, "yaw": 43.3252, "roll": 2.82838 },
+      "gpu_ms": 56.4154
+    },
+    {
+      "frame": 290,
+      "timestamp_s": 9.66667,
+      "head_box": [339.952, 473.329, 158.79],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 29.8154, "yaw": 57.9845, "roll": 14.804 },
+      "gpu_ms": 127.362
+    },
+    {
+      "frame": 291,
+      "timestamp_s": 9.7,
+      "head_box": [366.889, 477.973, 164.924],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 29.2987, "yaw": 61.5687, "roll": 18.5789 },
+      "gpu_ms": 51.8754
+    },
+    {
+      "frame": 292,
+      "timestamp_s": 9.73333,
+      "head_box": [392.587, 483.802, 177.28],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 28.1309, "yaw": 63.4761, "roll": 20.8345 },
+      "gpu_ms": 79.6539
+    },
+    {
+      "frame": 293,
+      "timestamp_s": 9.76667,
+      "head_box": [416.793, 502.049, 175.941],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 27.7047, "yaw": 63.3584, "roll": 24.3369 },
+      "gpu_ms": 133.766
+    },
+    {
+      "frame": 294,
+      "timestamp_s": 9.8,
+      "head_box": [432.302, 508.898, 168.673],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 26.1974, "yaw": 61.3098, "roll": 27.6907 },
+      "gpu_ms": 74.4218
+    },
+    {
+      "frame": 295,
+      "timestamp_s": 9.83333,
+      "head_box": [440.391, 516.302, 159.305],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 26.9611, "yaw": 60.356, "roll": 27.7598 },
+      "gpu_ms": 61.0575
+    },
+    {
+      "frame": 296,
+      "timestamp_s": 9.86667,
+      "head_box": [446.046, 519.582, 155.157],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 26.9852, "yaw": 59.2759, "roll": 29.8095 },
+      "gpu_ms": 146.85
+    },
+    {
+      "frame": 297,
+      "timestamp_s": 9.9,
+      "head_box": [443.622, 534.608, 147.187],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 30.408, "yaw": 57.2985, "roll": 28.6931 },
+      "gpu_ms": 90.2532
+    },
+    {
+      "frame": 298,
+      "timestamp_s": 9.93333,
+      "head_box": [445.072, 528.192, 145.502],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 30.2805, "yaw": 56.4968, "roll": 29.0583 },
+      "gpu_ms": 119.866
+    },
+    {
+      "frame": 299,
+      "timestamp_s": 9.96667,
+      "head_box": [441.82, 520.627, 141.579],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 29.4887, "yaw": 59.1874, "roll": 27.5113 },
+      "gpu_ms": 104.314
+    },
+    {
+      "frame": 300,
+      "timestamp_s": 10,
+      "head_box": [432.683, 507.346, 141.901],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 27.6816, "yaw": 61.7129, "roll": 30.7383 },
+      "gpu_ms": 90.0297
+    },
+    {
+      "frame": 301,
+      "timestamp_s": 10.0333,
+      "head_box": [424.215, 514.873, 145.429],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 32.0108, "yaw": 55.2058, "roll": 20.0007 },
+      "gpu_ms": 98.724
+    },
+    {
+      "frame": 302,
+      "timestamp_s": 10.0667,
+      "head_box": [417.712, 507.417, 157.227],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 31.3889, "yaw": 54.1898, "roll": 10.0652 },
+      "gpu_ms": 158.275
+    },
+    {
+      "frame": 303,
+      "timestamp_s": 10.1,
+      "head_box": [406.693, 503.482, 168.622],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 32.6503, "yaw": 54.3624, "roll": -1.69665 },
+      "gpu_ms": 103.619
+    },
+    {
+      "frame": 304,
+      "timestamp_s": 10.1333,
+      "head_box": [386.355, 482.757, 176.395],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 30.0275, "yaw": 54.2455, "roll": 2.48481 },
+      "gpu_ms": 64.476
+    },
+    {
+      "frame": 305,
+      "timestamp_s": 10.1667,
+      "head_box": [362.192, 502.772, 167.999],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 32.6928, "yaw": 44.2563, "roll": -16.5117 },
+      "gpu_ms": 130.658
+    },
+    {
+      "frame": 306,
+      "timestamp_s": 10.2,
+      "head_box": [341.487, 503.199, 158.677],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 32.055, "yaw": 46.5153, "roll": -10.196 },
+      "gpu_ms": 82.3627
+    },
+    {
+      "frame": 307,
+      "timestamp_s": 10.2333,
+      "head_box": [321.683, 509.404, 157.108],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 32.7354, "yaw": 46.3088, "roll": -5.97467 },
+      "gpu_ms": 46.8073
+    },
+    {
+      "frame": 308,
+      "timestamp_s": 10.2667,
+      "head_box": [303.202, 520.797, 143.846],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 34.3314, "yaw": 46.6437, "roll": -0.249836 },
+      "gpu_ms": 107.204
+    },
+    {
+      "frame": 309,
+      "timestamp_s": 10.3,
+      "head_box": [282.051, 521.976, 126.116],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 37.7451, "yaw": 37.4646, "roll": 1.38507 },
+      "gpu_ms": 65.206
+    },
+    {
+      "frame": 310,
+      "timestamp_s": 10.3333,
+      "head_box": [263.881, 505.906, 116.676],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 33.1095, "yaw": 43.7926, "roll": -6.11685 },
+      "gpu_ms": 73.5531
+    },
+    {
+      "frame": 311,
+      "timestamp_s": 10.3667,
+      "head_box": [290.885, 480.726, 143.896],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 32.7677, "yaw": 51.9135, "roll": -28.3315 },
+      "gpu_ms": 46.3839
+    },
+    {
+      "frame": 312,
+      "timestamp_s": 10.4,
+      "head_box": [317.454, 460.708, 168.644],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 37.9258, "yaw": 39.659, "roll": 5.53426 },
+      "gpu_ms": 81.691
+    },
+    {
+      "frame": 313,
+      "timestamp_s": 10.4333,
+      "head_box": [339.777, 446.792, 188.196],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 39.4531, "yaw": 47.1054, "roll": -2.98971 },
+      "gpu_ms": 90.9376
+    },
+    {
+      "frame": 314,
+      "timestamp_s": 10.4667,
+      "head_box": [356.205, 438.623, 201.698],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 39.7155, "yaw": 50.2909, "roll": -13.778 },
+      "gpu_ms": 34.7117
+    },
+    {
+      "frame": 315,
+      "timestamp_s": 10.5,
+      "head_box": [366.631, 435.128, 209.544],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 38.4549, "yaw": 53.1926, "roll": -10.1261 },
+      "gpu_ms": 77.8282
+    },
+    {
+      "frame": 316,
+      "timestamp_s": 10.5333,
+      "head_box": [371.892, 434.962, 212.82],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 37.6085, "yaw": 56.8491, "roll": -11.2609 },
+      "gpu_ms": 46.7471
+    },
+    {
+      "frame": 317,
+      "timestamp_s": 10.5667,
+      "head_box": [373.264, 436.818, 212.863],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 38.4956, "yaw": 53.7465, "roll": -10.913 },
+      "gpu_ms": 98.4632
+    },
+    {
+      "frame": 318,
+      "timestamp_s": 10.6,
+      "head_box": [372.098, 439.609, 210.959],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 38.4435, "yaw": 52.2696, "roll": -0.471365 },
+      "gpu_ms": 107.426
+    },
+    {
+      "frame": 319,
+      "timestamp_s": 10.6333,
+      "head_box": [369.584, 442.542, 208.173],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 38.0711, "yaw": 51.4919, "roll": -0.77501 },
+      "gpu_ms": 112.609
+    },
+    {
+      "frame": 320,
+      "timestamp_s": 10.6667,
+      "head_box": [366.638, 445.121, 205.275],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 36.399, "yaw": 49.3339, "roll": 6.02841 },
+      "gpu_ms": 73.9989
+    },
+    {
+      "frame": 321,
+      "timestamp_s": 10.7,
+      "head_box": [363.874, 447.1, 202.745],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 38.2641, "yaw": 37.0432, "roll": -11.5197 },
+      "gpu_ms": 120.368
+    },
+    {
+      "frame": 322,
+      "timestamp_s": 10.7333,
+      "head_box": [361.635, 448.422, 200.816],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 32.2199, "yaw": 50.0703, "roll": -17.2284 },
+      "gpu_ms": 103.096
+    },
+    {
+      "frame": 323,
+      "timestamp_s": 10.7667,
+      "head_box": [360.046, 449.152, 199.535],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 29.9493, "yaw": 47.9553, "roll": -18.654 },
+      "gpu_ms": 119.48
+    },
+    {
+      "frame": 324,
+      "timestamp_s": 10.8,
+      "head_box": [359.086, 449.418, 198.837],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 26.2774, "yaw": 48.8772, "roll": 2.83442 },
+      "gpu_ms": 43.9056
+    },
+    {
+      "frame": 325,
+      "timestamp_s": 10.8333,
+      "head_box": [358.647, 449.364, 198.592],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 25.4423, "yaw": 62.554, "roll": 24.2287 },
+      "gpu_ms": 170.591
+    },
+    {
+      "frame": 326,
+      "timestamp_s": 10.8667,
+      "head_box": [361.196, 487.665, 177.174],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 28.2997, "yaw": 65.8463, "roll": 33.0618 },
+      "gpu_ms": 116.754
+    },
+    {
+      "frame": 327,
+      "timestamp_s": 10.9,
+      "head_box": [361.379, 527.65, 160.167],
+      "prior": "skeleton_clavicle",
+      "pose": { "pitch": 33.8688, "yaw": 41.9166, "roll": -2.92414 },
+      "gpu_ms": 79.7266
+    },
+    {
+      "frame": 328,
+      "timestamp_s": 10.9333,
+      "head_box": [360.992, 510.294, 169.067],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 32.612, "yaw": 47.8297, "roll": 4.8973 },
+      "gpu_ms": 43.8478
+    },
+    {
+      "frame": 329,
+      "timestamp_s": 10.9667,
+      "head_box": [360.611, 490.536, 179.047],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 31.6524, "yaw": 50.6031, "roll": -6.40644 },
+      "gpu_ms": 82.6952
+    },
+    {
+      "frame": 330,
+      "timestamp_s": 11,
+      "head_box": [360.291, 472.3, 188.178],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 30.6774, "yaw": 49.0182, "roll": 2.23404 },
+      "gpu_ms": 98.196
+    },
+    {
+      "frame": 331,
+      "timestamp_s": 11.0333,
+      "head_box": [360.055, 457.714, 195.43],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 33.0359, "yaw": 55.1407, "roll": 2.35628 },
+      "gpu_ms": 111.933
+    },
+    {
+      "frame": 332,
+      "timestamp_s": 11.0667,
+      "head_box": [359.905, 447.505, 200.466],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 32.9071, "yaw": 56.0747, "roll": 4.67185 },
+      "gpu_ms": 37.521
+    },
+    {
+      "frame": 333,
+      "timestamp_s": 11.1,
+      "head_box": [359.83, 441.454, 203.418],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 33.6148, "yaw": 56.1752, "roll": -2.7478 },
+      "gpu_ms": 42.1047
+    },
+    {
+      "frame": 334,
+      "timestamp_s": 11.1333,
+      "head_box": [359.81, 438.806, 204.677],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 33.7774, "yaw": 53.2039, "roll": -2.08197 },
+      "gpu_ms": 92.3168
+    },
+    {
+      "frame": 335,
+      "timestamp_s": 11.1667,
+      "head_box": [359.827, 438.595, 204.73],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 32.7874, "yaw": 56.0237, "roll": -2.04121 },
+      "gpu_ms": 96.8507
+    },
+    {
+      "frame": 336,
+      "timestamp_s": 11.2,
+      "head_box": [359.863, 439.88, 204.053],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 31.1909, "yaw": 56.6077, "roll": 2.28874 },
+      "gpu_ms": 76.9532
+    },
+    {
+      "frame": 337,
+      "timestamp_s": 11.2333,
+      "head_box": [359.905, 441.869, 203.039],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 30.2848, "yaw": 58.8471, "roll": 1.40575 },
+      "gpu_ms": 102.001
+    },
+    {
+      "frame": 338,
+      "timestamp_s": 11.2667,
+      "head_box": [359.944, 443.982, 201.974],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 31.5822, "yaw": 53.5267, "roll": -2.93511 },
+      "gpu_ms": 49.1456
+    },
+    {
+      "frame": 339,
+      "timestamp_s": 11.3,
+      "head_box": [359.977, 445.852, 201.039],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 32.9275, "yaw": 55.4574, "roll": -0.362536 },
+      "gpu_ms": 71.1068
+    },
+    {
+      "frame": 340,
+      "timestamp_s": 11.3333,
+      "head_box": [359.999, 447.297, 200.323],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 31.8272, "yaw": 54.6591, "roll": 1.35847 },
+      "gpu_ms": 179.308
+    },
+    {
+      "frame": 341,
+      "timestamp_s": 11.3667,
+      "head_box": [360.013, 448.269, 199.844],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 31.4715, "yaw": 54.0494, "roll": 4.86232 },
+      "gpu_ms": 70.5301
+    },
+    {
+      "frame": 342,
+      "timestamp_s": 11.4,
+      "head_box": [360.019, 448.812, 199.58],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 32.5314, "yaw": 48.1532, "roll": -1.76555 },
+      "gpu_ms": 96.3703
+    },
+    {
+      "frame": 343,
+      "timestamp_s": 11.4333,
+      "head_box": [390.697, 460.707, 176.215],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 33.4089, "yaw": 42.0567, "roll": 4.63932 },
+      "gpu_ms": 42.7709
+    },
+    {
+      "frame": 344,
+      "timestamp_s": 11.4667,
+      "head_box": [420.041, 454.961, 156.083],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 36.59, "yaw": 37.5347, "roll": 7.3056 },
+      "gpu_ms": 54.8875
+    },
+    {
+      "frame": 345,
+      "timestamp_s": 11.5,
+      "head_box": [429.096, 434.173, 142.669],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 36.667, "yaw": 39.2849, "roll": -3.88573 },
+      "gpu_ms": 93.9023
+    },
+    {
+      "frame": 346,
+      "timestamp_s": 11.5333,
+      "head_box": [432.857, 418.779, 133.877],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 34.6651, "yaw": 43.7837, "roll": 8.85914 },
+      "gpu_ms": 169.046
+    },
+    {
+      "frame": 347,
+      "timestamp_s": 11.5667,
+      "head_box": [416.072, 410.13, 123.646],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 34.9684, "yaw": 44.2762, "roll": 10.6251 },
+      "gpu_ms": 85.7646
+    },
+    {
+      "frame": 348,
+      "timestamp_s": 11.6,
+      "head_box": [395.349, 383.286, 124.818],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 36.3819, "yaw": 42.5113, "roll": 6.0181 },
+      "gpu_ms": 93.08
+    },
+    {
+      "frame": 349,
+      "timestamp_s": 11.6333,
+      "head_box": [377.986, 328.746, 130.416],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 33.1794, "yaw": 44.8751, "roll": -18.1265 },
+      "gpu_ms": 56.111
+    },
+    {
+      "frame": 350,
+      "timestamp_s": 11.6667,
+      "head_box": [339.948, 337.209, 140.274],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 30.4376, "yaw": 59.7106, "roll": 8.72295 },
+      "gpu_ms": 40.2223
+    },
+    {
+      "frame": 351,
+      "timestamp_s": 11.7,
+      "head_box": [313.5, 318.47, 147.517],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 30.84, "yaw": 60.6984, "roll": 3.16385 },
+      "gpu_ms": 64.4427
+    },
+    {
+      "frame": 352,
+      "timestamp_s": 11.7333,
+      "head_box": [318.168, 360.103, 171.068],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 34.5181, "yaw": 49.8319, "roll": -3.02053 },
+      "gpu_ms": 94.6947
+    },
+    {
+      "frame": 353,
+      "timestamp_s": 11.7667,
+      "head_box": [327.244, 398.268, 189.538],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 37.0552, "yaw": 40.8001, "roll": 5.59211 },
+      "gpu_ms": 91.4089
+    },
+    {
+      "frame": 354,
+      "timestamp_s": 11.8,
+      "head_box": [337.603, 428.626, 202.19],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 34.7459, "yaw": 35.9128, "roll": -18.09 },
+      "gpu_ms": 82.7595
+    },
+    {
+      "frame": 355,
+      "timestamp_s": 11.8333,
+      "head_box": [347.178, 449.748, 209.452],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 35.7239, "yaw": 35.3326, "roll": -3.36371 },
+      "gpu_ms": 54.1831
+    },
+    {
+      "frame": 356,
+      "timestamp_s": 11.8667,
+      "head_box": [354.846, 462.158, 212.392],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 33.9853, "yaw": 39.2235, "roll": 3.12368 },
+      "gpu_ms": 136.279
+    },
+    {
+      "frame": 357,
+      "timestamp_s": 11.9,
+      "head_box": [360.22, 467.481, 212.297],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 34.561, "yaw": 41.3471, "roll": 8.4098 },
+      "gpu_ms": 93.8585
+    },
+    {
+      "frame": 358,
+      "timestamp_s": 11.9333,
+      "head_box": [363.412, 467.752, 210.395],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 31.9209, "yaw": 42.8237, "roll": 0.501149 },
+      "gpu_ms": 81.3796
+    },
+    {
+      "frame": 359,
+      "timestamp_s": 11.9667,
+      "head_box": [301.932, 396.336, 174.182],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 34.6098, "yaw": 37.6829, "roll": -2.52292 },
+      "gpu_ms": 53.9554
+    },
+    {
+      "frame": 360,
+      "timestamp_s": 12,
+      "head_box": [250.439, 333.228, 149.945],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 36.2876, "yaw": 42.5152, "roll": -0.715999 },
+      "gpu_ms": 60.8524
+    },
+    {
+      "frame": 361,
+      "timestamp_s": 12.0333,
+      "head_box": [213.218, 290.647, 125.328],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 40.1918, "yaw": 35.55, "roll": -8.65567 },
+      "gpu_ms": 92.6702
+    },
+    {
+      "frame": 362,
+      "timestamp_s": 12.0667,
+      "head_box": [188.922, 265.449, 110.616],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 38.8271, "yaw": 24.4499, "roll": -3.00053 },
+      "gpu_ms": 125.768
+    },
+    {
+      "frame": 363,
+      "timestamp_s": 12.1,
+      "head_box": [176.378, 262.069, 100.591],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 36.0532, "yaw": 36.5305, "roll": -0.545976 },
+      "gpu_ms": 125.462
+    },
+    {
+      "frame": 364,
+      "timestamp_s": 12.1333,
+      "head_box": [171.925, 264.103, 95.8099],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 37.7991, "yaw": 30.914, "roll": -7.84189 },
+      "gpu_ms": 75.3609
+    },
+    {
+      "frame": 365,
+      "timestamp_s": 12.1667,
+      "head_box": [176.199, 280.369, 93.4001],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 43.7801, "yaw": 22.8693, "roll": -12.6844 },
+      "gpu_ms": 80.9034
+    },
+    {
+      "frame": 366,
+      "timestamp_s": 12.2,
+      "head_box": [181.436, 296.635, 87.1484],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 45.3352, "yaw": 18.4024, "roll": 2.33255 },
+      "gpu_ms": 130.149
+    },
+    {
+      "frame": 367,
+      "timestamp_s": 12.2333,
+      "head_box": [188.726, 309.739, 88.0898],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 33.4809, "yaw": 47.0847, "roll": 12.8865 },
+      "gpu_ms": 101.002
+    },
+    {
+      "frame": 368,
+      "timestamp_s": 12.2667,
+      "head_box": [199.627, 324.809, 87.292],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 32.1761, "yaw": 90, "roll": -18.4687 },
+      "gpu_ms": 89.4538
+    },
+    {
+      "frame": 369,
+      "timestamp_s": 12.3,
+      "head_box": [206.737, 337.288, 85.6652],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 36.8574, "yaw": 71.2407, "roll": -30.188 },
+      "gpu_ms": 129.192
+    },
+    {
+      "frame": 370,
+      "timestamp_s": 12.3333,
+      "head_box": [271.309, 388.344, 129.943],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 34.8508, "yaw": 36.3053, "roll": -6.01849 },
+      "gpu_ms": 86.6784
+    },
+    {
+      "frame": 371,
+      "timestamp_s": 12.3667,
+      "head_box": [259.675, 365.881, 122.467],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 35.7455, "yaw": 43.5689, "roll": -3.32207 },
+      "gpu_ms": 126.145
+    },
+    {
+      "frame": 372,
+      "timestamp_s": 12.4,
+      "head_box": [245.197, 346.786, 119.278],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 37.4574, "yaw": 41.8875, "roll": 15.4814 },
+      "gpu_ms": 65.9268
+    },
+    {
+      "frame": 373,
+      "timestamp_s": 12.4333,
+      "head_box": [229.012, 323.428, 119.66],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 38.9985, "yaw": 42.7284, "roll": -13.1505 },
+      "gpu_ms": 87.8637
+    },
+    {
+      "frame": 374,
+      "timestamp_s": 12.4667,
+      "head_box": [215.224, 291.081, 137.803],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 38.5571, "yaw": 33.7513, "roll": -12.4437 },
+      "gpu_ms": 53.8163
+    },
+    {
+      "frame": 375,
+      "timestamp_s": 12.5,
+      "head_box": [207.469, 258.735, 162.617],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 38.2497, "yaw": 33.5913, "roll": -11.5136 },
+      "gpu_ms": 124.081
+    },
+    {
+      "frame": 376,
+      "timestamp_s": 12.5333,
+      "head_box": [199.073, 255.097, 186.294],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 36.2587, "yaw": 42.5617, "roll": -3.14568 },
+      "gpu_ms": 131.424
+    },
+    {
+      "frame": 377,
+      "timestamp_s": 12.5667,
+      "head_box": [190.933, 269.135, 195.092],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 37.8267, "yaw": 39.0515, "roll": -11.5096 },
+      "gpu_ms": 81.9111
+    },
+    {
+      "frame": 378,
+      "timestamp_s": 12.6,
+      "head_box": [186.226, 288.841, 195.964],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 36.1292, "yaw": 51.5592, "roll": -10.6582 },
+      "gpu_ms": 78.4318
+    },
+    {
+      "frame": 379,
+      "timestamp_s": 12.6333,
+      "head_box": [251.641, 355.126, 203.192],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 40.967, "yaw": 41.3105, "roll": -14.052 },
+      "gpu_ms": 117.579
+    },
+    {
+      "frame": 380,
+      "timestamp_s": 12.6667,
+      "head_box": [244.406, 335.574, 197.95],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 40.2964, "yaw": 31.9249, "roll": -16.8076 },
+      "gpu_ms": 162.747
+    },
+    {
+      "frame": 381,
+      "timestamp_s": 12.7,
+      "head_box": [296.616, 386.49, 200.8],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 32.2004, "yaw": 46.1104, "roll": 9.73612 },
+      "gpu_ms": 89.3933
+    },
+    {
+      "frame": 382,
+      "timestamp_s": 12.7333,
+      "head_box": [274.704, 354.642, 188.177],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 33.8711, "yaw": 47.1576, "roll": -8.59937 },
+      "gpu_ms": 71.65
+    },
+    {
+      "frame": 383,
+      "timestamp_s": 12.7667,
+      "head_box": [249.001, 304.715, 183.906],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 36.1033, "yaw": 38.9729, "roll": 8.40779 },
+      "gpu_ms": 81.5236
+    },
+    {
+      "frame": 384,
+      "timestamp_s": 12.8,
+      "head_box": [226.399, 261.872, 170.995],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 39.3191, "yaw": 31.8848, "roll": -21.7707 },
+      "gpu_ms": 64.2856
+    },
+    {
+      "frame": 385,
+      "timestamp_s": 12.8333,
+      "head_box": [208.465, 235.275, 174.659],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 28.7785, "yaw": 59.6508, "roll": -6.5317 },
+      "gpu_ms": 80.2574
+    },
+    {
+      "frame": 386,
+      "timestamp_s": 12.8667,
+      "head_box": [196.237, 227.083, 170.55],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 30.0617, "yaw": 60.3125, "roll": -4.5857 },
+      "gpu_ms": 78.1424
+    },
+    {
+      "frame": 387,
+      "timestamp_s": 12.9,
+      "head_box": [253.794, 303.712, 180.3],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 35.7049, "yaw": 40.2088, "roll": 7.0246 },
+      "gpu_ms": 83.6217
+    },
+    {
+      "frame": 388,
+      "timestamp_s": 12.9333,
+      "head_box": [247.297, 278.611, 178.878],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 35.3276, "yaw": 47.2379, "roll": 2.43338 },
+      "gpu_ms": 72.4831
+    },
+    {
+      "frame": 389,
+      "timestamp_s": 12.9667,
+      "head_box": [295.906, 346.91, 187.585],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 31.1525, "yaw": 51.2676, "roll": 4.04459 },
+      "gpu_ms": 125.116
+    },
+    {
+      "frame": 390,
+      "timestamp_s": 13,
+      "head_box": [283.876, 304.767, 187.613],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 31.9976, "yaw": 48.5779, "roll": 11.3898 },
+      "gpu_ms": 55.5777
+    },
+    {
+      "frame": 391,
+      "timestamp_s": 13.0333,
+      "head_box": [263.361, 319.027, 178.229],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 35.8307, "yaw": 55.3997, "roll": 19.2086 },
+      "gpu_ms": 83.7035
+    },
+    {
+      "frame": 392,
+      "timestamp_s": 13.0667,
+      "head_box": [300.842, 374.034, 185.658],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 33.4245, "yaw": 44.5009, "roll": 5.78421 },
+      "gpu_ms": 91.7305
+    },
+    {
+      "frame": 393,
+      "timestamp_s": 13.1,
+      "head_box": [332.205, 418.133, 192.267],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 34.6067, "yaw": 42.0703, "roll": 3.04064 },
+      "gpu_ms": 51.534
+    },
+    {
+      "frame": 394,
+      "timestamp_s": 13.1333,
+      "head_box": [332.482, 398.391, 149.388],
+      "prior": "skeleton_clavicle",
+      "pose": { "pitch": 33.7234, "yaw": 46.0811, "roll": 11.044 },
+      "gpu_ms": 99.4176
+    },
+    {
+      "frame": 395,
+      "timestamp_s": 13.1667,
+      "head_box": [318.207, 365.018, 125.003],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 33.1601, "yaw": 43.767, "roll": 16.4582 },
+      "gpu_ms": 42.7666
+    },
+    {
+      "frame": 396,
+      "timestamp_s": 13.2,
+      "head_box": [301.287, 343.293, 99.5388],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 38.9699, "yaw": 43.912, "roll": 34.8791 },
+      "gpu_ms": 54.1146
+    },
+    {
+      "frame": 397,
+      "timestamp_s": 13.2333,
+      "head_box": [288.376, 329.394, 79.1105],
+      "prior": "skeleton_clavicle",
+      "pose": { "pitch": 41.7279, "yaw": 42.4244, "roll": 12.461 },
+      "gpu_ms": 41.424
+    },
+    {
+      "frame": 398,
+      "timestamp_s": 13.2667,
+      "head_box": [273.295, 309.832, 79.8448],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 39.2671, "yaw": 60.134, "roll": -11.592 },
+      "gpu_ms": 104.992
+    },
+    {
+      "frame": 399,
+      "timestamp_s": 13.3,
+      "head_box": [262.059, 292.408, 93.474],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 44.585, "yaw": 32.3535, "roll": -14.8498 },
+      "gpu_ms": 69.2279
+    },
+    {
+      "frame": 400,
+      "timestamp_s": 13.3333,
+      "head_box": [256.832, 251.821, 108.492],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 36.1666, "yaw": 38.249, "roll": 24.4506 },
+      "gpu_ms": 77.2179
+    },
+    {
+      "frame": 401,
+      "timestamp_s": 13.3667,
+      "head_box": [258.893, 219.846, 124.539],
+      "prior": "pure_facial_kps",
+      "pose": { "pitch": 39.4028, "yaw": 38.1066, "roll": 16.8245 },
+      "gpu_ms": 60.9852
+    },
+    {
+      "frame": 402,
+      "timestamp_s": 13.4,
+      "head_box": [262.355, 208.818, 134.222],
+      "prior": "facial_kps_blend",
+      "pose": { "pitch": 39.173, "yaw": 31.578, "roll": 6.33936 },
+      "gpu_ms": 93.5631
+    },
+    {
+      "frame": 403,
+      "timestamp_s": 13.4333,
+      "head_box": [300.438, 291.621, 165.883],
+      "prior": "fallback_frame_center",
+      "pose": { "pitch": 34.9025, "yaw": 44.5145, "roll": 1.80606 },
+      "gpu_ms": 39.2131
+    }
+  ]
+}

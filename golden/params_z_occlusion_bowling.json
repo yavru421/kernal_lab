@@ -1,0 +1,10 @@
+{
+  "width": 720,
+  "height": 1280,
+  "max_frames": 180,
+  "graphic_depth_m": 3.5,
+  "subject_base_z_m": 2.2,
+  "feather_radius_m": 0.05,
+  "meters_per_pixel": 0.0028,
+  "skeleton_tracks_path": "c:\\dev\\cu_vision_lite\\exports\\kinematics\\bowling\\skeleton_2d_tracks.json"
+}

@@ -219,22 +219,34 @@ struct VideoStreamer {
     int height = 1920;
     std::string err;
 
-    bool open(const std::string& input_path, const std::string& out_mp4_path, int w, int h) {
+    bool open(const std::string& input_path, const std::string& out_mp4_path, int w, int h, int max_frames = 0) {
         width = w; height = h;
         if (input_path == "synthetic") {
             is_synthetic = true;
             return true;
         }
-        // Hardware NVDEC input pipe (BGR24)
-        std::string in_cmd = "ffmpeg -y -hide_banner -loglevel error -hwaccel cuda -i \"" + input_path + "\" -f rawvideo -pix_fmt bgr24 -";
+        // Video input pipe with guaranteed scale & orientation (BGR24)
+        // Cleanly bounds to max_frames and sets fatal loglevel to prevent broken pipe EOF warnings
+        std::string in_cmd = "ffmpeg -y -hide_banner -loglevel fatal -nostdin -i \"" + input_path + "\"";
+        if (max_frames > 0) {
+            in_cmd += " -frames:v " + std::to_string(max_frames);
+        }
+        in_cmd += " -vf \"scale=" + std::to_string(width) + ":" + std::to_string(height) + "\" -f rawvideo -pix_fmt bgr24 -";
         fp_in = _popen(in_cmd.c_str(), "rb");
         if (!fp_in) { err = "failed to _popen NVDEC pipe for: " + input_path; return false; }
 
-        // Hardware NVENC output pipe (H.264 MP4)
+        // Hardware NVENC output pipe (H.264 MP4) with source audio muxing
         if (!out_mp4_path.empty()) {
-            std::string out_cmd = "ffmpeg -y -hide_banner -loglevel error -f rawvideo -pix_fmt bgr24 -s " +
-                                  std::to_string(width) + "x" + std::to_string(height) +
-                                  " -r 59.94 -i - -c:v h264_nvenc -pix_fmt yuv420p -b:v 12M \"" + out_mp4_path + "\"";
+            std::string out_cmd;
+            if (!is_synthetic && !input_path.empty() && fs::exists(input_path)) {
+                out_cmd = "ffmpeg -y -hide_banner -loglevel error -f rawvideo -pix_fmt bgr24 -s " +
+                          std::to_string(width) + "x" + std::to_string(height) +
+                          " -r 59.94 -i - -i \"" + input_path + "\" -map 0:v:0 -map 1:a:0? -c:v h264_nvenc -pix_fmt yuv420p -b:v 12M -c:a aac -shortest \"" + out_mp4_path + "\"";
+            } else {
+                out_cmd = "ffmpeg -y -hide_banner -loglevel error -f rawvideo -pix_fmt bgr24 -s " +
+                          std::to_string(width) + "x" + std::to_string(height) +
+                          " -r 59.94 -i - -c:v h264_nvenc -pix_fmt yuv420p -b:v 12M \"" + out_mp4_path + "\"";
+            }
             fp_out = _popen(out_cmd.c_str(), "wb");
             if (!fp_out) { _pclose(fp_in); fp_in = nullptr; err = "failed to _popen NVENC pipe for: " + out_mp4_path; return false; }
         }
@@ -286,8 +298,15 @@ struct VideoStreamer {
     }
 
     void close() {
-        if (fp_in) { _pclose(fp_in); fp_in = nullptr; }
-        if (fp_out) { _pclose(fp_out); fp_out = nullptr; }
+        if (fp_out) {
+            fflush(fp_out);
+            _pclose(fp_out);
+            fp_out = nullptr;
+        }
+        if (fp_in) {
+            _pclose(fp_in);
+            fp_in = nullptr;
+        }
     }
 
     ~VideoStreamer() { close(); }
@@ -309,6 +328,43 @@ struct PinSpec {
     int lost_frames = 0;
     std::vector<std::pair<float, float>> trail;
 };
+
+static std::vector<std::vector<float>> load_skeleton_tracks(const std::string& path, int max_frames) {
+    std::string content;
+    if (!read_file(path, content)) return {};
+    std::vector<std::vector<float>> all_kps;
+
+    static const char* KP_NAMES[] = {
+        "nose", "left_eye", "right_eye", "left_ear", "right_ear",
+        "left_shoulder", "right_shoulder", "left_elbow", "right_elbow",
+        "left_wrist", "right_wrist", "left_hip", "right_hip",
+        "left_knee", "right_knee", "left_ankle", "right_ankle"
+    };
+
+    size_t pos = 0;
+    while ((pos = content.find("\"frame\":", pos)) != std::string::npos && (int)all_kps.size() < max_frames) {
+        auto next_f = content.find("\"frame\":", pos + 8);
+        std::string frame_str = content.substr(pos, (next_f == std::string::npos ? content.size() - pos : next_f - pos));
+        std::vector<float> kps(17 * 3, 0.0f);
+
+        for (int k = 0; k < 17; ++k) {
+            std::string name_key = std::string("\"") + KP_NAMES[k] + "\":";
+            auto kp_pos = frame_str.find(name_key);
+            if (kp_pos != std::string::npos) {
+                auto kp_end = frame_str.find('}', kp_pos);
+                if (kp_end != std::string::npos) {
+                    std::string kp_sub = frame_str.substr(kp_pos, kp_end - kp_pos + 1);
+                    kps[k * 3 + 0] = jget_float(kp_sub, "x", 0.0f);
+                    kps[k * 3 + 1] = jget_float(kp_sub, "y", 0.0f);
+                    kps[k * 3 + 2] = jget_float(kp_sub, "confidence", 0.0f);
+                }
+            }
+        }
+        all_kps.push_back(kps);
+        pos = (next_f == std::string::npos ? content.size() : next_f);
+    }
+    return all_kps;
+}
 
 static std::vector<PinSpec> parse_pins_json(const std::string& j, int w, int h) {
     std::vector<PinSpec> pins;
@@ -640,7 +696,7 @@ int main(int argc, char** argv) {
         std::string out_video_path = (R.input == "synthetic") ? "" : (R.run_dir + "\\outputs\\tracked.mp4");
 
         VideoStreamer streamer;
-        if (!streamer.open(R.input, out_video_path, width, height)) {
+        if (!streamer.open(R.input, out_video_path, width, height, max_frames)) {
             return fail("input", streamer.err);
         }
 
@@ -1076,6 +1132,593 @@ int main(int argc, char** argv) {
         oi.kind = "telemetry_json";
         oi.bytes = (long long)tj.str().size();
         oi.sha256 = delta_sha;
+        R.outputs.push_back(oi);
+
+        R.frames = processed_frames;
+        R.ok = true;
+        return finish("finished");
+    }
+
+    // ---- Shape: per_buffer / video_composite (cu_z_occlusion)
+    if (R.kernel_id == "cu_z_occlusion") {
+        FARPROC p_main = sym[R.symbol_main];
+        if (!p_main) return fail("symbol", "Missing symbol_main: " + R.symbol_main);
+        FARPROC p_synth = GetProcAddress(h, "cu_synthesize_kinematic_depth");
+        if (!p_synth) return fail("symbol", "Missing cu_synthesize_kinematic_depth: " + win_err(GetLastError()));
+        FARPROC p_banner = GetProcAddress(h, "cu_render_graphic_banner");
+        if (!p_banner) return fail("symbol", "Missing cu_render_graphic_banner: " + win_err(GetLastError()));
+
+        struct OcclusionConfigHost {
+            float graphic_depth_m;
+            float feather_radius_m;
+            float normal_x;
+            float normal_y;
+            float normal_z;
+            int   emit_depth_vis;
+        };
+
+        typedef int (*fn_cu_composite_t)(
+            const unsigned char*, const float*, const unsigned char*,
+            unsigned char*, unsigned char*, int, int, const OcclusionConfigHost*, cudaStream_t
+        );
+        typedef int (*fn_cu_depth_t)(const float*, float*, int, int, float, float, cudaStream_t);
+        typedef int (*fn_cu_banner_t)(unsigned char*, int, int, int, int, int, int,
+                                      unsigned char, unsigned char, unsigned char, unsigned char,
+                                      unsigned char, unsigned char, unsigned char, int, cudaStream_t);
+
+        auto fn_composite = (fn_cu_composite_t)p_main;
+        auto fn_depth = (fn_cu_depth_t)p_synth;
+        auto fn_banner = (fn_cu_banner_t)p_banner;
+
+        int width = jget_int(R.params_json, "width", 720);
+        int height = jget_int(R.params_json, "height", 1280);
+        int max_frames = jget_int(R.params_json, "max_frames", 120);
+        float graphic_z = jget_float(R.params_json, "graphic_depth_m", 2.8f);
+        float subject_z = jget_float(R.params_json, "subject_base_z_m", 2.2f);
+        float feather = jget_float(R.params_json, "feather_radius_m", 0.05f);
+        float m_per_px = jget_float(R.params_json, "meters_per_pixel", 0.0028f);
+
+        std::string tracks_path = jget(R.params_json, "skeleton_tracks_path");
+        if (tracks_path.empty()) {
+            tracks_path = "c:\\dev\\cu_vision_lite\\exports\\kinematics\\bowling\\skeleton_2d_tracks.json";
+        }
+        std::vector<std::vector<float>> tracks = load_skeleton_tracks(tracks_path, max_frames);
+
+        std::string out_video_path = (R.input == "synthetic") ? "" : (R.run_dir + "\\outputs\\occlusion_composite.mp4");
+        VideoStreamer streamer;
+        if (!streamer.open(R.input, out_video_path, width, height, max_frames)) {
+            return fail("input", streamer.err);
+        }
+
+        size_t bgr_bytes = (size_t)width * height * 3;
+        size_t bgra_bytes = (size_t)width * height * 4;
+        size_t depth_bytes = (size_t)width * height * sizeof(float);
+        size_t kps_bytes = 17 * 3 * sizeof(float);
+
+        unsigned char *d_video_bgr = nullptr, *d_graphic_bgra = nullptr, *d_out_comp = nullptr;
+        float *d_depth_map = nullptr, *d_kps = nullptr;
+
+        cudaError_t ce;
+        if ((ce = cudaMalloc((void**)&d_video_bgr, bgr_bytes)) != cudaSuccess) return fail("cuda", cuda_err("cudaMalloc(d_video_bgr)", ce));
+        if ((ce = cudaMalloc((void**)&d_graphic_bgra, bgra_bytes)) != cudaSuccess) return fail("cuda", cuda_err("cudaMalloc(d_graphic_bgra)", ce));
+        if ((ce = cudaMalloc((void**)&d_depth_map, depth_bytes)) != cudaSuccess) return fail("cuda", cuda_err("cudaMalloc(d_depth_map)", ce));
+        if ((ce = cudaMalloc((void**)&d_out_comp, bgr_bytes)) != cudaSuccess) return fail("cuda", cuda_err("cudaMalloc(d_out_comp)", ce));
+        if ((ce = cudaMalloc((void**)&d_kps, kps_bytes)) != cudaSuccess) return fail("cuda", cuda_err("cudaMalloc(d_kps)", ce));
+
+        // Direct GPU VRAM procedural HUD banner rasterization (guarantees zero-alpha transparent outside box)
+        int box_x0 = 40, box_x1 = width - 40;
+        int box_y0 = 340, box_y1 = 580;
+        fn_banner(d_graphic_bgra, width, height, box_x0, box_y0, box_x1, box_y1,
+                  180, 80, 20, 190,  // Background: Cyan/blue glass, 190 alpha
+                  0, 220, 255, 4,    // Border: Amber gold, 4px thick
+                  0);
+
+        OcclusionConfigHost cfg;
+        cfg.graphic_depth_m = graphic_z;
+        cfg.feather_radius_m = feather;
+        cfg.normal_x = 0.0f;
+        cfg.normal_y = 0.0f;
+        cfg.normal_z = 1.0f;
+        cfg.emit_depth_vis = 0;
+
+        std::vector<unsigned char> h_bgr, h_gray, h_out_bgr(bgr_bytes);
+        std::vector<unsigned char> best_preview_bgr;
+
+        cudaEvent_t e0, e1; cudaEventCreate(&e0); cudaEventCreate(&e1);
+        size_t free0 = 0, free1 = 0, total = 0;
+        cudaMemGetInfo(&free0, &total);
+
+        cudaEventRecord(e0, 0);
+
+        int processed_frames = 0;
+        for (int f = 0; f < max_frames; ++f) {
+            if (!streamer.read_frame(h_bgr, h_gray, f)) break;
+
+            cudaMemcpy(d_video_bgr, h_bgr.data(), bgr_bytes, cudaMemcpyHostToDevice);
+
+            std::vector<float> f_kps(17 * 3, 0.0f);
+            if (f < (int)tracks.size()) {
+                f_kps = tracks[f];
+            } else if (!tracks.empty()) {
+                f_kps = tracks.back();
+            }
+            cudaMemcpy(d_kps, f_kps.data(), kps_bytes, cudaMemcpyHostToDevice);
+
+            int r_d = fn_depth(d_kps, d_depth_map, width, height, subject_z, m_per_px, 0);
+            if (r_d != 0) return fail("kernel_depth", "cu_synthesize_kinematic_depth failed: " + std::to_string(r_d));
+
+            int r_c = fn_composite(d_video_bgr, d_depth_map, d_graphic_bgra, d_out_comp, nullptr, width, height, &cfg, 0);
+            if (r_c != 0) return fail("kernel_composite", "cu_composite_z_occlusion failed: " + std::to_string(r_c));
+
+            cudaMemcpy(h_out_bgr.data(), d_out_comp, bgr_bytes, cudaMemcpyDeviceToHost);
+
+            if (f == 120 || (f == max_frames / 2 && best_preview_bgr.empty()) || best_preview_bgr.empty()) {
+                best_preview_bgr = h_out_bgr;
+            }
+
+            streamer.write_frame(h_out_bgr);
+            processed_frames++;
+        }
+
+        cudaEventRecord(e1, 0);
+        cudaEventSynchronize(e1);
+        float ms = 0; cudaEventElapsedTime(&ms, e0, e1);
+        R.gpu_ms = ms;
+        cudaMemGetInfo(&free1, &total);
+        R.vram_peak_mb = free0 > free1 ? (double)(free0 - free1) / (1024.0 * 1024.0) : 0.0;
+
+        cudaFree(d_video_bgr);
+        cudaFree(d_graphic_bgra);
+        cudaFree(d_depth_map);
+        cudaFree(d_out_comp);
+        cudaFree(d_kps);
+        streamer.close();
+
+        if (!best_preview_bgr.empty()) {
+            std::string preview_path = R.run_dir + "\\outputs\\preview_occlusion.jpg";
+            if (save_jpg(preview_path, best_preview_bgr, width, height)) {
+                std::string psha; sha256_file(preview_path, psha, herr);
+                OutputItem oi_p;
+                oi_p.output_id = R.run_id + "_preview_occlusion";
+                oi_p.path = "outputs/preview_occlusion.jpg";
+                oi_p.kind = "image";
+                oi_p.bytes = (long long)fs::file_size(preview_path);
+                oi_p.sha256 = psha;
+                R.outputs.push_back(oi_p);
+            }
+        }
+
+        if (!out_video_path.empty() && fs::exists(out_video_path)) {
+            std::string video_sha; sha256_file(out_video_path, video_sha, herr);
+            OutputItem oi_v;
+            oi_v.output_id = R.run_id + "_occlusion_composite_mp4";
+            oi_v.path = "outputs/occlusion_composite.mp4";
+            oi_v.kind = "video";
+            oi_v.bytes = (long long)fs::file_size(out_video_path);
+            oi_v.sha256 = video_sha;
+            R.outputs.push_back(oi_v);
+        }
+
+        std::ostringstream tj;
+        tj << "{\n  \"kernel_id\": \"cu_z_occlusion\",\n"
+           << "  \"input\": " << json_s(R.input) << ",\n"
+           << "  \"golden_id\": " << json_s(R.golden_id) << ",\n"
+           << "  \"dimensions\": { \"width\": " << width << ", \"height\": " << height << " },\n"
+           << "  \"graphic_depth_m\": " << graphic_z << ",\n"
+           << "  \"subject_base_z_m\": " << subject_z << ",\n"
+           << "  \"feather_radius_m\": " << feather << ",\n"
+           << "  \"frames_processed\": " << processed_frames << ",\n"
+           << "  \"gpu_total_ms\": " << ms << ",\n"
+           << "  \"gpu_fps\": " << (ms > 0 ? (float)processed_frames / (ms / 1000.0f) : 0.0f) << "\n"
+           << "}\n";
+
+        std::string telem_path = R.run_dir + "\\outputs\\occlusion_telemetry.json";
+        write_file(telem_path, tj.str());
+
+        std::string telem_sha; sha256_file(telem_path, telem_sha, herr);
+        OutputItem oi;
+        oi.output_id = R.run_id + "_occlusion_telemetry_json";
+        oi.path = "outputs/occlusion_telemetry.json";
+        oi.kind = "telemetry_json";
+        oi.bytes = (long long)tj.str().size();
+        oi.sha256 = telem_sha;
+        R.outputs.push_back(oi);
+
+        R.frames = processed_frames;
+        R.ok = true;
+        return finish("finished");
+    }
+
+    // ---- Homography Inverse Solver from 4 Destination Quad Corners (TL, TR, BR, BL)
+    auto compute_quad_homography_inv = [](const float corners[4][2], float H_inv[9]) -> bool {
+        float x0 = corners[0][0], y0 = corners[0][1];
+        float x1 = corners[1][0], y1 = corners[1][1];
+        float x2 = corners[2][0], y2 = corners[2][1];
+        float x3 = corners[3][0], y3 = corners[3][1];
+
+        float dx1 = x1 - x2;
+        float dx2 = x3 - x2;
+        float sx  = x0 - x1 + x2 - x3;
+        float dy1 = y1 - y2;
+        float dy2 = y3 - y2;
+        float sy  = y0 - y1 + y2 - y3;
+
+        float H[9];
+        if (std::fabs(sx) < 1e-5f && std::fabs(sy) < 1e-5f) {
+            H[0] = x1 - x0; H[1] = x3 - x0; H[2] = x0;
+            H[3] = y1 - y0; H[4] = y3 - y0; H[5] = y0;
+            H[6] = 0.0f;    H[7] = 0.0f;    H[8] = 1.0f;
+        } else {
+            float den = dx1 * dy2 - dx2 * dy1;
+            if (std::fabs(den) < 1e-9f) return false;
+            float g = (sx * dy2 - sy * dx2) / den;
+            float h = (dx1 * sy - dy1 * sx) / den;
+            H[0] = x1 - x0 + g * x1;
+            H[1] = x3 - x0 + h * x3;
+            H[2] = x0;
+            H[3] = y1 - y0 + g * y1;
+            H[4] = y3 - y0 + h * y3;
+            H[5] = y0;
+            H[6] = g;
+            H[7] = h;
+            H[8] = 1.0f;
+        }
+
+        float a = H[0], b = H[1], c = H[2];
+        float d = H[3], e = H[4], f = H[5];
+        float g = H[6], h = H[7], i = H[8];
+
+        float A00 = e * i - f * h;
+        float A01 = c * h - b * i;
+        float A02 = b * f - c * e;
+        float A10 = f * g - d * i;
+        float A11 = a * i - c * g;
+        float A12 = c * d - a * f;
+        float A20 = d * h - e * g;
+        float A21 = b * g - a * h;
+        float A22 = a * e - b * d;
+
+        float det = a * A00 + b * A10 + c * A20;
+        if (std::fabs(det) < 1e-9f) return false;
+
+        float inv_det = 1.0f / det;
+        H_inv[0] = A00 * inv_det;
+        H_inv[1] = A01 * inv_det;
+        H_inv[2] = A02 * inv_det;
+        H_inv[3] = A10 * inv_det;
+        H_inv[4] = A11 * inv_det;
+        H_inv[5] = A12 * inv_det;
+        H_inv[6] = A20 * inv_det;
+        H_inv[7] = A21 * inv_det;
+        H_inv[8] = A22 * inv_det;
+
+        if (std::fabs(H_inv[8]) > 1e-9f) {
+            float norm = 1.0f / H_inv[8];
+            for (int k = 0; k < 9; ++k) H_inv[k] *= norm;
+        }
+        return true;
+    };
+
+    auto parse_quad_corners = [](const std::string& j, float corners[4][2]) -> bool {
+        auto pos = j.find("\"plane_corners\"");
+        if (pos == std::string::npos) return false;
+        auto b_open = j.find('[', pos);
+        if (b_open == std::string::npos) return false;
+        std::vector<float> nums;
+        size_t i = b_open + 1;
+        while (i < j.size() && nums.size() < 8) {
+            if (j[i] == '-' || (j[i] >= '0' && j[i] <= '9')) {
+                size_t end_idx = i;
+                while (end_idx < j.size() && (j[end_idx] == '-' || j[end_idx] == '.' || (j[end_idx] >= '0' && j[end_idx] <= '9'))) {
+                    end_idx++;
+                }
+                try {
+                    nums.push_back(std::stof(j.substr(i, end_idx - i)));
+                } catch (...) {}
+                i = end_idx;
+            } else if (j[i] == ']' && nums.size() >= 8) {
+                break;
+            } else {
+                i++;
+            }
+        }
+        if (nums.size() < 8) return false;
+        corners[0][0] = nums[0]; corners[0][1] = nums[1];
+        corners[1][0] = nums[2]; corners[1][1] = nums[3];
+        corners[2][0] = nums[4]; corners[2][1] = nums[5];
+        corners[3][0] = nums[6]; corners[3][1] = nums[7];
+        return true;
+    };
+
+    // ---- Shape: per_buffer / video_sandwich_matting (cu_guided_matting)
+    if (R.kernel_id == "cu_guided_matting") {
+        FARPROC p_main = sym[R.symbol_main]; // cu_sandwich_composite
+        if (!p_main) return fail("symbol", "Missing symbol_main: " + R.symbol_main);
+        FARPROC p_trimap = GetProcAddress(h, "cu_generate_skeleton_trimap");
+        if (!p_trimap) return fail("symbol", "Missing cu_generate_skeleton_trimap: " + win_err(GetLastError()));
+        FARPROC p_matting = GetProcAddress(h, "cu_guided_filter_matting");
+        if (!p_matting) return fail("symbol", "Missing cu_guided_filter_matting: " + win_err(GetLastError()));
+        FARPROC p_banner = GetProcAddress(h, "cu_render_graphic_banner");
+        if (!p_banner) return fail("symbol", "Missing cu_render_graphic_banner: " + win_err(GetLastError()));
+        FARPROC p_texture = GetProcAddress(h, "cu_render_graphic_texture");
+        FARPROC p_release = GetProcAddress(h, "cu_guided_matting_release");
+
+        struct MattingConfigHost {
+            int   radius;
+            float eps;
+            float inner_scale;
+            float outer_scale;
+            int   clamp_trimap_bounds;
+            float temporal_momentum;
+        };
+
+        typedef int (*fn_cu_trimap_t)(const float*, float*, int, int, float, const MattingConfigHost*, cudaStream_t);
+        typedef int (*fn_cu_matting_t)(const unsigned char*, const float*, float*, float*, int, int, const MattingConfigHost*, cudaStream_t);
+        typedef int (*fn_cu_banner_t)(unsigned char*, int, int, const float*, int, int,
+                                      unsigned char, unsigned char, unsigned char, unsigned char,
+                                      unsigned char, unsigned char, unsigned char, int, cudaStream_t);
+        typedef int (*fn_cu_texture_t)(unsigned char*, int, int, const float*, const unsigned char*, int, int, float, float, cudaStream_t);
+        typedef int (*fn_cu_sandwich_t)(const unsigned char*, const unsigned char*, const float*,
+                                        const float*, unsigned char*, unsigned char*, int, int, int, cudaStream_t);
+        typedef void (*fn_cu_release_t)(void);
+
+        auto fn_trimap   = (fn_cu_trimap_t)p_trimap;
+        auto fn_matting  = (fn_cu_matting_t)p_matting;
+        auto fn_banner   = (fn_cu_banner_t)p_banner;
+        auto fn_texture  = (fn_cu_texture_t)p_texture;
+        auto fn_sandwich = (fn_cu_sandwich_t)p_main;
+        auto fn_release  = (fn_cu_release_t)p_release;
+
+        int width = jget_int(R.params_json, "width", 720);
+        int height = jget_int(R.params_json, "height", 1280);
+        int max_frames = jget_int(R.params_json, "max_frames", 120);
+        int radius = jget_int(R.params_json, "radius", 8);
+        float eps = jget_float(R.params_json, "eps", 1e-3f);
+        float inner_scale = jget_float(R.params_json, "inner_scale", 1.0f);
+        float outer_scale = jget_float(R.params_json, "outer_scale", 1.8f);
+        int clamp_bounds = jget_int(R.params_json, "clamp_trimap_bounds", 1);
+        float m_per_px = jget_float(R.params_json, "meters_per_pixel", 0.0028f);
+
+        std::string tracks_path = jget(R.params_json, "skeleton_tracks_path");
+        if (tracks_path.empty()) {
+            tracks_path = "c:\\dev\\cu_vision_lite\\exports\\kinematics\\bowling\\skeleton_2d_tracks.json";
+        }
+        std::vector<std::vector<float>> tracks = load_skeleton_tracks(tracks_path, max_frames);
+
+        std::string out_video_path = (R.input == "synthetic") ? "" : (R.run_dir + "\\outputs\\sandwich_composite.mp4");
+        VideoStreamer streamer;
+        if (!streamer.open(R.input, out_video_path, width, height, max_frames)) {
+            return fail("input", streamer.err);
+        }
+
+        size_t bgr_bytes = (size_t)width * height * 3;
+        size_t bgra_bytes = (size_t)width * height * 4;
+        size_t map_bytes = (size_t)width * height * sizeof(float);
+        size_t kps_bytes = 17 * 3 * sizeof(float);
+
+        unsigned char *d_video_bgr = nullptr, *d_graphic_bgra = nullptr, *d_out_comp = nullptr;
+        float *d_trimap = nullptr, *d_alpha_matte = nullptr, *d_alpha_prev = nullptr, *d_kps = nullptr;
+
+        cudaError_t ce;
+        if ((ce = cudaMalloc((void**)&d_video_bgr, bgr_bytes)) != cudaSuccess) return fail("cuda", cuda_err("cudaMalloc(d_video_bgr)", ce));
+        if ((ce = cudaMalloc((void**)&d_graphic_bgra, bgra_bytes)) != cudaSuccess) return fail("cuda", cuda_err("cudaMalloc(d_graphic_bgra)", ce));
+        if ((ce = cudaMalloc((void**)&d_trimap, map_bytes)) != cudaSuccess) return fail("cuda", cuda_err("cudaMalloc(d_trimap)", ce));
+        if ((ce = cudaMalloc((void**)&d_alpha_matte, map_bytes)) != cudaSuccess) return fail("cuda", cuda_err("cudaMalloc(d_alpha_matte)", ce));
+        if ((ce = cudaMalloc((void**)&d_alpha_prev, map_bytes)) != cudaSuccess) return fail("cuda", cuda_err("cudaMalloc(d_alpha_prev)", ce));
+        if ((ce = cudaMalloc((void**)&d_out_comp, bgr_bytes)) != cudaSuccess) return fail("cuda", cuda_err("cudaMalloc(d_out_comp)", ce));
+        if ((ce = cudaMalloc((void**)&d_kps, kps_bytes)) != cudaSuccess) return fail("cuda", cuda_err("cudaMalloc(d_kps)", ce));
+
+        cudaMemset(d_alpha_prev, 0, map_bytes);
+
+        // Load and render 3D graffiti / graphic plate texture onto lane
+        std::string tex_path = jget(R.params_json, "texture_path");
+        if (tex_path.empty()) {
+            tex_path = "c:\\dev\\cu_vision_lite\\csrc\\graffiti_plate_1024x1024.bgra";
+        }
+        int tex_w = jget_int(R.params_json, "texture_width", 1024);
+        int tex_h = jget_int(R.params_json, "texture_height", 1024);
+        float opacity = jget_float(R.params_json, "opacity", 0.95f);
+        float specular_mix = jget_float(R.params_json, "specular_mix", 0.35f);
+
+        float corners[4][2];
+        if (!parse_quad_corners(R.params_json, corners)) {
+            // Default perspective placement on bowling lane
+            corners[0][0] = 120.0f; corners[0][1] = 370.0f; // TL
+            corners[1][0] = 600.0f; corners[1][1] = 370.0f; // TR
+            corners[2][0] = 690.0f; corners[2][1] = 740.0f; // BR
+            corners[3][0] =  30.0f; corners[3][1] = 740.0f; // BL
+        }
+        float H_inv[9] = { 0 };
+        compute_quad_homography_inv(corners, H_inv);
+
+        std::string tex_raw;
+        unsigned char* d_tex_bgra = nullptr;
+        bool tex_rendered = false;
+
+        if (fn_texture && read_file(tex_path, tex_raw) && tex_raw.size() >= (size_t)tex_w * tex_h * 4) {
+            size_t tex_bytes = (size_t)tex_w * tex_h * 4;
+            if (cudaMalloc((void**)&d_tex_bgra, tex_bytes) == cudaSuccess) {
+                cudaMemcpy(d_tex_bgra, tex_raw.data(), tex_bytes, cudaMemcpyHostToDevice);
+                fn_texture(d_graphic_bgra, width, height, H_inv, d_tex_bgra, tex_w, tex_h, opacity, specular_mix, 0);
+                tex_rendered = true;
+            }
+        }
+
+        if (!tex_rendered) {
+            // Direct GPU VRAM procedural HUD banner fallback
+            float H_inv_banner[9] = {
+                1.0f,  0.0f, -360.0f,
+                0.0f,  2.0f, -900.0f,
+                0.0f, -0.001f, 1.5f
+            };
+            int box_w = 640;
+            int box_h = 240;
+            fn_banner(d_graphic_bgra, width, height, H_inv_banner, box_w, box_h,
+                      180, 80, 20, 120,  // Background: Cyan/blue glass, 120 alpha (softer)
+                      0, 220, 255, 4,    // Border: Amber gold, 4px thick
+                      0);
+        }
+
+        MattingConfigHost cfg;
+        cfg.radius = radius;
+        cfg.eps = eps;
+        cfg.inner_scale = inner_scale;
+        cfg.outer_scale = outer_scale;
+        cfg.clamp_trimap_bounds = clamp_bounds;
+        cfg.temporal_momentum = jget_float(R.params_json, "temporal_alpha_momentum", 0.0f);
+
+        std::vector<int> preview_frames = { 45, 90, 135 };
+        auto p_pos = R.params_json.find("\"preview_frames\"");
+        if (p_pos != std::string::npos) {
+            auto b_open = R.params_json.find('[', p_pos);
+            auto b_close = R.params_json.find(']', b_open);
+            if (b_open != std::string::npos && b_close != std::string::npos) {
+                preview_frames.clear();
+                std::string sub = R.params_json.substr(b_open + 1, b_close - b_open - 1);
+                std::stringstream ss(sub);
+                std::string item;
+                while (std::getline(ss, item, ',')) {
+                    try {
+                        int val = std::stoi(item);
+                        preview_frames.push_back(val);
+                    } catch (...) {}
+                }
+            }
+        }
+        std::map<int, std::vector<unsigned char>> preview_buffers;
+        std::vector<unsigned char> h_bgr, h_gray, h_out_bgr(bgr_bytes);
+        std::vector<unsigned char> best_preview_bgr;
+
+        cudaEvent_t e0, e1; cudaEventCreate(&e0); cudaEventCreate(&e1);
+        size_t free0 = 0, free1 = 0, total = 0;
+        cudaMemGetInfo(&free0, &total);
+
+        cudaEventRecord(e0, 0);
+
+        int processed_frames = 0;
+        for (int f = 0; f < max_frames; ++f) {
+            if (!streamer.read_frame(h_bgr, h_gray, f)) break;
+
+            cudaMemcpy(d_video_bgr, h_bgr.data(), bgr_bytes, cudaMemcpyHostToDevice);
+
+            std::vector<float> f_kps(17 * 3, 0.0f);
+            if (f < (int)tracks.size()) {
+                f_kps = tracks[f];
+            } else if (!tracks.empty()) {
+                f_kps = tracks.back();
+            }
+            cudaMemcpy(d_kps, f_kps.data(), kps_bytes, cudaMemcpyHostToDevice);
+
+            // Step 1: Skeleton Trimap
+            int r_t = fn_trimap(d_kps, d_trimap, width, height, m_per_px, &cfg, 0);
+            if (r_t != 0) return fail("kernel_trimap", "cu_generate_skeleton_trimap failed: " + std::to_string(r_t));
+
+            // Step 2: Guided Filter Matting
+            int r_m = fn_matting(d_video_bgr, d_trimap, d_alpha_matte, d_alpha_prev, width, height, &cfg, 0);
+            if (r_m != 0) return fail("kernel_matting", "cu_guided_filter_matting failed: " + std::to_string(r_m));
+
+            // Step 3 & 4: 4-Step Optical Sandwich Composite (with contact shadow synthesis)
+            int r_s = fn_sandwich(d_video_bgr, d_graphic_bgra, d_alpha_matte, d_kps, d_out_comp, nullptr, width, height, f, 0);
+            if (r_s != 0) return fail("kernel_sandwich", "cu_sandwich_composite failed: " + std::to_string(r_s));
+
+            cudaMemcpy(h_out_bgr.data(), d_out_comp, bgr_bytes, cudaMemcpyDeviceToHost);
+
+            for (int pf : preview_frames) {
+                if (f == pf) {
+                    preview_buffers[pf] = h_out_bgr;
+                }
+            }
+            if (f == 90 || best_preview_bgr.empty()) {
+                best_preview_bgr = h_out_bgr;
+            }
+
+            streamer.write_frame(h_out_bgr);
+            processed_frames++;
+        }
+
+        cudaEventRecord(e1, 0);
+        cudaEventSynchronize(e1);
+        float ms = 0; cudaEventElapsedTime(&ms, e0, e1);
+        R.gpu_ms = ms;
+        cudaMemGetInfo(&free1, &total);
+        R.vram_peak_mb = free0 > free1 ? (double)(free0 - free1) / (1024.0 * 1024.0) : 0.0;
+
+        if (fn_release) fn_release();
+        if (d_tex_bgra) cudaFree(d_tex_bgra);
+        cudaFree(d_video_bgr);
+        cudaFree(d_graphic_bgra);
+        cudaFree(d_trimap);
+        cudaFree(d_alpha_matte);
+        cudaFree(d_alpha_prev);
+        cudaFree(d_out_comp);
+        cudaFree(d_kps);
+        streamer.close();
+
+        // Save parameterized preview frames spread
+        for (const auto& kv : preview_buffers) {
+            int pf = kv.first;
+            std::string preview_path = R.run_dir + "\\outputs\\preview_sandwich_f" + std::to_string(pf) + ".jpg";
+            if (save_jpg(preview_path, kv.second, width, height)) {
+                std::string psha; sha256_file(preview_path, psha, herr);
+                OutputItem oi_p;
+                oi_p.output_id = R.run_id + "_preview_f" + std::to_string(pf);
+                oi_p.path = "outputs/preview_sandwich_f" + std::to_string(pf) + ".jpg";
+                oi_p.kind = "image";
+                oi_p.bytes = (long long)fs::file_size(preview_path);
+                oi_p.sha256 = psha;
+                R.outputs.push_back(oi_p);
+            }
+        }
+
+        if (!best_preview_bgr.empty()) {
+            std::string preview_path = R.run_dir + "\\outputs\\preview_sandwich.jpg";
+            if (save_jpg(preview_path, best_preview_bgr, width, height)) {
+                std::string psha; sha256_file(preview_path, psha, herr);
+                OutputItem oi_p;
+                oi_p.output_id = R.run_id + "_preview_sandwich";
+                oi_p.path = "outputs/preview_sandwich.jpg";
+                oi_p.kind = "image";
+                oi_p.bytes = (long long)fs::file_size(preview_path);
+                oi_p.sha256 = psha;
+                R.outputs.push_back(oi_p);
+            }
+        }
+
+        if (!out_video_path.empty() && fs::exists(out_video_path)) {
+            std::string video_sha; sha256_file(out_video_path, video_sha, herr);
+            OutputItem oi_v;
+            oi_v.output_id = R.run_id + "_sandwich_composite_mp4";
+            oi_v.path = "outputs/sandwich_composite.mp4";
+            oi_v.kind = "video";
+            oi_v.bytes = (long long)fs::file_size(out_video_path);
+            oi_v.sha256 = video_sha;
+            R.outputs.push_back(oi_v);
+        }
+
+        std::ostringstream tj;
+        tj << "{\n  \"kernel_id\": \"cu_guided_matting\",\n"
+           << "  \"input\": " << json_s(R.input) << ",\n"
+           << "  \"golden_id\": " << json_s(R.golden_id) << ",\n"
+           << "  \"dimensions\": { \"width\": " << width << ", \"height\": " << height << " },\n"
+           << "  \"guided_filter_radius\": " << radius << ",\n"
+           << "  \"guided_filter_eps\": " << eps << ",\n"
+           << "  \"inner_scale\": " << inner_scale << ",\n"
+           << "  \"outer_scale\": " << outer_scale << ",\n"
+           << "  \"frames_processed\": " << processed_frames << ",\n"
+           << "  \"gpu_total_ms\": " << ms << ",\n"
+           << "  \"gpu_fps\": " << (ms > 0 ? (float)processed_frames / (ms / 1000.0f) : 0.0f) << "\n"
+           << "}\n";
+
+        std::string telem_path = R.run_dir + "\\outputs\\matting_telemetry.json";
+        write_file(telem_path, tj.str());
+
+        std::string telem_sha; sha256_file(telem_path, telem_sha, herr);
+        OutputItem oi;
+        oi.output_id = R.run_id + "_matting_telemetry_json";
+        oi.path = "outputs/matting_telemetry.json";
+        oi.kind = "telemetry_json";
+        oi.bytes = (long long)tj.str().size();
+        oi.sha256 = telem_sha;
         R.outputs.push_back(oi);
 
         R.frames = processed_frames;

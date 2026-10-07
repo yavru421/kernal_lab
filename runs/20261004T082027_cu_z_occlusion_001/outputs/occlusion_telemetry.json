@@ -1,0 +1,12 @@
+{
+  "kernel_id": "cu_z_occlusion",
+  "input": "C:\\Users\\John\\Downloads\\prahl_outings\\bowling.MOV",
+  "golden_id": "golden_z_occlusion_bowling_v1",
+  "dimensions": { "width": 720, "height": 1280 },
+  "graphic_depth_m": 3.5,
+  "subject_base_z_m": 2.2,
+  "feather_radius_m": 0.05,
+  "frames_processed": 180,
+  "gpu_total_ms": 923.083,
+  "gpu_fps": 194.999
+}

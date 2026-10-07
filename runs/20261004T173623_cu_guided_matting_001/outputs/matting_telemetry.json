@@ -1,0 +1,13 @@
+{
+  "kernel_id": "cu_guided_matting",
+  "input": "C:\\\\Users\\\\John\\\\Downloads\\\\backup.MOV",
+  "golden_id": "",
+  "dimensions": { "width": 720, "height": 1280 },
+  "guided_filter_radius": 8,
+  "guided_filter_eps": 0.001,
+  "inner_scale": 1,
+  "outer_scale": 1.8,
+  "frames_processed": 415,
+  "gpu_total_ms": 1992.99,
+  "gpu_fps": 208.229
+}

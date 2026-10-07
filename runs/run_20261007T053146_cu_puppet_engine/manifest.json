@@ -1,0 +1,17 @@
+{
+  "run_id": "run_20261007T053146_cu_puppet_engine",
+  "kernel_id": "cu_puppet_engine",
+  "caller": "kernel_lab",
+  "subject": "kermit_puppet_native_cuda",
+  "status": "success",
+  "ok": true,
+  "frames": 150,
+  "fps": 30,
+  "gpu_ms": 674.127,
+  "wall_ms": 674.344,
+  "fps_throughput": 222.438,
+  "outputs": [
+    "C:\dev\kernel_lab\runs\run_20261007T053146_cu_puppet_engine\outputs\kermit_puppet_with_audio_150f.mp4",
+    "C:\dev\kernel_lab\runs\run_20261007T053146_cu_puppet_engine\outputs\kermit_puppet_contact_sheet.png"
+  ]
+}

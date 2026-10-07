@@ -1,0 +1,24 @@
+{
+  "schema": "kernel_lab.manifest/v1",
+  "run_id": "20261004T081705_cu_z_occlusion_001", "status": "finished",
+  "host_version": "kernel_host/0.3.2",
+  "kernel": { "kernel_id": "cu_z_occlusion", "dll_path": "c:\\dev\\cu_vision_lite\\cu_z_occlusion.dll", "dll_sha256": "c1a913673f861a4cf1587c5466c709b314c04fcee33405d4b5dc1816c2f832f3", "shape": "per_buffer", "symbol_init": "", "symbol_main": "cu_composite_z_occlusion", "adapter": "c:\\dev\\kernel_lab\\host\\adapters\\cu_z_occlusion.json", "adapter_sha256": "769190d7f16b9ee152295a19c70115d33b2d345b9215fc5fec3356a529f8d725" },
+  "invocation": { "caller": "operator_eval", "subject": "bowling_z_occlusion", "params": {
+  "width": 720,
+  "height": 1280,
+  "max_frames": 180,
+  "graphic_depth_m": 2.8,
+  "subject_base_z_m": 2.2,
+  "feather_radius_m": 0.04,
+  "meters_per_pixel": 0.0028,
+  "skeleton_tracks_path": "c:\\dev\\cu_vision_lite\\exports\\kinematics\\bowling\\skeleton_2d_tracks.json"
+}
+, "golden_id": "golden_z_occlusion_bowling_v1" },
+  "input": { "path": "C:\\Users\\John\\Downloads\\prahl_outings\\bowling.MOV" },
+  "gpu": { "pre": "NVIDIA GeForce RTX 4060 Laptop GPU, 616.92, 8188 MiB, 1825 MiB, 49, 9 %, 8.9", "post": "NVIDIA GeForce RTX 4060 Laptop GPU, 616.92, 8188 MiB, 1907 MiB, 50, 36 %, 8.9" },
+  "timing": { "wall_ms": 1494.23, "gpu_ms": 1037.34, "timing_mode": "host_stream" },
+  "memory": { "vram_peak_mb": 0 },
+  "frames": 180,
+  "outputs": [{ "path": "outputs/preview_occlusion.jpg", "kind": "image", "bytes": 156793, "sha256": "41a33c2135ec4c5e58f0fdaba3320b68c7ea7ed06f3a76c55098a3b5f4cf9658" }, { "path": "outputs/occlusion_composite.mp4", "kind": "video", "bytes": 5653726, "sha256": "05391680d0eaa1ff6c929057c86574b6f5bf2c91e0090b6895cc3aedd3fc1948" }, { "path": "outputs/occlusion_telemetry.json", "kind": "telemetry_json", "bytes": 359, "sha256": "8ad1dd67ab4a436f0487443fa45932e285c2c495ed5c27b5ab90ee995528fef2" }],
+  "error": { "stage": "", "trace": "" }
+}

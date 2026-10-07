@@ -1,0 +1,16 @@
+{
+  "kernel_id": "cu_guided_matting",
+  "order": "5",
+  "shape": "per_buffer",
+  "symbol_init": "",
+  "init_args": "none",
+  "symbol_main": "cu_sandwich_composite",
+  "symbol_aux": "cu_generate_skeleton_trimap,cu_guided_filter_matting,cu_render_graphic_banner,cu_guided_matting_release",
+  "signature_source": "c:\\dev\\cu_vision_lite\\csrc\\cu_guided_matting.cu:310",
+  "signature_main": "int cu_sandwich_composite(const unsigned char* d_video_bgr, const unsigned char* d_graphic_bgra, const float* d_alpha_matte, unsigned char* d_out_composite, unsigned char* d_out_subject_vis, int width, int height, cudaStream_t stream)",
+  "decoder": "nvdec_bgr24",
+  "per": "frame",
+  "timing_mode": "host_stream",
+  "outputs": "sandwich_composite.mp4:video,preview_sandwich.jpg:image,matting_telemetry.json:telemetry_json",
+  "note": "Native AD107 4-step VFX optical sandwich compositor with skeleton trimap and CUDA guided filter matting"
+}

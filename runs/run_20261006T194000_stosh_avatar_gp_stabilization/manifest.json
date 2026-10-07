@@ -1,0 +1,34 @@
+{
+  "run_id": "run_20261006T194000_stosh_avatar_gp_stabilization",
+  "kernel_id": "cu_video_face_tracker",
+  "caller": "cu_vision_lite",
+  "subject": "stosh_mexico_crossing_border_gp_stabilization",
+  "status": "success",
+  "ok": true,
+  "frames": 150,
+  "fps": 30,
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "driver": "616.92",
+    "arch": "AD107 (sm_89)",
+    "vram_total_mb": 8188,
+    "vram_peak_mb": 1917
+  },
+  "stabilization_pipeline": {
+    "landmark_damping": "Savitzky-Golay filter (window=9, polyorder=2) bidirectional",
+    "jitter_reduction_pct": 36.0,
+    "max_spatial_deviation_px": 4.65,
+    "grease_pencil_engine": "Mesh-Driven Line Art modifier (GPv3) targeting Stosh_Outlines",
+    "hook_modifiers_removed": 106,
+    "takeoff_root_cause": "GP stroke points re-indexed dynamically across frames, causing per-point Hook modifiers to point at wrong array indices or degenerate points"
+  },
+  "outputs": [
+    "C:\\dev\\cu_vision_lite\\stosh_animated_avatar_smoothed_150f.mp4",
+    "C:\\dev\\cu_vision_lite\\renders\\stosh_avatar_smoothed_contact_sheet.png",
+    "C:\\dev\\kernel_lab\\runs\\run_20261006T140726_video_face_tracker\\outputs\\face_tracks_smoothed.json",
+    "C:\\dev\\cu_vision_lite\\face_tracking_scene.blend"
+  ],
+  "render_engine": "BLENDER_EEVEE (EEVEE Next Blender 5.2 LTS)",
+  "render_wall_ms": 111415.71,
+  "total_wall_ms": 112051.51
+}
