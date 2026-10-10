@@ -3,7 +3,10 @@
 Purpose: work ON CUDA kernels (build, benchmark, validate, improve) and LOG every use of them.
 This project does not own subject work (bowling, cinema, GVSM). Those projects call kernels; kernel_lab records and verifies it.
 
-Global Metropolis rules still apply (banned_software, mcp_routing, duckdb_cuda_acceleration, mind_lake, operator_rails, strict_versioning). Project-specific invariants:
+Global Metropolis rules still apply (substrate_autonomy, banned_software, mcp_routing, duckdb_cuda_acceleration, mind_lake, operator_rails, strict_versioning).
+Governed by the **Substrate Autonomy & Laboratory Velocity Doctrine**: *"Human possible without AI agents; human impractical without AI agents."* (See [SUBSTRATE_AUTONOMY_DOCTRINE.md](file:///c:/dev/docs/SUBSTRATE_AUTONOMY_DOCTRINE.md)).
+
+Project-specific invariants:
 
 1. **Ledger first.** Every kernel build, run and operator verdict becomes a row in `kernel_lab.duckdb` (schema: `sql/001_schema.sql`). No run counts as done until it is logged.
 2. **Verdicts are data.** When John says a result is good or garbage, write a `verdicts` row against the run. Never edit the run row.
