@@ -1,0 +1,195 @@
+{
+  "run_id": "run_20261009T131007_trailer_trip_kinematics",
+  "video_path": "G:\\My Drive\\Job Records\\OPEN\\cooper, nigel, concrete\\JohnandFrankly\\Cooper_7741.MOV",
+  "processed_frames": 8213,
+  "duration_seconds": 273.77,
+  "target_fps": 30.0,
+  "wall_time_seconds": 700.79,
+  "average_fps": 11.72,
+  "total_trips": 17,
+  "cumulative_tonnage_kg": 565.0,
+  "cumulative_tonnage_tons": 0.623,
+  "cumulative_tonnage_lbs": 1245.6,
+  "tripwire_limits": {
+    "trailer_x_limit": 450.0,
+    "trench_x_limit": 520.0
+  },
+  "mass_model": {
+    "single_carry_kg": 20.0,
+    "heavy_pry_2man_kg": 35.0,
+    "empty_return_kg": 0.0
+  },
+  "workers": {
+    "john": {
+      "subject_id": 0,
+      "role": "Trench Demo & Slab Pry",
+      "shirt_color": "Orange",
+      "trips": 4,
+      "cumulative_kg": 140.0,
+      "trip_events": [
+        {
+          "worker": "John (Orange)",
+          "trip": 1,
+          "frame": 1359,
+          "time_s": 45.3,
+          "mass_kg": 35.0,
+          "cumulative_kg": 35.0,
+          "is_two_man": true
+        },
+        {
+          "worker": "John (Orange)",
+          "trip": 2,
+          "frame": 4586,
+          "time_s": 152.87,
+          "mass_kg": 35.0,
+          "cumulative_kg": 70.0,
+          "is_two_man": true
+        },
+        {
+          "worker": "John (Orange)",
+          "trip": 3,
+          "frame": 4594,
+          "time_s": 153.13,
+          "mass_kg": 35.0,
+          "cumulative_kg": 105.0,
+          "is_two_man": true
+        },
+        {
+          "worker": "John (Orange)",
+          "trip": 4,
+          "frame": 4629,
+          "time_s": 154.3,
+          "mass_kg": 35.0,
+          "cumulative_kg": 140.0,
+          "is_two_man": true
+        }
+      ]
+    },
+    "skyler": {
+      "subject_id": 1,
+      "role": "Trailer Load & Dump Hoist",
+      "shirt_color": "Neon Yellow",
+      "trips": 13,
+      "cumulative_kg": 425.0,
+      "trip_events": [
+        {
+          "worker": "Skyler 'Frankly' (Yellow)",
+          "trip": 1,
+          "frame": 348,
+          "time_s": 11.6,
+          "mass_kg": 20.0,
+          "cumulative_kg": 20.0,
+          "is_two_man": false
+        },
+        {
+          "worker": "Skyler 'Frankly' (Yellow)",
+          "trip": 2,
+          "frame": 691,
+          "time_s": 23.03,
+          "mass_kg": 20.0,
+          "cumulative_kg": 40.0,
+          "is_two_man": false
+        },
+        {
+          "worker": "Skyler 'Frankly' (Yellow)",
+          "trip": 3,
+          "frame": 1236,
+          "time_s": 41.2,
+          "mass_kg": 35.0,
+          "cumulative_kg": 75.0,
+          "is_two_man": true
+        },
+        {
+          "worker": "Skyler 'Frankly' (Yellow)",
+          "trip": 4,
+          "frame": 1558,
+          "time_s": 51.93,
+          "mass_kg": 35.0,
+          "cumulative_kg": 110.0,
+          "is_two_man": true
+        },
+        {
+          "worker": "Skyler 'Frankly' (Yellow)",
+          "trip": 5,
+          "frame": 1951,
+          "time_s": 65.03,
+          "mass_kg": 35.0,
+          "cumulative_kg": 145.0,
+          "is_two_man": true
+        },
+        {
+          "worker": "Skyler 'Frankly' (Yellow)",
+          "trip": 6,
+          "frame": 2299,
+          "time_s": 76.63,
+          "mass_kg": 35.0,
+          "cumulative_kg": 180.0,
+          "is_two_man": true
+        },
+        {
+          "worker": "Skyler 'Frankly' (Yellow)",
+          "trip": 7,
+          "frame": 2699,
+          "time_s": 89.97,
+          "mass_kg": 35.0,
+          "cumulative_kg": 215.0,
+          "is_two_man": true
+        },
+        {
+          "worker": "Skyler 'Frankly' (Yellow)",
+          "trip": 8,
+          "frame": 3819,
+          "time_s": 127.3,
+          "mass_kg": 35.0,
+          "cumulative_kg": 250.0,
+          "is_two_man": true
+        },
+        {
+          "worker": "Skyler 'Frankly' (Yellow)",
+          "trip": 9,
+          "frame": 4471,
+          "time_s": 149.03,
+          "mass_kg": 35.0,
+          "cumulative_kg": 285.0,
+          "is_two_man": true
+        },
+        {
+          "worker": "Skyler 'Frankly' (Yellow)",
+          "trip": 10,
+          "frame": 4531,
+          "time_s": 151.03,
+          "mass_kg": 35.0,
+          "cumulative_kg": 320.0,
+          "is_two_man": true
+        },
+        {
+          "worker": "Skyler 'Frankly' (Yellow)",
+          "trip": 11,
+          "frame": 4779,
+          "time_s": 159.3,
+          "mass_kg": 35.0,
+          "cumulative_kg": 355.0,
+          "is_two_man": true
+        },
+        {
+          "worker": "Skyler 'Frankly' (Yellow)",
+          "trip": 12,
+          "frame": 5025,
+          "time_s": 167.5,
+          "mass_kg": 35.0,
+          "cumulative_kg": 390.0,
+          "is_two_man": false
+        },
+        {
+          "worker": "Skyler 'Frankly' (Yellow)",
+          "trip": 13,
+          "frame": 6367,
+          "time_s": 212.23,
+          "mass_kg": 35.0,
+          "cumulative_kg": 425.0,
+          "is_two_man": true
+        }
+      ]
+    }
+  }
+}

@@ -15,5 +15,9 @@ golden/*
 runs/**/outputs/*.mp4
 runs/**/outputs/*.mov
 runs/**/outputs/*.MOV
-runs/*.jpg
+runs/**/outputs/*.avi
+runs/**/*.jpg
+runs/**/*.jpeg
 
+# Loose scratch files
+scratch*

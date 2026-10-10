@@ -1,0 +1,40 @@
+{
+  "run_id": "run_20261009T125654_trailer_trip_kinematics",
+  "video_path": "G:\\My Drive\\Job Records\\OPEN\\cooper, nigel, concrete\\JohnandFrankly\\Cooper_7741.MOV",
+  "processed_frames": 60,
+  "duration_seconds": 2.0,
+  "target_fps": 30.0,
+  "wall_time_seconds": 4.8,
+  "average_fps": 12.49,
+  "total_trips": 0,
+  "cumulative_tonnage_kg": 0.0,
+  "cumulative_tonnage_tons": 0.0,
+  "cumulative_tonnage_lbs": 0.0,
+  "tripwire_limits": {
+    "trailer_x_limit": 450.0,
+    "trench_x_limit": 520.0
+  },
+  "mass_model": {
+    "single_carry_kg": 20.0,
+    "heavy_pry_2man_kg": 35.0,
+    "empty_return_kg": 0.0
+  },
+  "workers": {
+    "john": {
+      "subject_id": 0,
+      "role": "Trench Demo & Slab Pry",
+      "shirt_color": "Orange",
+      "trips": 0,
+      "cumulative_kg": 0.0,
+      "trip_events": []
+    },
+    "skyler": {
+      "subject_id": 1,
+      "role": "Trailer Load & Dump Hoist",
+      "shirt_color": "Neon Yellow",
+      "trips": 0,
+      "cumulative_kg": 0.0,
+      "trip_events": []
+    }
+  }
+}

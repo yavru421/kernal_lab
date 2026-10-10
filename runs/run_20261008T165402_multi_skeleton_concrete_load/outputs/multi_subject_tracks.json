@@ -1,0 +1,6749 @@
+[
+  {
+    "frame": 0,
+    "timestamp_s": 0.0,
+    "subjects": [
+      {
+        "theta_trunk_deg": 7.3,
+        "theta_knee_left_deg": 176.9,
+        "theta_knee_right_deg": 177.1,
+        "theta_elbow_left_deg": 179.3,
+        "theta_elbow_right_deg": 175.3,
+        "theta_cva_neck_deg": 73.1,
+        "l5_s1_moment_nm": 19.8,
+        "l5_s1_compression_n": 788.4,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 533.8,
+        "com_y": 273.7,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 0.3,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.95,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 91.595,
+        "bbox": [
+          474,
+          165,
+          591,
+          407
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 1,
+    "timestamp_s": 0.017,
+    "subjects": [
+      {
+        "theta_trunk_deg": 7.6,
+        "theta_knee_left_deg": 178.3,
+        "theta_knee_right_deg": 178.6,
+        "theta_elbow_left_deg": 179.7,
+        "theta_elbow_right_deg": 175.0,
+        "theta_cva_neck_deg": 73.5,
+        "l5_s1_moment_nm": 20.5,
+        "l5_s1_compression_n": 803.2,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 533.9,
+        "com_y": 273.4,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 0.1,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.95,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.961,
+        "bbox": [
+          475,
+          164,
+          591,
+          406
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 2,
+    "timestamp_s": 0.033,
+    "subjects": [
+      {
+        "theta_trunk_deg": 7.7,
+        "theta_knee_left_deg": 179.1,
+        "theta_knee_right_deg": 179.5,
+        "theta_elbow_left_deg": 179.6,
+        "theta_elbow_right_deg": 174.8,
+        "theta_cva_neck_deg": 73.8,
+        "l5_s1_moment_nm": 20.9,
+        "l5_s1_compression_n": 811.0,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 534.1,
+        "com_y": 273.3,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 0.1,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.95,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.893,
+        "bbox": [
+          475,
+          163,
+          591,
+          406
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 3,
+    "timestamp_s": 0.05,
+    "subjects": [
+      {
+        "theta_trunk_deg": 7.9,
+        "theta_knee_left_deg": 179.5,
+        "theta_knee_right_deg": 179.8,
+        "theta_elbow_left_deg": 179.4,
+        "theta_elbow_right_deg": 174.6,
+        "theta_cva_neck_deg": 74.7,
+        "l5_s1_moment_nm": 21.3,
+        "l5_s1_compression_n": 817.8,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 534.6,
+        "com_y": 272.8,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 0.4,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.94,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.996,
+        "bbox": [
+          474,
+          161,
+          590,
+          406
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 4,
+    "timestamp_s": 0.067,
+    "subjects": [
+      {
+        "theta_trunk_deg": 8.0,
+        "theta_knee_left_deg": 179.7,
+        "theta_knee_right_deg": 179.4,
+        "theta_elbow_left_deg": 179.9,
+        "theta_elbow_right_deg": 174.1,
+        "theta_cva_neck_deg": 76.2,
+        "l5_s1_moment_nm": 21.5,
+        "l5_s1_compression_n": 821.3,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 535.1,
+        "com_y": 272.5,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 0.8,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.94,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.953,
+        "bbox": [
+          473,
+          161,
+          590,
+          406
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 5,
+    "timestamp_s": 0.083,
+    "subjects": [
+      {
+        "theta_trunk_deg": 8.1,
+        "theta_knee_left_deg": 179.6,
+        "theta_knee_right_deg": 179.2,
+        "theta_elbow_left_deg": 179.9,
+        "theta_elbow_right_deg": 174.1,
+        "theta_cva_neck_deg": 77.4,
+        "l5_s1_moment_nm": 21.9,
+        "l5_s1_compression_n": 829.5,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 535.5,
+        "com_y": 271.5,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 1.0,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.94,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.923,
+        "bbox": [
+          473,
+          159,
+          590,
+          405
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 6,
+    "timestamp_s": 0.1,
+    "subjects": [
+      {
+        "theta_trunk_deg": 7.8,
+        "theta_knee_left_deg": 179.6,
+        "theta_knee_right_deg": 179.2,
+        "theta_elbow_left_deg": 179.9,
+        "theta_elbow_right_deg": 174.7,
+        "theta_cva_neck_deg": 78.7,
+        "l5_s1_moment_nm": 21.2,
+        "l5_s1_compression_n": 815.3,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 536.1,
+        "com_y": 271.0,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 1.4,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.93,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.048,
+        "bbox": [
+          474,
+          158,
+          589,
+          404
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 7,
+    "timestamp_s": 0.117,
+    "subjects": [
+      {
+        "theta_trunk_deg": 7.7,
+        "theta_knee_left_deg": 178.6,
+        "theta_knee_right_deg": 178.5,
+        "theta_elbow_left_deg": 179.8,
+        "theta_elbow_right_deg": 174.5,
+        "theta_cva_neck_deg": 79.4,
+        "l5_s1_moment_nm": 20.8,
+        "l5_s1_compression_n": 807.9,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 536.7,
+        "com_y": 270.4,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 1.7,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.93,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.927,
+        "bbox": [
+          474,
+          157,
+          588,
+          402
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 8,
+    "timestamp_s": 0.133,
+    "subjects": [
+      {
+        "theta_trunk_deg": 7.9,
+        "theta_knee_left_deg": 177.0,
+        "theta_knee_right_deg": 176.9,
+        "theta_elbow_left_deg": 179.1,
+        "theta_elbow_right_deg": 173.7,
+        "theta_cva_neck_deg": 80.1,
+        "l5_s1_moment_nm": 21.3,
+        "l5_s1_compression_n": 818.3,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 536.7,
+        "com_y": 270.0,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 1.9,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.93,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.002,
+        "bbox": [
+          474,
+          156,
+          588,
+          401
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 9,
+    "timestamp_s": 0.15,
+    "subjects": [
+      {
+        "theta_trunk_deg": 8.3,
+        "theta_knee_left_deg": 175.8,
+        "theta_knee_right_deg": 175.7,
+        "theta_elbow_left_deg": 178.9,
+        "theta_elbow_right_deg": 172.7,
+        "theta_cva_neck_deg": 80.6,
+        "l5_s1_moment_nm": 22.4,
+        "l5_s1_compression_n": 841.0,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 536.5,
+        "com_y": 269.5,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 2.0,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.93,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.102,
+        "bbox": [
+          476,
+          156,
+          587,
+          403
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 10,
+    "timestamp_s": 0.167,
+    "subjects": [
+      {
+        "theta_trunk_deg": 8.7,
+        "theta_knee_left_deg": 174.6,
+        "theta_knee_right_deg": 174.8,
+        "theta_elbow_left_deg": 178.9,
+        "theta_elbow_right_deg": 170.8,
+        "theta_cva_neck_deg": 81.0,
+        "l5_s1_moment_nm": 23.6,
+        "l5_s1_compression_n": 865.1,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 536.4,
+        "com_y": 269.6,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 2.2,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.93,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.922,
+        "bbox": [
+          477,
+          155,
+          586,
+          405
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 11,
+    "timestamp_s": 0.184,
+    "subjects": [
+      {
+        "theta_trunk_deg": 8.8,
+        "theta_knee_left_deg": 174.7,
+        "theta_knee_right_deg": 174.9,
+        "theta_elbow_left_deg": 179.5,
+        "theta_elbow_right_deg": 170.2,
+        "theta_cva_neck_deg": 81.7,
+        "l5_s1_moment_nm": 23.9,
+        "l5_s1_compression_n": 871.2,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 536.6,
+        "com_y": 269.2,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 2.4,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.93,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.936,
+        "bbox": [
+          478,
+          155,
+          584,
+          405
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 12,
+    "timestamp_s": 0.2,
+    "subjects": [
+      {
+        "theta_trunk_deg": 9.2,
+        "theta_knee_left_deg": 173.1,
+        "theta_knee_right_deg": 173.2,
+        "theta_elbow_left_deg": 179.9,
+        "theta_elbow_right_deg": 169.0,
+        "theta_cva_neck_deg": 82.8,
+        "l5_s1_moment_nm": 25.3,
+        "l5_s1_compression_n": 897.5,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 536.6,
+        "com_y": 268.8,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 2.6,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.92,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.903,
+        "bbox": [
+          478,
+          155,
+          583,
+          404
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 13,
+    "timestamp_s": 0.217,
+    "subjects": [
+      {
+        "theta_trunk_deg": 9.3,
+        "theta_knee_left_deg": 173.4,
+        "theta_knee_right_deg": 173.8,
+        "theta_elbow_left_deg": 179.5,
+        "theta_elbow_right_deg": 167.3,
+        "theta_cva_neck_deg": 83.7,
+        "l5_s1_moment_nm": 25.9,
+        "l5_s1_compression_n": 910.7,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 536.7,
+        "com_y": 269.2,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 3.0,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.92,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.0,
+        "bbox": [
+          479,
+          155,
+          582,
+          405
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 14,
+    "timestamp_s": 0.234,
+    "subjects": [
+      {
+        "theta_trunk_deg": 9.3,
+        "theta_knee_left_deg": 174.4,
+        "theta_knee_right_deg": 175.5,
+        "theta_elbow_left_deg": 178.3,
+        "theta_elbow_right_deg": 165.4,
+        "theta_cva_neck_deg": 84.1,
+        "l5_s1_moment_nm": 25.7,
+        "l5_s1_compression_n": 905.3,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 537.4,
+        "com_y": 268.8,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 3.3,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.92,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.819,
+        "bbox": [
+          481,
+          154,
+          581,
+          406
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 15,
+    "timestamp_s": 0.25,
+    "subjects": [
+      {
+        "theta_trunk_deg": 9.3,
+        "theta_knee_left_deg": 175.6,
+        "theta_knee_right_deg": 176.9,
+        "theta_elbow_left_deg": 177.6,
+        "theta_elbow_right_deg": 164.0,
+        "theta_cva_neck_deg": 84.6,
+        "l5_s1_moment_nm": 26.0,
+        "l5_s1_compression_n": 911.8,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 537.8,
+        "com_y": 268.5,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 3.5,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.92,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.1,
+        "bbox": [
+          481,
+          154,
+          580,
+          406
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 16,
+    "timestamp_s": 0.267,
+    "subjects": [
+      {
+        "theta_trunk_deg": 9.8,
+        "theta_knee_left_deg": 173.2,
+        "theta_knee_right_deg": 176.6,
+        "theta_elbow_left_deg": 174.9,
+        "theta_elbow_right_deg": 162.5,
+        "theta_cva_neck_deg": 87.2,
+        "l5_s1_moment_nm": 27.6,
+        "l5_s1_compression_n": 944.7,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 537.9,
+        "com_y": 267.5,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 3.7,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.92,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.849,
+        "bbox": [
+          482,
+          154,
+          580,
+          405
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 17,
+    "timestamp_s": 0.284,
+    "subjects": [
+      {
+        "theta_trunk_deg": 10.3,
+        "theta_knee_left_deg": 166.4,
+        "theta_knee_right_deg": 170.7,
+        "theta_elbow_left_deg": 176.5,
+        "theta_elbow_right_deg": 155.4,
+        "theta_cva_neck_deg": 87.4,
+        "l5_s1_moment_nm": 27.4,
+        "l5_s1_compression_n": 939.6,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 537.9,
+        "com_y": 266.9,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 3.5,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.93,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.832,
+        "bbox": [
+          484,
+          154,
+          579,
+          404
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 18,
+    "timestamp_s": 0.3,
+    "subjects": [
+      {
+        "theta_trunk_deg": 10.0,
+        "theta_knee_left_deg": 166.1,
+        "theta_knee_right_deg": 170.8,
+        "theta_elbow_left_deg": 176.9,
+        "theta_elbow_right_deg": 150.6,
+        "theta_cva_neck_deg": 87.7,
+        "l5_s1_moment_nm": 27.4,
+        "l5_s1_compression_n": 1123.9,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 538.5,
+        "com_y": 266.8,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 3.6,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.92,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.97,
+        "bbox": [
+          486,
+          155,
+          579,
+          403
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 18.7,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              477,
+              240,
+              589,
+              341
+            ],
+            "pixel_area": 936,
+            "area_cm2": 780.9,
+            "est_mass_kg": 18.7
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 19,
+    "timestamp_s": 0.317,
+    "subjects": [
+      {
+        "theta_trunk_deg": 9.7,
+        "theta_knee_left_deg": 166.8,
+        "theta_knee_right_deg": 171.6,
+        "theta_elbow_left_deg": 177.9,
+        "theta_elbow_right_deg": 147.1,
+        "theta_cva_neck_deg": 88.3,
+        "l5_s1_moment_nm": 26.9,
+        "l5_s1_compression_n": 1104.0,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 539.2,
+        "com_y": 266.9,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 3.8,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.92,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.965,
+        "bbox": [
+          487,
+          155,
+          579,
+          404
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 17.8,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              479,
+              240,
+              589,
+              339
+            ],
+            "pixel_area": 879,
+            "area_cm2": 740.2,
+            "est_mass_kg": 17.8
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 20,
+    "timestamp_s": 0.334,
+    "subjects": [
+      {
+        "theta_trunk_deg": 8.8,
+        "theta_knee_left_deg": 167.7,
+        "theta_knee_right_deg": 169.5,
+        "theta_elbow_left_deg": 177.2,
+        "theta_elbow_right_deg": 142.0,
+        "theta_cva_neck_deg": 88.8,
+        "l5_s1_moment_nm": 25.1,
+        "l5_s1_compression_n": 1059.5,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 540.9,
+        "com_y": 267.1,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 4.6,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.91,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.892,
+        "bbox": [
+          488,
+          155,
+          579,
+          406
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 16.8,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              485,
+              244,
+              589,
+              337
+            ],
+            "pixel_area": 786,
+            "area_cm2": 699.5,
+            "est_mass_kg": 16.8
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 21,
+    "timestamp_s": 0.35,
+    "subjects": [
+      {
+        "theta_trunk_deg": 8.5,
+        "theta_knee_left_deg": 168.5,
+        "theta_knee_right_deg": 169.9,
+        "theta_elbow_left_deg": 177.5,
+        "theta_elbow_right_deg": 140.7,
+        "theta_cva_neck_deg": 89.0,
+        "l5_s1_moment_nm": 25.1,
+        "l5_s1_compression_n": 1036.4,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 541.5,
+        "com_y": 267.5,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 4.8,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.91,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.835,
+        "bbox": [
+          488,
+          155,
+          579,
+          406
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 14.5,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              489,
+              246,
+              587,
+              334
+            ],
+            "pixel_area": 682,
+            "area_cm2": 603.9,
+            "est_mass_kg": 14.5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 22,
+    "timestamp_s": 0.367,
+    "subjects": [
+      {
+        "theta_trunk_deg": 8.5,
+        "theta_knee_left_deg": 170.0,
+        "theta_knee_right_deg": 171.3,
+        "theta_elbow_left_deg": 177.9,
+        "theta_elbow_right_deg": 138.9,
+        "theta_cva_neck_deg": 89.4,
+        "l5_s1_moment_nm": 25.0,
+        "l5_s1_compression_n": 1029.5,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 542.0,
+        "com_y": 267.0,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 4.9,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.91,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.987,
+        "bbox": [
+          488,
+          155,
+          580,
+          405
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 14.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              491,
+              245,
+              587,
+              332
+            ],
+            "pixel_area": 651,
+            "area_cm2": 583.1,
+            "est_mass_kg": 14.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 23,
+    "timestamp_s": 0.384,
+    "subjects": [
+      {
+        "theta_trunk_deg": 8.2,
+        "theta_knee_left_deg": 171.7,
+        "theta_knee_right_deg": 172.9,
+        "theta_elbow_left_deg": 177.9,
+        "theta_elbow_right_deg": 137.2,
+        "theta_cva_neck_deg": 89.2,
+        "l5_s1_moment_nm": 23.6,
+        "l5_s1_compression_n": 997.1,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 542.6,
+        "com_y": 267.1,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 5.1,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.9,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.016,
+        "bbox": [
+          488,
+          155,
+          580,
+          406
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 13.5,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              492,
+              246,
+              586,
+              330
+            ],
+            "pixel_area": 623,
+            "area_cm2": 560.9,
+            "est_mass_kg": 13.5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 24,
+    "timestamp_s": 0.4,
+    "subjects": [
+      {
+        "theta_trunk_deg": 8.4,
+        "theta_knee_left_deg": 173.1,
+        "theta_knee_right_deg": 173.9,
+        "theta_elbow_left_deg": 177.8,
+        "theta_elbow_right_deg": 137.0,
+        "theta_cva_neck_deg": 88.0,
+        "l5_s1_moment_nm": 24.5,
+        "l5_s1_compression_n": 1004.4,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 543.4,
+        "com_y": 266.9,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 5.3,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.9,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.887,
+        "bbox": [
+          489,
+          156,
+          581,
+          405
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 12.4,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              495,
+              246,
+              585,
+              327
+            ],
+            "pixel_area": 570,
+            "area_cm2": 516.6,
+            "est_mass_kg": 12.4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 25,
+    "timestamp_s": 0.417,
+    "subjects": [
+      {
+        "theta_trunk_deg": 8.9,
+        "theta_knee_left_deg": 174.0,
+        "theta_knee_right_deg": 174.8,
+        "theta_elbow_left_deg": 177.6,
+        "theta_elbow_right_deg": 135.9,
+        "theta_cva_neck_deg": 87.6,
+        "l5_s1_moment_nm": 25.6,
+        "l5_s1_compression_n": 1027.2,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 544.0,
+        "com_y": 267.0,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 5.6,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.9,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.931,
+        "bbox": [
+          489,
+          156,
+          581,
+          404
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 12.5,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              496,
+              247,
+              584,
+              327
+            ],
+            "pixel_area": 567,
+            "area_cm2": 519.3,
+            "est_mass_kg": 12.5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 26,
+    "timestamp_s": 0.434,
+    "subjects": [
+      {
+        "theta_trunk_deg": 9.2,
+        "theta_knee_left_deg": 176.1,
+        "theta_knee_right_deg": 176.6,
+        "theta_elbow_left_deg": 177.0,
+        "theta_elbow_right_deg": 133.5,
+        "theta_cva_neck_deg": 86.5,
+        "l5_s1_moment_nm": 27.5,
+        "l5_s1_compression_n": 1060.1,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 544.4,
+        "com_y": 267.5,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 5.9,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.9,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.071,
+        "bbox": [
+          489,
+          157,
+          582,
+          406
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 12.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              497,
+              248,
+              585,
+              327
+            ],
+            "pixel_area": 548,
+            "area_cm2": 499.3,
+            "est_mass_kg": 12.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 27,
+    "timestamp_s": 0.45,
+    "subjects": [
+      {
+        "theta_trunk_deg": 9.9,
+        "theta_knee_left_deg": 177.5,
+        "theta_knee_right_deg": 177.8,
+        "theta_elbow_left_deg": 177.0,
+        "theta_elbow_right_deg": 131.2,
+        "theta_cva_neck_deg": 85.8,
+        "l5_s1_moment_nm": 29.3,
+        "l5_s1_compression_n": 1079.7,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 545.0,
+        "com_y": 267.8,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 6.1,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.9,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.122,
+        "bbox": [
+          489,
+          157,
+          583,
+          408
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 10.4,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              499,
+              249,
+              583,
+              324
+            ],
+            "pixel_area": 475,
+            "area_cm2": 433.1,
+            "est_mass_kg": 10.4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 28,
+    "timestamp_s": 0.467,
+    "subjects": [
+      {
+        "theta_trunk_deg": 10.3,
+        "theta_knee_left_deg": 178.6,
+        "theta_knee_right_deg": 178.4,
+        "theta_elbow_left_deg": 175.9,
+        "theta_elbow_right_deg": 130.7,
+        "theta_cva_neck_deg": 85.1,
+        "l5_s1_moment_nm": 31.4,
+        "l5_s1_compression_n": 1129.2,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 545.6,
+        "com_y": 268.0,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 6.4,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.9,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.118,
+        "bbox": [
+          489,
+          157,
+          583,
+          409
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 11.1,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              499,
+              249,
+              585,
+              326
+            ],
+            "pixel_area": 507,
+            "area_cm2": 462.2,
+            "est_mass_kg": 11.1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 29,
+    "timestamp_s": 0.484,
+    "subjects": [
+      {
+        "theta_trunk_deg": 10.7,
+        "theta_knee_left_deg": 179.5,
+        "theta_knee_right_deg": 179.1,
+        "theta_elbow_left_deg": 176.1,
+        "theta_elbow_right_deg": 130.3,
+        "theta_cva_neck_deg": 84.8,
+        "l5_s1_moment_nm": 32.8,
+        "l5_s1_compression_n": 1157.5,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 546.2,
+        "com_y": 268.3,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 6.5,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.9,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.933,
+        "bbox": [
+          488,
+          157,
+          584,
+          409
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 11.1,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              500,
+              249,
+              586,
+              326
+            ],
+            "pixel_area": 509,
+            "area_cm2": 461.1,
+            "est_mass_kg": 11.1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 30,
+    "timestamp_s": 0.501,
+    "subjects": [
+      {
+        "theta_trunk_deg": 10.9,
+        "theta_knee_left_deg": 179.7,
+        "theta_knee_right_deg": 179.5,
+        "theta_elbow_left_deg": 175.1,
+        "theta_elbow_right_deg": 129.1,
+        "theta_cva_neck_deg": 84.1,
+        "l5_s1_moment_nm": 33.6,
+        "l5_s1_compression_n": 1170.2,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 547.0,
+        "com_y": 268.6,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 6.5,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.89,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.941,
+        "bbox": [
+          488,
+          157,
+          585,
+          411
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 10.8,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              501,
+              249,
+              587,
+              327
+            ],
+            "pixel_area": 497,
+            "area_cm2": 450.7,
+            "est_mass_kg": 10.8
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 31,
+    "timestamp_s": 0.517,
+    "subjects": [
+      {
+        "theta_trunk_deg": 11.1,
+        "theta_knee_left_deg": 179.0,
+        "theta_knee_right_deg": 179.0,
+        "theta_elbow_left_deg": 175.3,
+        "theta_elbow_right_deg": 128.6,
+        "theta_cva_neck_deg": 83.0,
+        "l5_s1_moment_nm": 32.1,
+        "l5_s1_compression_n": 1034.0,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 548.4,
+        "com_y": 268.8,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 6.4,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.88,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.005,
+        "bbox": [
+          488,
+          157,
+          586,
+          410
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 32,
+    "timestamp_s": 0.534,
+    "subjects": [
+      {
+        "theta_trunk_deg": 11.1,
+        "theta_knee_left_deg": 178.8,
+        "theta_knee_right_deg": 178.7,
+        "theta_elbow_left_deg": 175.2,
+        "theta_elbow_right_deg": 128.3,
+        "theta_cva_neck_deg": 82.5,
+        "l5_s1_moment_nm": 32.4,
+        "l5_s1_compression_n": 1040.3,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 549.0,
+        "com_y": 269.2,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 6.2,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.88,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.988,
+        "bbox": [
+          488,
+          157,
+          587,
+          410
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 33,
+    "timestamp_s": 0.551,
+    "subjects": [
+      {
+        "theta_trunk_deg": 11.1,
+        "theta_knee_left_deg": 178.2,
+        "theta_knee_right_deg": 178.2,
+        "theta_elbow_left_deg": 174.3,
+        "theta_elbow_right_deg": 130.9,
+        "theta_cva_neck_deg": 82.7,
+        "l5_s1_moment_nm": 32.7,
+        "l5_s1_compression_n": 1154.7,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 549.9,
+        "com_y": 269.6,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 6.0,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.88,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.065,
+        "bbox": [
+          487,
+          158,
+          588,
+          410
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 11.1,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              503,
+              249,
+              589,
+              326
+            ],
+            "pixel_area": 508,
+            "area_cm2": 463.5,
+            "est_mass_kg": 11.1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 34,
+    "timestamp_s": 0.567,
+    "subjects": [
+      {
+        "theta_trunk_deg": 11.1,
+        "theta_knee_left_deg": 178.4,
+        "theta_knee_right_deg": 178.4,
+        "theta_elbow_left_deg": 172.4,
+        "theta_elbow_right_deg": 130.4,
+        "theta_cva_neck_deg": 82.4,
+        "l5_s1_moment_nm": 33.0,
+        "l5_s1_compression_n": 1167.3,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 550.5,
+        "com_y": 269.9,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 6.2,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.89,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.898,
+        "bbox": [
+          488,
+          158,
+          589,
+          411
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 11.7,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              502,
+              249,
+              592,
+              330
+            ],
+            "pixel_area": 540,
+            "area_cm2": 488.1,
+            "est_mass_kg": 11.7
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 35,
+    "timestamp_s": 0.584,
+    "subjects": [
+      {
+        "theta_trunk_deg": 11.4,
+        "theta_knee_left_deg": 178.6,
+        "theta_knee_right_deg": 179.0,
+        "theta_elbow_left_deg": 171.3,
+        "theta_elbow_right_deg": 132.5,
+        "theta_cva_neck_deg": 82.4,
+        "l5_s1_moment_nm": 34.2,
+        "l5_s1_compression_n": 1206.4,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 551.0,
+        "com_y": 269.8,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 6.1,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.89,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.905,
+        "bbox": [
+          488,
+          158,
+          591,
+          411
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 13.2,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              501,
+              249,
+              593,
+              332
+            ],
+            "pixel_area": 605,
+            "area_cm2": 550.0,
+            "est_mass_kg": 13.2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 36,
+    "timestamp_s": 0.601,
+    "subjects": [
+      {
+        "theta_trunk_deg": 10.8,
+        "theta_knee_left_deg": 179.7,
+        "theta_knee_right_deg": 177.8,
+        "theta_elbow_left_deg": 174.1,
+        "theta_elbow_right_deg": 136.0,
+        "theta_cva_neck_deg": 83.0,
+        "l5_s1_moment_nm": 33.2,
+        "l5_s1_compression_n": 1188.0,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 550.8,
+        "com_y": 269.1,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 5.2,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.88,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.895,
+        "bbox": [
+          488,
+          159,
+          592,
+          411
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 13.5,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              501,
+              249,
+              595,
+              334
+            ],
+            "pixel_area": 641,
+            "area_cm2": 561.9,
+            "est_mass_kg": 13.5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 37,
+    "timestamp_s": 0.617,
+    "subjects": [
+      {
+        "theta_trunk_deg": 11.0,
+        "theta_knee_left_deg": 179.1,
+        "theta_knee_right_deg": 178.6,
+        "theta_elbow_left_deg": 177.8,
+        "theta_elbow_right_deg": 139.8,
+        "theta_cva_neck_deg": 84.4,
+        "l5_s1_moment_nm": 33.0,
+        "l5_s1_compression_n": 1184.3,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 551.5,
+        "com_y": 268.7,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 4.6,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.89,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.92,
+        "bbox": [
+          488,
+          159,
+          594,
+          411
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 13.5,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              500,
+              249,
+              596,
+              336
+            ],
+            "pixel_area": 654,
+            "area_cm2": 561.7,
+            "est_mass_kg": 13.5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 38,
+    "timestamp_s": 0.634,
+    "subjects": [
+      {
+        "theta_trunk_deg": 11.1,
+        "theta_knee_left_deg": 178.7,
+        "theta_knee_right_deg": 179.1,
+        "theta_elbow_left_deg": 178.4,
+        "theta_elbow_right_deg": 139.8,
+        "theta_cva_neck_deg": 84.2,
+        "l5_s1_moment_nm": 32.2,
+        "l5_s1_compression_n": 1179.0,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 552.6,
+        "com_y": 268.9,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 4.4,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.87,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.081,
+        "bbox": [
+          488,
+          159,
+          595,
+          411
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 14.6,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              499,
+              249,
+              597,
+              337
+            ],
+            "pixel_area": 708,
+            "area_cm2": 606.6,
+            "est_mass_kg": 14.6
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 39,
+    "timestamp_s": 0.651,
+    "subjects": [
+      {
+        "theta_trunk_deg": 11.6,
+        "theta_knee_left_deg": 179.4,
+        "theta_knee_right_deg": 179.3,
+        "theta_elbow_left_deg": 178.4,
+        "theta_elbow_right_deg": 141.6,
+        "theta_cva_neck_deg": 83.4,
+        "l5_s1_moment_nm": 35.2,
+        "l5_s1_compression_n": 1246.4,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 554.2,
+        "com_y": 269.3,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 4.6,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.87,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.967,
+        "bbox": [
+          488,
+          158,
+          596,
+          411
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 15.3,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              499,
+              249,
+              599,
+              339
+            ],
+            "pixel_area": 721,
+            "area_cm2": 636.1,
+            "est_mass_kg": 15.3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 40,
+    "timestamp_s": 0.667,
+    "subjects": [
+      {
+        "theta_trunk_deg": 12.0,
+        "theta_knee_left_deg": 178.3,
+        "theta_knee_right_deg": 179.3,
+        "theta_elbow_left_deg": 177.4,
+        "theta_elbow_right_deg": 143.2,
+        "theta_cva_neck_deg": 83.8,
+        "l5_s1_moment_nm": 38.3,
+        "l5_s1_compression_n": 1314.5,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 555.5,
+        "com_y": 269.1,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 4.4,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.86,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.941,
+        "bbox": [
+          488,
+          158,
+          597,
+          411
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 15.9,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              498,
+              249,
+              600,
+              341
+            ],
+            "pixel_area": 737,
+            "area_cm2": 664.1,
+            "est_mass_kg": 15.9
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 41,
+    "timestamp_s": 0.684,
+    "subjects": [
+      {
+        "theta_trunk_deg": 12.0,
+        "theta_knee_left_deg": 178.5,
+        "theta_knee_right_deg": 179.1,
+        "theta_elbow_left_deg": 179.1,
+        "theta_elbow_right_deg": 144.0,
+        "theta_cva_neck_deg": 84.8,
+        "l5_s1_moment_nm": 41.4,
+        "l5_s1_compression_n": 1369.5,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 556.4,
+        "com_y": 269.2,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 3.7,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.86,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.842,
+        "bbox": [
+          488,
+          159,
+          598,
+          410
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 15.3,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              501,
+              247,
+              597,
+              333
+            ],
+            "pixel_area": 663,
+            "area_cm2": 638.1,
+            "est_mass_kg": 15.3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 42,
+    "timestamp_s": 0.701,
+    "subjects": [
+      {
+        "theta_trunk_deg": 11.8,
+        "theta_knee_left_deg": 178.5,
+        "theta_knee_right_deg": 179.2,
+        "theta_elbow_left_deg": 178.5,
+        "theta_elbow_right_deg": 148.2,
+        "theta_cva_neck_deg": 87.7,
+        "l5_s1_moment_nm": 43.1,
+        "l5_s1_compression_n": 1402.7,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 557.9,
+        "com_y": 268.7,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 3.3,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.87,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.857,
+        "bbox": [
+          488,
+          157,
+          600,
+          410
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 15.1,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              501,
+              247,
+              599,
+              335
+            ],
+            "pixel_area": 657,
+            "area_cm2": 627.2,
+            "est_mass_kg": 15.1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 43,
+    "timestamp_s": 0.717,
+    "subjects": [
+      {
+        "theta_trunk_deg": 12.1,
+        "theta_knee_left_deg": 178.2,
+        "theta_knee_right_deg": 178.9,
+        "theta_elbow_left_deg": 179.2,
+        "theta_elbow_right_deg": 150.7,
+        "theta_cva_neck_deg": 89.0,
+        "l5_s1_moment_nm": 44.7,
+        "l5_s1_compression_n": 1447.2,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 558.9,
+        "com_y": 268.7,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 3.3,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.88,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.956,
+        "bbox": [
+          488,
+          155,
+          602,
+          411
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 16.4,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              499,
+              250,
+              601,
+              342
+            ],
+            "pixel_area": 742,
+            "area_cm2": 682.1,
+            "est_mass_kg": 16.4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 44,
+    "timestamp_s": 0.734,
+    "subjects": [
+      {
+        "theta_trunk_deg": 11.9,
+        "theta_knee_left_deg": 178.0,
+        "theta_knee_right_deg": 178.6,
+        "theta_elbow_left_deg": 178.8,
+        "theta_elbow_right_deg": 152.3,
+        "theta_cva_neck_deg": 88.5,
+        "l5_s1_moment_nm": 46.0,
+        "l5_s1_compression_n": 1494.7,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 560.0,
+        "com_y": 268.7,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 3.3,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.88,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.964,
+        "bbox": [
+          489,
+          156,
+          604,
+          410
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 18.6,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              498,
+              249,
+              604,
+              344
+            ],
+            "pixel_area": 832,
+            "area_cm2": 773.0,
+            "est_mass_kg": 18.6
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 45,
+    "timestamp_s": 0.751,
+    "subjects": [
+      {
+        "theta_trunk_deg": 12.1,
+        "theta_knee_left_deg": 177.9,
+        "theta_knee_right_deg": 178.5,
+        "theta_elbow_left_deg": 178.1,
+        "theta_elbow_right_deg": 152.6,
+        "theta_cva_neck_deg": 87.8,
+        "l5_s1_moment_nm": 36.9,
+        "l5_s1_compression_n": 1129.5,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 561.1,
+        "com_y": 268.5,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 3.2,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.88,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.915,
+        "bbox": [
+          489,
+          156,
+          605,
+          409
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 46,
+    "timestamp_s": 0.767,
+    "subjects": [
+      {
+        "theta_trunk_deg": 12.2,
+        "theta_knee_left_deg": 176.4,
+        "theta_knee_right_deg": 177.3,
+        "theta_elbow_left_deg": 178.4,
+        "theta_elbow_right_deg": 152.8,
+        "theta_cva_neck_deg": 88.1,
+        "l5_s1_moment_nm": 37.5,
+        "l5_s1_compression_n": 1141.9,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 562.3,
+        "com_y": 268.0,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 3.1,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.88,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.948,
+        "bbox": [
+          489,
+          155,
+          606,
+          409
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 47,
+    "timestamp_s": 0.784,
+    "subjects": [
+      {
+        "theta_trunk_deg": 12.4,
+        "theta_knee_left_deg": 173.9,
+        "theta_knee_right_deg": 175.2,
+        "theta_elbow_left_deg": 178.4,
+        "theta_elbow_right_deg": 153.4,
+        "theta_cva_neck_deg": 89.3,
+        "l5_s1_moment_nm": 37.7,
+        "l5_s1_compression_n": 1146.1,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 563.3,
+        "com_y": 267.2,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 2.9,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.89,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.04,
+        "bbox": [
+          489,
+          154,
+          608,
+          409
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 48,
+    "timestamp_s": 0.801,
+    "subjects": [
+      {
+        "theta_trunk_deg": 12.4,
+        "theta_knee_left_deg": 172.6,
+        "theta_knee_right_deg": 173.8,
+        "theta_elbow_left_deg": 179.2,
+        "theta_elbow_right_deg": 154.0,
+        "theta_cva_neck_deg": 89.6,
+        "l5_s1_moment_nm": 38.3,
+        "l5_s1_compression_n": 1157.8,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 564.2,
+        "com_y": 267.0,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 2.7,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.89,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.941,
+        "bbox": [
+          488,
+          153,
+          608,
+          409
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 49,
+    "timestamp_s": 0.817,
+    "subjects": [
+      {
+        "theta_trunk_deg": 13.7,
+        "theta_knee_left_deg": 173.4,
+        "theta_knee_right_deg": 172.8,
+        "theta_elbow_left_deg": 168.3,
+        "theta_elbow_right_deg": 149.8,
+        "theta_cva_neck_deg": 84.6,
+        "l5_s1_moment_nm": 43.0,
+        "l5_s1_compression_n": 1252.9,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 564.6,
+        "com_y": 268.3,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 4.2,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.91,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.96,
+        "bbox": [
+          488,
+          153,
+          610,
+          409
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 50,
+    "timestamp_s": 0.834,
+    "subjects": [
+      {
+        "theta_trunk_deg": 16.4,
+        "theta_knee_left_deg": 173.8,
+        "theta_knee_right_deg": 173.5,
+        "theta_elbow_left_deg": 171.9,
+        "theta_elbow_right_deg": 138.2,
+        "theta_cva_neck_deg": 81.5,
+        "l5_s1_moment_nm": 51.2,
+        "l5_s1_compression_n": 1415.4,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 562.6,
+        "com_y": 270.0,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 6.0,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.91,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.888,
+        "bbox": [
+          489,
+          158,
+          611,
+          410
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 51,
+    "timestamp_s": 0.851,
+    "subjects": [
+      {
+        "theta_trunk_deg": 17.1,
+        "theta_knee_left_deg": 174.9,
+        "theta_knee_right_deg": 174.0,
+        "theta_elbow_left_deg": 171.2,
+        "theta_elbow_right_deg": 137.2,
+        "theta_cva_neck_deg": 80.9,
+        "l5_s1_moment_nm": 54.7,
+        "l5_s1_compression_n": 1486.3,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 563.0,
+        "com_y": 270.3,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 6.7,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.91,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.454,
+        "bbox": [
+          489,
+          159,
+          612,
+          410
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 52,
+    "timestamp_s": 0.868,
+    "subjects": [
+      {
+        "theta_trunk_deg": 18.1,
+        "theta_knee_left_deg": 175.7,
+        "theta_knee_right_deg": 174.3,
+        "theta_elbow_left_deg": 171.3,
+        "theta_elbow_right_deg": 139.0,
+        "theta_cva_neck_deg": 83.6,
+        "l5_s1_moment_nm": 57.7,
+        "l5_s1_compression_n": 1547.1,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 563.2,
+        "com_y": 270.0,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 6.3,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.92,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.923,
+        "bbox": [
+          488,
+          157,
+          614,
+          412
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 53,
+    "timestamp_s": 0.884,
+    "subjects": [
+      {
+        "theta_trunk_deg": 18.2,
+        "theta_knee_left_deg": 175.6,
+        "theta_knee_right_deg": 173.8,
+        "theta_elbow_left_deg": 170.1,
+        "theta_elbow_right_deg": 140.5,
+        "theta_cva_neck_deg": 85.0,
+        "l5_s1_moment_nm": 57.5,
+        "l5_s1_compression_n": 1542.5,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 563.8,
+        "com_y": 270.4,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 6.2,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.93,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.983,
+        "bbox": [
+          489,
+          156,
+          615,
+          412
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 54,
+    "timestamp_s": 0.901,
+    "subjects": [
+      {
+        "theta_trunk_deg": 19.1,
+        "theta_knee_left_deg": 175.7,
+        "theta_knee_right_deg": 173.2,
+        "theta_elbow_left_deg": 169.6,
+        "theta_elbow_right_deg": 142.3,
+        "theta_cva_neck_deg": 82.8,
+        "l5_s1_moment_nm": 59.4,
+        "l5_s1_compression_n": 1580.3,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 565.0,
+        "com_y": 270.8,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 6.6,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.92,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.004,
+        "bbox": [
+          489,
+          159,
+          617,
+          413
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 55,
+    "timestamp_s": 0.918,
+    "subjects": [
+      {
+        "theta_trunk_deg": 19.7,
+        "theta_knee_left_deg": 173.7,
+        "theta_knee_right_deg": 170.9,
+        "theta_elbow_left_deg": 165.6,
+        "theta_elbow_right_deg": 143.8,
+        "theta_cva_neck_deg": 79.9,
+        "l5_s1_moment_nm": 60.5,
+        "l5_s1_compression_n": 1603.2,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 566.1,
+        "com_y": 271.2,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 6.9,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.91,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.947,
+        "bbox": [
+          489,
+          160,
+          620,
+          413
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 56,
+    "timestamp_s": 0.934,
+    "subjects": [
+      {
+        "theta_trunk_deg": 18.9,
+        "theta_knee_left_deg": 165.4,
+        "theta_knee_right_deg": 174.1,
+        "theta_elbow_left_deg": 166.4,
+        "theta_elbow_right_deg": 158.1,
+        "theta_cva_neck_deg": 80.5,
+        "l5_s1_moment_nm": 57.9,
+        "l5_s1_compression_n": 1549.5,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 568.3,
+        "com_y": 270.4,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 5.1,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.92,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.809,
+        "bbox": [
+          490,
+          158,
+          621,
+          413
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 57,
+    "timestamp_s": 0.951,
+    "subjects": [
+      {
+        "theta_trunk_deg": 19.6,
+        "theta_knee_left_deg": 170.1,
+        "theta_knee_right_deg": 167.9,
+        "theta_elbow_left_deg": 160.1,
+        "theta_elbow_right_deg": 150.1,
+        "theta_cva_neck_deg": 81.0,
+        "l5_s1_moment_nm": 60.6,
+        "l5_s1_compression_n": 1603.8,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 568.3,
+        "com_y": 271.9,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 6.6,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.92,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.94,
+        "bbox": [
+          490,
+          159,
+          623,
+          413
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 58,
+    "timestamp_s": 0.968,
+    "subjects": [
+      {
+        "theta_trunk_deg": 19.6,
+        "theta_knee_left_deg": 170.6,
+        "theta_knee_right_deg": 166.6,
+        "theta_elbow_left_deg": 158.0,
+        "theta_elbow_right_deg": 149.8,
+        "theta_cva_neck_deg": 81.1,
+        "l5_s1_moment_nm": 61.5,
+        "l5_s1_compression_n": 1621.7,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 569.4,
+        "com_y": 271.9,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 6.7,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.92,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.968,
+        "bbox": [
+          491,
+          159,
+          624,
+          413
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 59,
+    "timestamp_s": 0.984,
+    "subjects": [
+      {
+        "theta_trunk_deg": 19.9,
+        "theta_knee_left_deg": 170.4,
+        "theta_knee_right_deg": 166.3,
+        "theta_elbow_left_deg": 157.2,
+        "theta_elbow_right_deg": 149.7,
+        "theta_cva_neck_deg": 81.3,
+        "l5_s1_moment_nm": 62.6,
+        "l5_s1_compression_n": 1644.5,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 570.5,
+        "com_y": 272.3,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 6.7,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.92,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.968,
+        "bbox": [
+          493,
+          160,
+          625,
+          412
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 60,
+    "timestamp_s": 1.001,
+    "subjects": [
+      {
+        "theta_trunk_deg": 20.0,
+        "theta_knee_left_deg": 169.5,
+        "theta_knee_right_deg": 165.4,
+        "theta_elbow_left_deg": 157.7,
+        "theta_elbow_right_deg": 148.5,
+        "theta_cva_neck_deg": 81.3,
+        "l5_s1_moment_nm": 63.1,
+        "l5_s1_compression_n": 1654.9,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 571.1,
+        "com_y": 272.6,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 6.5,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.91,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.935,
+        "bbox": [
+          493,
+          161,
+          626,
+          412
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 61,
+    "timestamp_s": 1.018,
+    "subjects": [
+      {
+        "theta_trunk_deg": 19.2,
+        "theta_knee_left_deg": 164.0,
+        "theta_knee_right_deg": 171.9,
+        "theta_elbow_left_deg": 161.7,
+        "theta_elbow_right_deg": 156.0,
+        "theta_cva_neck_deg": 82.6,
+        "l5_s1_moment_nm": 61.1,
+        "l5_s1_compression_n": 1614.9,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 572.3,
+        "com_y": 271.2,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 2.6,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.91,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.956,
+        "bbox": [
+          494,
+          161,
+          626,
+          412
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 62,
+    "timestamp_s": 1.034,
+    "subjects": [
+      {
+        "theta_trunk_deg": 18.4,
+        "theta_knee_left_deg": 163.4,
+        "theta_knee_right_deg": 173.1,
+        "theta_elbow_left_deg": 163.2,
+        "theta_elbow_right_deg": 157.8,
+        "theta_cva_neck_deg": 82.0,
+        "l5_s1_moment_nm": 60.2,
+        "l5_s1_compression_n": 1596.2,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 572.7,
+        "com_y": 271.6,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 2.4,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.91,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.987,
+        "bbox": [
+          495,
+          162,
+          625,
+          413
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 63,
+    "timestamp_s": 1.051,
+    "subjects": [
+      {
+        "theta_trunk_deg": 18.0,
+        "theta_knee_left_deg": 163.2,
+        "theta_knee_right_deg": 172.1,
+        "theta_elbow_left_deg": 162.9,
+        "theta_elbow_right_deg": 158.9,
+        "theta_cva_neck_deg": 80.8,
+        "l5_s1_moment_nm": 61.0,
+        "l5_s1_compression_n": 1611.3,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 573.2,
+        "com_y": 271.3,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 2.2,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.9,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.948,
+        "bbox": [
+          495,
+          162,
+          626,
+          412
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 64,
+    "timestamp_s": 1.068,
+    "subjects": [
+      {
+        "theta_trunk_deg": 18.8,
+        "theta_knee_left_deg": 163.4,
+        "theta_knee_right_deg": 170.3,
+        "theta_elbow_left_deg": 165.4,
+        "theta_elbow_right_deg": 155.1,
+        "theta_cva_neck_deg": 82.5,
+        "l5_s1_moment_nm": 64.0,
+        "l5_s1_compression_n": 1672.9,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 573.7,
+        "com_y": 271.3,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 4.3,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.91,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.164,
+        "bbox": [
+          496,
+          162,
+          627,
+          411
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 65,
+    "timestamp_s": 1.084,
+    "subjects": [
+      {
+        "theta_trunk_deg": 19.1,
+        "theta_knee_left_deg": 164.1,
+        "theta_knee_right_deg": 170.2,
+        "theta_elbow_left_deg": 165.2,
+        "theta_elbow_right_deg": 153.9,
+        "theta_cva_neck_deg": 82.0,
+        "l5_s1_moment_nm": 65.8,
+        "l5_s1_compression_n": 1708.2,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 574.1,
+        "com_y": 271.5,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 4.8,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.91,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.064,
+        "bbox": [
+          497,
+          162,
+          628,
+          411
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 66,
+    "timestamp_s": 1.101,
+    "subjects": [
+      {
+        "theta_trunk_deg": 19.4,
+        "theta_knee_left_deg": 165.1,
+        "theta_knee_right_deg": 170.4,
+        "theta_elbow_left_deg": 166.7,
+        "theta_elbow_right_deg": 152.2,
+        "theta_cva_neck_deg": 82.2,
+        "l5_s1_moment_nm": 67.1,
+        "l5_s1_compression_n": 1733.3,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 574.6,
+        "com_y": 271.6,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 5.0,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.91,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.89,
+        "bbox": [
+          498,
+          161,
+          628,
+          411
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 67,
+    "timestamp_s": 1.118,
+    "subjects": [
+      {
+        "theta_trunk_deg": 19.9,
+        "theta_knee_left_deg": 166.4,
+        "theta_knee_right_deg": 171.4,
+        "theta_elbow_left_deg": 166.0,
+        "theta_elbow_right_deg": 150.0,
+        "theta_cva_neck_deg": 81.8,
+        "l5_s1_moment_nm": 69.0,
+        "l5_s1_compression_n": 1772.5,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 574.9,
+        "com_y": 272.3,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 5.3,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.91,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.01,
+        "bbox": [
+          498,
+          162,
+          630,
+          411
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 68,
+    "timestamp_s": 1.134,
+    "subjects": [
+      {
+        "theta_trunk_deg": 20.5,
+        "theta_knee_left_deg": 166.2,
+        "theta_knee_right_deg": 171.4,
+        "theta_elbow_left_deg": 164.7,
+        "theta_elbow_right_deg": 149.2,
+        "theta_cva_neck_deg": 81.7,
+        "l5_s1_moment_nm": 70.7,
+        "l5_s1_compression_n": 1806.9,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 575.7,
+        "com_y": 272.3,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 5.6,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.92,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.999,
+        "bbox": [
+          499,
+          162,
+          631,
+          410
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 69,
+    "timestamp_s": 1.151,
+    "subjects": [
+      {
+        "theta_trunk_deg": 21.5,
+        "theta_knee_left_deg": 165.3,
+        "theta_knee_right_deg": 170.3,
+        "theta_elbow_left_deg": 163.8,
+        "theta_elbow_right_deg": 148.0,
+        "theta_cva_neck_deg": 81.2,
+        "l5_s1_moment_nm": 74.0,
+        "l5_s1_compression_n": 1872.4,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 576.7,
+        "com_y": 271.8,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 5.7,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.92,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.825,
+        "bbox": [
+          500,
+          161,
+          633,
+          410
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 70,
+    "timestamp_s": 1.168,
+    "subjects": [
+      {
+        "theta_trunk_deg": 22.2,
+        "theta_knee_left_deg": 165.5,
+        "theta_knee_right_deg": 170.4,
+        "theta_elbow_left_deg": 162.8,
+        "theta_elbow_right_deg": 147.2,
+        "theta_cva_neck_deg": 81.6,
+        "l5_s1_moment_nm": 76.4,
+        "l5_s1_compression_n": 1920.5,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 577.5,
+        "com_y": 271.6,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 5.7,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.92,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.909,
+        "bbox": [
+          501,
+          160,
+          635,
+          411
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 71,
+    "timestamp_s": 1.185,
+    "subjects": [
+      {
+        "theta_trunk_deg": 22.3,
+        "theta_knee_left_deg": 164.8,
+        "theta_knee_right_deg": 169.7,
+        "theta_elbow_left_deg": 163.4,
+        "theta_elbow_right_deg": 147.2,
+        "theta_cva_neck_deg": 80.7,
+        "l5_s1_moment_nm": 77.7,
+        "l5_s1_compression_n": 1947.1,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 578.3,
+        "com_y": 271.4,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 5.9,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.92,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.876,
+        "bbox": [
+          503,
+          160,
+          635,
+          411
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 72,
+    "timestamp_s": 1.201,
+    "subjects": [
+      {
+        "theta_trunk_deg": 22.1,
+        "theta_knee_left_deg": 165.6,
+        "theta_knee_right_deg": 170.0,
+        "theta_elbow_left_deg": 163.8,
+        "theta_elbow_right_deg": 146.0,
+        "theta_cva_neck_deg": 80.0,
+        "l5_s1_moment_nm": 78.4,
+        "l5_s1_compression_n": 1959.9,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 579.0,
+        "com_y": 271.3,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 6.0,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.92,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.885,
+        "bbox": [
+          506,
+          160,
+          635,
+          411
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 73,
+    "timestamp_s": 1.218,
+    "subjects": [
+      {
+        "theta_trunk_deg": 21.7,
+        "theta_knee_left_deg": 166.6,
+        "theta_knee_right_deg": 170.0,
+        "theta_elbow_left_deg": 164.4,
+        "theta_elbow_right_deg": 145.3,
+        "theta_cva_neck_deg": 77.8,
+        "l5_s1_moment_nm": 79.8,
+        "l5_s1_compression_n": 1988.4,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 579.4,
+        "com_y": 271.1,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 6.1,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.91,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.184,
+        "bbox": [
+          508,
+          159,
+          636,
+          411
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 74,
+    "timestamp_s": 1.235,
+    "subjects": [
+      {
+        "theta_trunk_deg": 21.9,
+        "theta_knee_left_deg": 167.6,
+        "theta_knee_right_deg": 170.6,
+        "theta_elbow_left_deg": 165.2,
+        "theta_elbow_right_deg": 144.5,
+        "theta_cva_neck_deg": 77.0,
+        "l5_s1_moment_nm": 81.2,
+        "l5_s1_compression_n": 2016.2,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 579.6,
+        "com_y": 270.8,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 6.2,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.91,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.945,
+        "bbox": [
+          509,
+          158,
+          636,
+          412
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 75,
+    "timestamp_s": 1.251,
+    "subjects": [
+      {
+        "theta_trunk_deg": 21.6,
+        "theta_knee_left_deg": 168.1,
+        "theta_knee_right_deg": 170.6,
+        "theta_elbow_left_deg": 164.7,
+        "theta_elbow_right_deg": 143.6,
+        "theta_cva_neck_deg": 74.5,
+        "l5_s1_moment_nm": 83.2,
+        "l5_s1_compression_n": 2055.8,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 579.7,
+        "com_y": 270.6,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 6.6,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.91,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.017,
+        "bbox": [
+          510,
+          158,
+          637,
+          412
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 76,
+    "timestamp_s": 1.268,
+    "subjects": [
+      {
+        "theta_trunk_deg": 21.5,
+        "theta_knee_left_deg": 169.8,
+        "theta_knee_right_deg": 172.0,
+        "theta_elbow_left_deg": 164.9,
+        "theta_elbow_right_deg": 142.7,
+        "theta_cva_neck_deg": 71.5,
+        "l5_s1_moment_nm": 85.2,
+        "l5_s1_compression_n": 2096.7,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 580.1,
+        "com_y": 270.4,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 7.2,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.9,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.915,
+        "bbox": [
+          511,
+          158,
+          638,
+          412
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 77,
+    "timestamp_s": 1.285,
+    "subjects": [
+      {
+        "theta_trunk_deg": 21.0,
+        "theta_knee_left_deg": 171.3,
+        "theta_knee_right_deg": 173.1,
+        "theta_elbow_left_deg": 164.7,
+        "theta_elbow_right_deg": 142.5,
+        "theta_cva_neck_deg": 69.1,
+        "l5_s1_moment_nm": 86.8,
+        "l5_s1_compression_n": 2127.3,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 580.6,
+        "com_y": 270.7,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 7.8,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.9,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.973,
+        "bbox": [
+          513,
+          157,
+          639,
+          414
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 78,
+    "timestamp_s": 1.301,
+    "subjects": [
+      {
+        "theta_trunk_deg": 21.3,
+        "theta_knee_left_deg": 172.0,
+        "theta_knee_right_deg": 173.4,
+        "theta_elbow_left_deg": 164.8,
+        "theta_elbow_right_deg": 141.4,
+        "theta_cva_neck_deg": 67.9,
+        "l5_s1_moment_nm": 89.6,
+        "l5_s1_compression_n": 2183.8,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 580.8,
+        "com_y": 270.5,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 8.2,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.89,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.91,
+        "bbox": [
+          514,
+          158,
+          639,
+          413
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 79,
+    "timestamp_s": 1.318,
+    "subjects": [
+      {
+        "theta_trunk_deg": 20.9,
+        "theta_knee_left_deg": 172.2,
+        "theta_knee_right_deg": 173.4,
+        "theta_elbow_left_deg": 164.7,
+        "theta_elbow_right_deg": 141.9,
+        "theta_cva_neck_deg": 68.2,
+        "l5_s1_moment_nm": 88.9,
+        "l5_s1_compression_n": 2170.3,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 581.2,
+        "com_y": 270.7,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 8.1,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.89,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.03,
+        "bbox": [
+          515,
+          158,
+          638,
+          413
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 80,
+    "timestamp_s": 1.335,
+    "subjects": [
+      {
+        "theta_trunk_deg": 21.0,
+        "theta_knee_left_deg": 173.1,
+        "theta_knee_right_deg": 174.1,
+        "theta_elbow_left_deg": 164.5,
+        "theta_elbow_right_deg": 141.4,
+        "theta_cva_neck_deg": 68.1,
+        "l5_s1_moment_nm": 89.4,
+        "l5_s1_compression_n": 2180.2,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 581.4,
+        "com_y": 270.7,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 8.1,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.9,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.935,
+        "bbox": [
+          516,
+          158,
+          639,
+          414
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 81,
+    "timestamp_s": 1.351,
+    "subjects": [
+      {
+        "theta_trunk_deg": 21.0,
+        "theta_knee_left_deg": 172.3,
+        "theta_knee_right_deg": 173.1,
+        "theta_elbow_left_deg": 163.2,
+        "theta_elbow_right_deg": 141.0,
+        "theta_cva_neck_deg": 67.4,
+        "l5_s1_moment_nm": 90.7,
+        "l5_s1_compression_n": 2206.0,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 581.8,
+        "com_y": 270.4,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 8.0,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.89,
+        "valid_keypoints": 17,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.897,
+        "bbox": [
+          516,
+          158,
+          640,
+          414
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 82,
+    "timestamp_s": 1.368,
+    "subjects": [
+      {
+        "theta_trunk_deg": 19.8,
+        "theta_knee_left_deg": 173.4,
+        "theta_knee_right_deg": 176.3,
+        "theta_elbow_left_deg": 157.9,
+        "theta_elbow_right_deg": 145.5,
+        "theta_cva_neck_deg": 63.8,
+        "l5_s1_moment_nm": 90.0,
+        "l5_s1_compression_n": 2192.0,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 581.9,
+        "com_y": 269.8,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 5.7,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.87,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.844,
+        "bbox": [
+          518,
+          157,
+          640,
+          417
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 83,
+    "timestamp_s": 1.385,
+    "subjects": [
+      {
+        "theta_trunk_deg": 19.7,
+        "theta_knee_left_deg": 173.3,
+        "theta_knee_right_deg": 176.4,
+        "theta_elbow_left_deg": 156.8,
+        "theta_elbow_right_deg": 145.3,
+        "theta_cva_neck_deg": 63.1,
+        "l5_s1_moment_nm": 89.7,
+        "l5_s1_compression_n": 2186.1,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 582.2,
+        "com_y": 269.7,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 5.5,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.87,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.814,
+        "bbox": [
+          519,
+          157,
+          641,
+          418
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 84,
+    "timestamp_s": 1.401,
+    "subjects": [
+      {
+        "theta_trunk_deg": 19.6,
+        "theta_knee_left_deg": 173.9,
+        "theta_knee_right_deg": 176.5,
+        "theta_elbow_left_deg": 157.6,
+        "theta_elbow_right_deg": 144.5,
+        "theta_cva_neck_deg": 61.4,
+        "l5_s1_moment_nm": 90.9,
+        "l5_s1_compression_n": 2210.8,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 582.3,
+        "com_y": 270.0,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 5.8,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.87,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.884,
+        "bbox": [
+          520,
+          157,
+          641,
+          421
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 85,
+    "timestamp_s": 1.418,
+    "subjects": [
+      {
+        "theta_trunk_deg": 19.7,
+        "theta_knee_left_deg": 173.4,
+        "theta_knee_right_deg": 176.5,
+        "theta_elbow_left_deg": 156.1,
+        "theta_elbow_right_deg": 143.7,
+        "theta_cva_neck_deg": 60.0,
+        "l5_s1_moment_nm": 92.4,
+        "l5_s1_compression_n": 2241.0,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 582.7,
+        "com_y": 269.5,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 6.2,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.86,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.962,
+        "bbox": [
+          521,
+          157,
+          642,
+          420
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 86,
+    "timestamp_s": 1.435,
+    "subjects": [
+      {
+        "theta_trunk_deg": 19.5,
+        "theta_knee_left_deg": 172.6,
+        "theta_knee_right_deg": 175.5,
+        "theta_elbow_left_deg": 156.9,
+        "theta_elbow_right_deg": 142.8,
+        "theta_cva_neck_deg": 59.6,
+        "l5_s1_moment_nm": 92.1,
+        "l5_s1_compression_n": 2235.2,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 582.9,
+        "com_y": 269.7,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 7.0,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.86,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.911,
+        "bbox": [
+          523,
+          156,
+          643,
+          423
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 87,
+    "timestamp_s": 1.451,
+    "subjects": [
+      {
+        "theta_trunk_deg": 19.5,
+        "theta_knee_left_deg": 172.0,
+        "theta_knee_right_deg": 174.9,
+        "theta_elbow_left_deg": 157.8,
+        "theta_elbow_right_deg": 142.2,
+        "theta_cva_neck_deg": 60.3,
+        "l5_s1_moment_nm": 91.0,
+        "l5_s1_compression_n": 2211.4,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 583.2,
+        "com_y": 269.7,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 7.1,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.86,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.833,
+        "bbox": [
+          525,
+          156,
+          643,
+          426
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 88,
+    "timestamp_s": 1.468,
+    "subjects": [
+      {
+        "theta_trunk_deg": 19.1,
+        "theta_knee_left_deg": 173.9,
+        "theta_knee_right_deg": 176.6,
+        "theta_elbow_left_deg": 156.6,
+        "theta_elbow_right_deg": 140.6,
+        "theta_cva_neck_deg": 59.0,
+        "l5_s1_moment_nm": 93.1,
+        "l5_s1_compression_n": 2254.1,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 583.4,
+        "com_y": 269.9,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 8.0,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.86,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.976,
+        "bbox": [
+          526,
+          156,
+          643,
+          429
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 89,
+    "timestamp_s": 1.485,
+    "subjects": [
+      {
+        "theta_trunk_deg": 18.5,
+        "theta_knee_left_deg": 175.0,
+        "theta_knee_right_deg": 176.9,
+        "theta_elbow_left_deg": 156.6,
+        "theta_elbow_right_deg": 139.6,
+        "theta_cva_neck_deg": 58.7,
+        "l5_s1_moment_nm": 91.6,
+        "l5_s1_compression_n": 2224.4,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 583.8,
+        "com_y": 270.7,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 8.0,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.86,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.171,
+        "bbox": [
+          526,
+          157,
+          644,
+          432
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 90,
+    "timestamp_s": 1.502,
+    "subjects": [
+      {
+        "theta_trunk_deg": 18.3,
+        "theta_knee_left_deg": 175.5,
+        "theta_knee_right_deg": 177.4,
+        "theta_elbow_left_deg": 156.8,
+        "theta_elbow_right_deg": 139.7,
+        "theta_cva_neck_deg": 58.0,
+        "l5_s1_moment_nm": 92.5,
+        "l5_s1_compression_n": 2243.2,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 584.3,
+        "com_y": 271.0,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 8.6,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.86,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.006,
+        "bbox": [
+          527,
+          158,
+          644,
+          435
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 91,
+    "timestamp_s": 1.518,
+    "subjects": [
+      {
+        "theta_trunk_deg": 18.5,
+        "theta_knee_left_deg": 173.4,
+        "theta_knee_right_deg": 175.7,
+        "theta_elbow_left_deg": 155.0,
+        "theta_elbow_right_deg": 139.2,
+        "theta_cva_neck_deg": 57.8,
+        "l5_s1_moment_nm": 94.2,
+        "l5_s1_compression_n": 2275.3,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 584.4,
+        "com_y": 271.3,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 9.2,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.86,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.942,
+        "bbox": [
+          527,
+          158,
+          644,
+          437
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 92,
+    "timestamp_s": 1.535,
+    "subjects": [
+      {
+        "theta_trunk_deg": 18.7,
+        "theta_knee_left_deg": 173.0,
+        "theta_knee_right_deg": 175.8,
+        "theta_elbow_left_deg": 152.6,
+        "theta_elbow_right_deg": 138.6,
+        "theta_cva_neck_deg": 57.1,
+        "l5_s1_moment_nm": 98.3,
+        "l5_s1_compression_n": 2358.4,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 584.2,
+        "com_y": 271.1,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 9.4,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.86,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.015,
+        "bbox": [
+          527,
+          158,
+          644,
+          437
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 93,
+    "timestamp_s": 1.552,
+    "subjects": [
+      {
+        "theta_trunk_deg": 18.2,
+        "theta_knee_left_deg": 171.0,
+        "theta_knee_right_deg": 174.9,
+        "theta_elbow_left_deg": 150.2,
+        "theta_elbow_right_deg": 139.5,
+        "theta_cva_neck_deg": 57.3,
+        "l5_s1_moment_nm": 96.1,
+        "l5_s1_compression_n": 2313.5,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 584.6,
+        "com_y": 271.6,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 9.7,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.85,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.953,
+        "bbox": [
+          526,
+          158,
+          645,
+          433
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 94,
+    "timestamp_s": 1.568,
+    "subjects": [
+      {
+        "theta_trunk_deg": 17.8,
+        "theta_knee_left_deg": 171.0,
+        "theta_knee_right_deg": 174.7,
+        "theta_elbow_left_deg": 147.8,
+        "theta_elbow_right_deg": 138.1,
+        "theta_cva_neck_deg": 56.9,
+        "l5_s1_moment_nm": 96.3,
+        "l5_s1_compression_n": 2318.4,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 584.4,
+        "com_y": 271.7,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 9.4,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.85,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.013,
+        "bbox": [
+          525,
+          158,
+          645,
+          427
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 95,
+    "timestamp_s": 1.585,
+    "subjects": [
+      {
+        "theta_trunk_deg": 17.3,
+        "theta_knee_left_deg": 168.1,
+        "theta_knee_right_deg": 172.6,
+        "theta_elbow_left_deg": 143.0,
+        "theta_elbow_right_deg": 136.3,
+        "theta_cva_neck_deg": 55.3,
+        "l5_s1_moment_nm": 102.0,
+        "l5_s1_compression_n": 2431.8,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 584.4,
+        "com_y": 271.6,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 9.8,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.84,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.933,
+        "bbox": [
+          524,
+          159,
+          646,
+          427
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 96,
+    "timestamp_s": 1.602,
+    "subjects": [
+      {
+        "theta_trunk_deg": 16.9,
+        "theta_knee_left_deg": 166.4,
+        "theta_knee_right_deg": 171.9,
+        "theta_elbow_left_deg": 138.8,
+        "theta_elbow_right_deg": 136.3,
+        "theta_cva_neck_deg": 52.5,
+        "l5_s1_moment_nm": 109.3,
+        "l5_s1_compression_n": 2577.3,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 584.3,
+        "com_y": 271.5,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 9.7,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.82,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.005,
+        "bbox": [
+          524,
+          160,
+          646,
+          422
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 97,
+    "timestamp_s": 1.618,
+    "subjects": [
+      {
+        "theta_trunk_deg": 17.5,
+        "theta_knee_left_deg": 164.9,
+        "theta_knee_right_deg": 170.6,
+        "theta_elbow_left_deg": 136.1,
+        "theta_elbow_right_deg": 136.3,
+        "theta_cva_neck_deg": 49.9,
+        "l5_s1_moment_nm": 113.7,
+        "l5_s1_compression_n": 2666.2,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 583.9,
+        "com_y": 271.4,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 9.0,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.82,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.042,
+        "bbox": [
+          524,
+          161,
+          646,
+          420
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 98,
+    "timestamp_s": 1.635,
+    "subjects": [
+      {
+        "theta_trunk_deg": 18.3,
+        "theta_knee_left_deg": 162.3,
+        "theta_knee_right_deg": 169.2,
+        "theta_elbow_left_deg": 132.5,
+        "theta_elbow_right_deg": 136.5,
+        "theta_cva_neck_deg": 47.4,
+        "l5_s1_moment_nm": 119.3,
+        "l5_s1_compression_n": 2778.9,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 584.2,
+        "com_y": 271.3,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 8.9,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.81,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.892,
+        "bbox": [
+          524,
+          161,
+          648,
+          419
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 99,
+    "timestamp_s": 1.652,
+    "subjects": [
+      {
+        "theta_trunk_deg": 20.1,
+        "theta_knee_left_deg": 162.1,
+        "theta_knee_right_deg": 168.5,
+        "theta_elbow_left_deg": 132.0,
+        "theta_elbow_right_deg": 137.0,
+        "theta_cva_neck_deg": 47.5,
+        "l5_s1_moment_nm": 157.1,
+        "l5_s1_compression_n": 3974.8,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 584.1,
+        "com_y": 270.0,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 7.9,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.81,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.926,
+        "bbox": [
+          525,
+          160,
+          648,
+          418
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              532,
+              248,
+              612,
+              320
+            ],
+            "pixel_area": 477,
+            "area_cm2": 1908.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 100,
+    "timestamp_s": 1.668,
+    "subjects": [
+      {
+        "theta_trunk_deg": 20.8,
+        "theta_knee_left_deg": 159.6,
+        "theta_knee_right_deg": 166.4,
+        "theta_elbow_left_deg": 130.6,
+        "theta_elbow_right_deg": 137.0,
+        "theta_cva_neck_deg": 45.7,
+        "l5_s1_moment_nm": 167.3,
+        "l5_s1_compression_n": 4179.0,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": false,
+        "com_x": 584.1,
+        "com_y": 269.8,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 8.6,
+        "kinetic_chain_score": 100.0,
+        "mean_keypoint_conf": 0.8,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.866,
+        "bbox": [
+          524,
+          160,
+          650,
+          418
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              531,
+              246,
+              611,
+              318
+            ],
+            "pixel_area": 483,
+            "area_cm2": 1932.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 101,
+    "timestamp_s": 1.685,
+    "subjects": [
+      {
+        "theta_trunk_deg": 22.9,
+        "theta_knee_left_deg": 160.2,
+        "theta_knee_right_deg": 166.5,
+        "theta_elbow_left_deg": 131.1,
+        "theta_elbow_right_deg": 137.3,
+        "theta_cva_neck_deg": 44.3,
+        "l5_s1_moment_nm": 180.0,
+        "l5_s1_compression_n": 4424.2,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": true,
+        "com_x": 584.6,
+        "com_y": 269.6,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 9.1,
+        "kinetic_chain_score": 85.0,
+        "mean_keypoint_conf": 0.79,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.971,
+        "bbox": [
+          524,
+          160,
+          652,
+          418
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 44.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              530,
+              245,
+              610,
+              317
+            ],
+            "pixel_area": 458,
+            "area_cm2": 1832.0,
+            "est_mass_kg": 44.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 102,
+    "timestamp_s": 1.702,
+    "subjects": [
+      {
+        "theta_trunk_deg": 23.8,
+        "theta_knee_left_deg": 162.0,
+        "theta_knee_right_deg": 167.4,
+        "theta_elbow_left_deg": 130.5,
+        "theta_elbow_right_deg": 139.7,
+        "theta_cva_neck_deg": 41.5,
+        "l5_s1_moment_nm": 164.7,
+        "l5_s1_compression_n": 4126.7,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": true,
+        "com_x": 584.2,
+        "com_y": 269.8,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 2.1,
+        "kinetic_chain_score": 85.0,
+        "mean_keypoint_conf": 0.8,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.013,
+        "bbox": [
+          524,
+          159,
+          654,
+          423
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              533,
+              247,
+              613,
+              319
+            ],
+            "pixel_area": 508,
+            "area_cm2": 2032.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 103,
+    "timestamp_s": 1.718,
+    "subjects": [
+      {
+        "theta_trunk_deg": 24.5,
+        "theta_knee_left_deg": 164.0,
+        "theta_knee_right_deg": 169.1,
+        "theta_elbow_left_deg": 128.4,
+        "theta_elbow_right_deg": 141.2,
+        "theta_cva_neck_deg": 39.1,
+        "l5_s1_moment_nm": 244.9,
+        "l5_s1_compression_n": 5730.7,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": true,
+        "com_x": 584.4,
+        "com_y": 269.9,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 0.3,
+        "kinetic_chain_score": 85.0,
+        "mean_keypoint_conf": 0.81,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.009,
+        "bbox": [
+          524,
+          158,
+          655,
+          424
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              540,
+              248,
+              620,
+              320
+            ],
+            "pixel_area": 532,
+            "area_cm2": 2128.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 104,
+    "timestamp_s": 1.735,
+    "subjects": [
+      {
+        "theta_trunk_deg": 24.3,
+        "theta_knee_left_deg": 166.3,
+        "theta_knee_right_deg": 172.0,
+        "theta_elbow_left_deg": 130.3,
+        "theta_elbow_right_deg": 142.2,
+        "theta_cva_neck_deg": 36.9,
+        "l5_s1_moment_nm": 256.5,
+        "l5_s1_compression_n": 5962.9,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": true,
+        "com_x": 585.3,
+        "com_y": 271.0,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 6.8,
+        "kinetic_chain_score": 65.0,
+        "mean_keypoint_conf": 0.8,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.943,
+        "bbox": [
+          524,
+          158,
+          656,
+          424
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              542,
+              248,
+              622,
+              320
+            ],
+            "pixel_area": 527,
+            "area_cm2": 2108.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 105,
+    "timestamp_s": 1.752,
+    "subjects": [
+      {
+        "theta_trunk_deg": 25.4,
+        "theta_knee_left_deg": 169.3,
+        "theta_knee_right_deg": 174.8,
+        "theta_elbow_left_deg": 130.3,
+        "theta_elbow_right_deg": 144.1,
+        "theta_cva_neck_deg": 36.5,
+        "l5_s1_moment_nm": 295.1,
+        "l5_s1_compression_n": 6736.5,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": true,
+        "com_x": 585.4,
+        "com_y": 271.2,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 11.0,
+        "kinetic_chain_score": 65.0,
+        "mean_keypoint_conf": 0.8,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.936,
+        "bbox": [
+          523,
+          157,
+          658,
+          424
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              545,
+              250,
+              625,
+              322
+            ],
+            "pixel_area": 519,
+            "area_cm2": 2076.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 106,
+    "timestamp_s": 1.768,
+    "subjects": [
+      {
+        "theta_trunk_deg": 27.3,
+        "theta_knee_left_deg": 169.1,
+        "theta_knee_right_deg": 174.1,
+        "theta_elbow_left_deg": 131.3,
+        "theta_elbow_right_deg": 143.7,
+        "theta_cva_neck_deg": 35.1,
+        "l5_s1_moment_nm": 317.5,
+        "l5_s1_compression_n": 7183.4,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": true,
+        "com_x": 585.8,
+        "com_y": 270.6,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 9.1,
+        "kinetic_chain_score": 65.0,
+        "mean_keypoint_conf": 0.8,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.972,
+        "bbox": [
+          522,
+          157,
+          660,
+          422
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              545,
+              249,
+              625,
+              321
+            ],
+            "pixel_area": 476,
+            "area_cm2": 1904.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 107,
+    "timestamp_s": 1.785,
+    "subjects": [
+      {
+        "theta_trunk_deg": 29.3,
+        "theta_knee_left_deg": 165.7,
+        "theta_knee_right_deg": 170.6,
+        "theta_elbow_left_deg": 131.2,
+        "theta_elbow_right_deg": 142.9,
+        "theta_cva_neck_deg": 34.5,
+        "l5_s1_moment_nm": 199.2,
+        "l5_s1_compression_n": 4377.2,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": true,
+        "com_x": 585.9,
+        "com_y": 270.2,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 11.2,
+        "kinetic_chain_score": 85.0,
+        "mean_keypoint_conf": 0.8,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.89,
+        "bbox": [
+          521,
+          158,
+          661,
+          419
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 108,
+    "timestamp_s": 1.802,
+    "subjects": [
+      {
+        "theta_trunk_deg": 30.3,
+        "theta_knee_left_deg": 164.4,
+        "theta_knee_right_deg": 167.0,
+        "theta_elbow_left_deg": 133.2,
+        "theta_elbow_right_deg": 140.7,
+        "theta_cva_neck_deg": 36.7,
+        "l5_s1_moment_nm": 203.5,
+        "l5_s1_compression_n": 4461.7,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": true,
+        "com_x": 586.0,
+        "com_y": 271.4,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 20.7,
+        "kinetic_chain_score": 85.0,
+        "mean_keypoint_conf": 0.82,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.972,
+        "bbox": [
+          521,
+          159,
+          663,
+          419
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 109,
+    "timestamp_s": 1.818,
+    "subjects": [
+      {
+        "theta_trunk_deg": 30.8,
+        "theta_knee_left_deg": 168.0,
+        "theta_knee_right_deg": 170.5,
+        "theta_elbow_left_deg": 132.6,
+        "theta_elbow_right_deg": 139.7,
+        "theta_cva_neck_deg": 37.8,
+        "l5_s1_moment_nm": 205.2,
+        "l5_s1_compression_n": 4497.0,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": true,
+        "com_x": 586.5,
+        "com_y": 271.8,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 22.6,
+        "kinetic_chain_score": 85.0,
+        "mean_keypoint_conf": 0.82,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.078,
+        "bbox": [
+          521,
+          160,
+          664,
+          420
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 110,
+    "timestamp_s": 1.835,
+    "subjects": [
+      {
+        "theta_trunk_deg": 32.2,
+        "theta_knee_left_deg": 169.0,
+        "theta_knee_right_deg": 171.7,
+        "theta_elbow_left_deg": 133.1,
+        "theta_elbow_right_deg": 140.2,
+        "theta_cva_neck_deg": 38.6,
+        "l5_s1_moment_nm": 449.0,
+        "l5_s1_compression_n": 9814.1,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": true,
+        "com_x": 586.7,
+        "com_y": 271.9,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 19.4,
+        "kinetic_chain_score": 65.0,
+        "mean_keypoint_conf": 0.83,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.006,
+        "bbox": [
+          521,
+          162,
+          666,
+          422
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              556,
+              250,
+              636,
+              322
+            ],
+            "pixel_area": 486,
+            "area_cm2": 1944.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 111,
+    "timestamp_s": 1.852,
+    "subjects": [
+      {
+        "theta_trunk_deg": 32.6,
+        "theta_knee_left_deg": 168.8,
+        "theta_knee_right_deg": 171.5,
+        "theta_elbow_left_deg": 128.2,
+        "theta_elbow_right_deg": 139.5,
+        "theta_cva_neck_deg": 34.0,
+        "l5_s1_moment_nm": 212.3,
+        "l5_s1_compression_n": 4638.0,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": true,
+        "com_x": 586.2,
+        "com_y": 271.0,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 22.4,
+        "kinetic_chain_score": 85.0,
+        "mean_keypoint_conf": 0.81,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.243,
+        "bbox": [
+          521,
+          162,
+          666,
+          423
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 112,
+    "timestamp_s": 1.869,
+    "subjects": [
+      {
+        "theta_trunk_deg": 33.8,
+        "theta_knee_left_deg": 168.7,
+        "theta_knee_right_deg": 171.1,
+        "theta_elbow_left_deg": 125.9,
+        "theta_elbow_right_deg": 139.7,
+        "theta_cva_neck_deg": 31.9,
+        "l5_s1_moment_nm": 481.8,
+        "l5_s1_compression_n": 10469.3,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": true,
+        "com_x": 586.0,
+        "com_y": 271.1,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 25.4,
+        "kinetic_chain_score": 65.0,
+        "mean_keypoint_conf": 0.8,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.961,
+        "bbox": [
+          520,
+          162,
+          668,
+          422
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              557,
+              248,
+              637,
+              320
+            ],
+            "pixel_area": 530,
+            "area_cm2": 2120.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 113,
+    "timestamp_s": 1.885,
+    "subjects": [
+      {
+        "theta_trunk_deg": 34.0,
+        "theta_knee_left_deg": 169.2,
+        "theta_knee_right_deg": 170.7,
+        "theta_elbow_left_deg": 125.9,
+        "theta_elbow_right_deg": 136.6,
+        "theta_cva_neck_deg": 28.4,
+        "l5_s1_moment_nm": 509.7,
+        "l5_s1_compression_n": 11028.2,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": true,
+        "com_x": 586.2,
+        "com_y": 272.1,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 23.8,
+        "kinetic_chain_score": 65.0,
+        "mean_keypoint_conf": 0.78,
+        "valid_keypoints": 15,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 12.49,
+        "bbox": [
+          520,
+          162,
+          669,
+          422
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              560,
+              251,
+              640,
+              323
+            ],
+            "pixel_area": 526,
+            "area_cm2": 2104.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 114,
+    "timestamp_s": 1.902,
+    "subjects": [
+      {
+        "theta_trunk_deg": 34.2,
+        "theta_knee_left_deg": 168.4,
+        "theta_knee_right_deg": 169.8,
+        "theta_elbow_left_deg": 126.9,
+        "theta_elbow_right_deg": 134.8,
+        "theta_cva_neck_deg": 24.2,
+        "l5_s1_moment_nm": 526.9,
+        "l5_s1_compression_n": 11371.8,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": true,
+        "com_x": 585.5,
+        "com_y": 272.8,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 24.6,
+        "kinetic_chain_score": 65.0,
+        "mean_keypoint_conf": 0.77,
+        "valid_keypoints": 15,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.889,
+        "bbox": [
+          520,
+          162,
+          669,
+          423
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              560,
+              253,
+              640,
+              325
+            ],
+            "pixel_area": 482,
+            "area_cm2": 1928.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 115,
+    "timestamp_s": 1.919,
+    "subjects": [
+      {
+        "theta_trunk_deg": 36.7,
+        "theta_knee_left_deg": 167.9,
+        "theta_knee_right_deg": 170.0,
+        "theta_elbow_left_deg": 127.8,
+        "theta_elbow_right_deg": 133.8,
+        "theta_cva_neck_deg": 25.3,
+        "l5_s1_moment_nm": 236.4,
+        "l5_s1_compression_n": 5119.3,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": true,
+        "com_x": 586.4,
+        "com_y": 273.3,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 25.6,
+        "kinetic_chain_score": 85.0,
+        "mean_keypoint_conf": 0.79,
+        "valid_keypoints": 15,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.917,
+        "bbox": [
+          520,
+          165,
+          671,
+          422
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 116,
+    "timestamp_s": 1.935,
+    "subjects": [
+      {
+        "theta_trunk_deg": 39.2,
+        "theta_knee_left_deg": 167.6,
+        "theta_knee_right_deg": 169.9,
+        "theta_elbow_left_deg": 128.7,
+        "theta_elbow_right_deg": 132.7,
+        "theta_cva_neck_deg": 24.9,
+        "l5_s1_moment_nm": 247.6,
+        "l5_s1_compression_n": 5343.7,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": true,
+        "com_x": 586.9,
+        "com_y": 273.1,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 26.0,
+        "kinetic_chain_score": 85.0,
+        "mean_keypoint_conf": 0.79,
+        "valid_keypoints": 15,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.838,
+        "bbox": [
+          520,
+          170,
+          671,
+          421
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 117,
+    "timestamp_s": 1.952,
+    "subjects": [
+      {
+        "theta_trunk_deg": 39.4,
+        "theta_knee_left_deg": 167.5,
+        "theta_knee_right_deg": 172.4,
+        "theta_elbow_left_deg": 122.6,
+        "theta_elbow_right_deg": 135.5,
+        "theta_cva_neck_deg": 19.2,
+        "l5_s1_moment_nm": 248.7,
+        "l5_s1_compression_n": 5366.7,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": true,
+        "com_x": 586.3,
+        "com_y": 274.7,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 25.1,
+        "kinetic_chain_score": 85.0,
+        "mean_keypoint_conf": 0.75,
+        "valid_keypoints": 15,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.366,
+        "bbox": [
+          520,
+          174,
+          672,
+          423
+        ],
+        "interpolated": false,
+        "chunk_count": 0,
+        "measured_load_kg": 0.0,
+        "chunks": []
+      }
+    ]
+  },
+  {
+    "frame": 118,
+    "timestamp_s": 1.969,
+    "subjects": [
+      {
+        "theta_trunk_deg": 40.9,
+        "theta_knee_left_deg": 168.2,
+        "theta_knee_right_deg": 173.9,
+        "theta_elbow_left_deg": 124.4,
+        "theta_elbow_right_deg": 140.5,
+        "theta_cva_neck_deg": 16.5,
+        "l5_s1_moment_nm": 622.8,
+        "l5_s1_compression_n": 13289.6,
+        "is_stoop_hazard": true,
+        "is_posture_slouch": true,
+        "com_x": 585.7,
+        "com_y": 275.8,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 15.7,
+        "kinetic_chain_score": 30.0,
+        "mean_keypoint_conf": 0.74,
+        "valid_keypoints": 15,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.947,
+        "bbox": [
+          520,
+          178,
+          672,
+          424
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              563,
+              268,
+              643,
+              340
+            ],
+            "pixel_area": 570,
+            "area_cm2": 2280.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 119,
+    "timestamp_s": 1.985,
+    "subjects": [
+      {
+        "theta_trunk_deg": 43.3,
+        "theta_knee_left_deg": 166.8,
+        "theta_knee_right_deg": 172.6,
+        "theta_elbow_left_deg": 125.4,
+        "theta_elbow_right_deg": 140.7,
+        "theta_cva_neck_deg": 13.4,
+        "l5_s1_moment_nm": 663.0,
+        "l5_s1_compression_n": 14094.5,
+        "is_stoop_hazard": true,
+        "is_posture_slouch": true,
+        "com_x": 585.7,
+        "com_y": 276.4,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 17.3,
+        "kinetic_chain_score": 30.0,
+        "mean_keypoint_conf": 0.75,
+        "valid_keypoints": 15,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.07,
+        "bbox": [
+          520,
+          182,
+          673,
+          425
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              566,
+              270,
+              646,
+              342
+            ],
+            "pixel_area": 627,
+            "area_cm2": 2508.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 120,
+    "timestamp_s": 2.002,
+    "subjects": [
+      {
+        "theta_trunk_deg": 45.9,
+        "theta_knee_left_deg": 165.9,
+        "theta_knee_right_deg": 170.7,
+        "theta_elbow_left_deg": 129.7,
+        "theta_elbow_right_deg": 147.9,
+        "theta_cva_neck_deg": 11.7,
+        "l5_s1_moment_nm": 698.0,
+        "l5_s1_compression_n": 14792.7,
+        "is_stoop_hazard": true,
+        "is_posture_slouch": true,
+        "com_x": 584.9,
+        "com_y": 277.3,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 15.5,
+        "kinetic_chain_score": 30.0,
+        "mean_keypoint_conf": 0.76,
+        "valid_keypoints": 15,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.019,
+        "bbox": [
+          520,
+          184,
+          674,
+          424
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              566,
+              275,
+              646,
+              347
+            ],
+            "pixel_area": 711,
+            "area_cm2": 2844.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 121,
+    "timestamp_s": 2.019,
+    "subjects": [
+      {
+        "theta_trunk_deg": 49.5,
+        "theta_knee_left_deg": 164.5,
+        "theta_knee_right_deg": 168.4,
+        "theta_elbow_left_deg": 134.0,
+        "theta_elbow_right_deg": 153.4,
+        "theta_cva_neck_deg": 14.4,
+        "l5_s1_moment_nm": 723.5,
+        "l5_s1_compression_n": 15303.4,
+        "is_stoop_hazard": true,
+        "is_posture_slouch": true,
+        "com_x": 584.8,
+        "com_y": 279.4,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 12.6,
+        "kinetic_chain_score": 30.0,
+        "mean_keypoint_conf": 0.77,
+        "valid_keypoints": 15,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.001,
+        "bbox": [
+          519,
+          188,
+          675,
+          424
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              566,
+              281,
+              646,
+              353
+            ],
+            "pixel_area": 784,
+            "area_cm2": 3136.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 122,
+    "timestamp_s": 2.035,
+    "subjects": [
+      {
+        "theta_trunk_deg": 51.8,
+        "theta_knee_left_deg": 164.8,
+        "theta_knee_right_deg": 167.9,
+        "theta_elbow_left_deg": 135.9,
+        "theta_elbow_right_deg": 153.7,
+        "theta_cva_neck_deg": 16.0,
+        "l5_s1_moment_nm": 745.1,
+        "l5_s1_compression_n": 15736.2,
+        "is_stoop_hazard": true,
+        "is_posture_slouch": true,
+        "com_x": 585.0,
+        "com_y": 280.2,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 13.8,
+        "kinetic_chain_score": 30.0,
+        "mean_keypoint_conf": 0.78,
+        "valid_keypoints": 15,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.035,
+        "bbox": [
+          518,
+          190,
+          676,
+          424
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              566,
+              285,
+              646,
+              357
+            ],
+            "pixel_area": 738,
+            "area_cm2": 2952.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 123,
+    "timestamp_s": 2.052,
+    "subjects": [
+      {
+        "theta_trunk_deg": 54.4,
+        "theta_knee_left_deg": 163.7,
+        "theta_knee_right_deg": 166.5,
+        "theta_elbow_left_deg": 136.8,
+        "theta_elbow_right_deg": 153.9,
+        "theta_cva_neck_deg": 12.5,
+        "l5_s1_moment_nm": 777.7,
+        "l5_s1_compression_n": 16386.7,
+        "is_stoop_hazard": true,
+        "is_posture_slouch": true,
+        "com_x": 585.2,
+        "com_y": 281.2,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 11.3,
+        "kinetic_chain_score": 30.0,
+        "mean_keypoint_conf": 0.78,
+        "valid_keypoints": 15,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.044,
+        "bbox": [
+          518,
+          196,
+          678,
+          425
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              568,
+              291,
+              648,
+              363
+            ],
+            "pixel_area": 747,
+            "area_cm2": 2988.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 124,
+    "timestamp_s": 2.069,
+    "subjects": [
+      {
+        "theta_trunk_deg": 55.7,
+        "theta_knee_left_deg": 160.1,
+        "theta_knee_right_deg": 162.9,
+        "theta_elbow_left_deg": 137.2,
+        "theta_elbow_right_deg": 155.0,
+        "theta_cva_neck_deg": 12.4,
+        "l5_s1_moment_nm": 798.9,
+        "l5_s1_compression_n": 16811.9,
+        "is_stoop_hazard": true,
+        "is_posture_slouch": true,
+        "com_x": 585.0,
+        "com_y": 282.4,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 8.9,
+        "kinetic_chain_score": 30.0,
+        "mean_keypoint_conf": 0.77,
+        "valid_keypoints": 15,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.986,
+        "bbox": [
+          518,
+          200,
+          679,
+          426
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              570,
+              296,
+              650,
+              368
+            ],
+            "pixel_area": 684,
+            "area_cm2": 2736.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 125,
+    "timestamp_s": 2.085,
+    "subjects": [
+      {
+        "theta_trunk_deg": 57.5,
+        "theta_knee_left_deg": 161.7,
+        "theta_knee_right_deg": 163.4,
+        "theta_elbow_left_deg": 142.0,
+        "theta_elbow_right_deg": 159.3,
+        "theta_cva_neck_deg": 11.3,
+        "l5_s1_moment_nm": 817.3,
+        "l5_s1_compression_n": 17179.7,
+        "is_stoop_hazard": true,
+        "is_posture_slouch": true,
+        "com_x": 584.4,
+        "com_y": 284.2,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 15.5,
+        "kinetic_chain_score": 30.0,
+        "mean_keypoint_conf": 0.77,
+        "valid_keypoints": 15,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.953,
+        "bbox": [
+          517,
+          203,
+          679,
+          425
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              572,
+              301,
+              652,
+              373
+            ],
+            "pixel_area": 699,
+            "area_cm2": 2796.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 126,
+    "timestamp_s": 2.102,
+    "subjects": [
+      {
+        "theta_trunk_deg": 59.9,
+        "theta_knee_left_deg": 158.2,
+        "theta_knee_right_deg": 159.8,
+        "theta_elbow_left_deg": 142.8,
+        "theta_elbow_right_deg": 159.5,
+        "theta_cva_neck_deg": 12.4,
+        "l5_s1_moment_nm": 830.6,
+        "l5_s1_compression_n": 17444.7,
+        "is_stoop_hazard": true,
+        "is_posture_slouch": true,
+        "com_x": 584.5,
+        "com_y": 285.9,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 16.1,
+        "kinetic_chain_score": 30.0,
+        "mean_keypoint_conf": 0.77,
+        "valid_keypoints": 15,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.007,
+        "bbox": [
+          516,
+          207,
+          679,
+          427
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              571,
+              305,
+              651,
+              377
+            ],
+            "pixel_area": 684,
+            "area_cm2": 2736.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 127,
+    "timestamp_s": 2.119,
+    "subjects": [
+      {
+        "theta_trunk_deg": 60.1,
+        "theta_knee_left_deg": 155.7,
+        "theta_knee_right_deg": 158.3,
+        "theta_elbow_left_deg": 143.5,
+        "theta_elbow_right_deg": 159.6,
+        "theta_cva_neck_deg": 10.9,
+        "l5_s1_moment_nm": 823.3,
+        "l5_s1_compression_n": 17299.8,
+        "is_stoop_hazard": true,
+        "is_posture_slouch": true,
+        "com_x": 585.8,
+        "com_y": 288.2,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 15.1,
+        "kinetic_chain_score": 30.0,
+        "mean_keypoint_conf": 0.77,
+        "valid_keypoints": 15,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.915,
+        "bbox": [
+          516,
+          212,
+          679,
+          426
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              571,
+              308,
+              651,
+              380
+            ],
+            "pixel_area": 695,
+            "area_cm2": 2780.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 128,
+    "timestamp_s": 2.135,
+    "subjects": [
+      {
+        "theta_trunk_deg": 63.2,
+        "theta_knee_left_deg": 154.9,
+        "theta_knee_right_deg": 157.3,
+        "theta_elbow_left_deg": 149.2,
+        "theta_elbow_right_deg": 161.8,
+        "theta_cva_neck_deg": 7.5,
+        "l5_s1_moment_nm": 849.5,
+        "l5_s1_compression_n": 17823.6,
+        "is_stoop_hazard": true,
+        "is_posture_slouch": true,
+        "com_x": 585.1,
+        "com_y": 288.5,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 17.9,
+        "kinetic_chain_score": 30.0,
+        "mean_keypoint_conf": 0.77,
+        "valid_keypoints": 15,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.856,
+        "bbox": [
+          515,
+          215,
+          680,
+          426
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              571,
+              311,
+              651,
+              383
+            ],
+            "pixel_area": 717,
+            "area_cm2": 2868.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 129,
+    "timestamp_s": 2.152,
+    "subjects": [
+      {
+        "theta_trunk_deg": 65.6,
+        "theta_knee_left_deg": 148.6,
+        "theta_knee_right_deg": 152.5,
+        "theta_elbow_left_deg": 149.8,
+        "theta_elbow_right_deg": 162.0,
+        "theta_cva_neck_deg": 7.0,
+        "l5_s1_moment_nm": 882.4,
+        "l5_s1_compression_n": 18480.6,
+        "is_stoop_hazard": true,
+        "is_posture_slouch": true,
+        "com_x": 584.8,
+        "com_y": 289.5,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 21.3,
+        "kinetic_chain_score": 30.0,
+        "mean_keypoint_conf": 0.78,
+        "valid_keypoints": 15,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.964,
+        "bbox": [
+          514,
+          218,
+          680,
+          426
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              572,
+              316,
+              652,
+              388
+            ],
+            "pixel_area": 745,
+            "area_cm2": 2980.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 130,
+    "timestamp_s": 2.169,
+    "subjects": [
+      {
+        "theta_trunk_deg": 70.4,
+        "theta_knee_left_deg": 144.8,
+        "theta_knee_right_deg": 149.5,
+        "theta_elbow_left_deg": 155.2,
+        "theta_elbow_right_deg": 164.1,
+        "theta_cva_neck_deg": 8.6,
+        "l5_s1_moment_nm": 896.8,
+        "l5_s1_compression_n": 18769.8,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": true,
+        "com_x": 585.2,
+        "com_y": 289.9,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 41.0,
+        "kinetic_chain_score": 65.0,
+        "mean_keypoint_conf": 0.8,
+        "valid_keypoints": 15,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.075,
+        "bbox": [
+          513,
+          221,
+          680,
+          424
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              573,
+              321,
+              653,
+              393
+            ],
+            "pixel_area": 756,
+            "area_cm2": 3024.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 131,
+    "timestamp_s": 2.186,
+    "subjects": [
+      {
+        "theta_trunk_deg": 73.9,
+        "theta_knee_left_deg": 145.9,
+        "theta_knee_right_deg": 150.3,
+        "theta_elbow_left_deg": 158.2,
+        "theta_elbow_right_deg": 164.6,
+        "theta_cva_neck_deg": 12.9,
+        "l5_s1_moment_nm": 908.3,
+        "l5_s1_compression_n": 18998.6,
+        "is_stoop_hazard": true,
+        "is_posture_slouch": true,
+        "com_x": 586.4,
+        "com_y": 291.9,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 41.4,
+        "kinetic_chain_score": 30.0,
+        "mean_keypoint_conf": 0.82,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.506,
+        "bbox": [
+          512,
+          223,
+          680,
+          424
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              575,
+              327,
+              655,
+              399
+            ],
+            "pixel_area": 758,
+            "area_cm2": 3032.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 132,
+    "timestamp_s": 2.202,
+    "subjects": [
+      {
+        "theta_trunk_deg": 77.8,
+        "theta_knee_left_deg": 144.2,
+        "theta_knee_right_deg": 151.0,
+        "theta_elbow_left_deg": 163.7,
+        "theta_elbow_right_deg": 163.3,
+        "theta_cva_neck_deg": 15.7,
+        "l5_s1_moment_nm": 896.8,
+        "l5_s1_compression_n": 18769.5,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": true,
+        "com_x": 587.8,
+        "com_y": 294.2,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 6.6,
+        "kinetic_chain_score": 65.0,
+        "mean_keypoint_conf": 0.82,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.925,
+        "bbox": [
+          512,
+          226,
+          680,
+          422
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              575,
+              330,
+              655,
+              402
+            ],
+            "pixel_area": 745,
+            "area_cm2": 2980.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 133,
+    "timestamp_s": 2.219,
+    "subjects": [
+      {
+        "theta_trunk_deg": 78.7,
+        "theta_knee_left_deg": 144.7,
+        "theta_knee_right_deg": 151.0,
+        "theta_elbow_left_deg": 165.9,
+        "theta_elbow_right_deg": 160.6,
+        "theta_cva_neck_deg": 11.5,
+        "l5_s1_moment_nm": 891.9,
+        "l5_s1_compression_n": 18672.1,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": true,
+        "com_x": 588.0,
+        "com_y": 295.2,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 8.4,
+        "kinetic_chain_score": 65.0,
+        "mean_keypoint_conf": 0.81,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.887,
+        "bbox": [
+          511,
+          228,
+          680,
+          422
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              574,
+              333,
+              654,
+              405
+            ],
+            "pixel_area": 726,
+            "area_cm2": 2904.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 134,
+    "timestamp_s": 2.236,
+    "subjects": [
+      {
+        "theta_trunk_deg": 81.0,
+        "theta_knee_left_deg": 146.5,
+        "theta_knee_right_deg": 151.4,
+        "theta_elbow_left_deg": 163.1,
+        "theta_elbow_right_deg": 159.7,
+        "theta_cva_neck_deg": 13.2,
+        "l5_s1_moment_nm": 916.5,
+        "l5_s1_compression_n": 19163.9,
+        "is_stoop_hazard": true,
+        "is_posture_slouch": true,
+        "com_x": 587.8,
+        "com_y": 297.2,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 11.1,
+        "kinetic_chain_score": 30.0,
+        "mean_keypoint_conf": 0.81,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.929,
+        "bbox": [
+          511,
+          229,
+          680,
+          421
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              576,
+              335,
+              656,
+              407
+            ],
+            "pixel_area": 735,
+            "area_cm2": 2940.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 135,
+    "timestamp_s": 2.252,
+    "subjects": [
+      {
+        "theta_trunk_deg": 80.4,
+        "theta_knee_left_deg": 147.3,
+        "theta_knee_right_deg": 151.6,
+        "theta_elbow_left_deg": 159.7,
+        "theta_elbow_right_deg": 160.4,
+        "theta_cva_neck_deg": 3.1,
+        "l5_s1_moment_nm": 925.8,
+        "l5_s1_compression_n": 19349.3,
+        "is_stoop_hazard": true,
+        "is_posture_slouch": true,
+        "com_x": 586.7,
+        "com_y": 297.7,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 109.8,
+        "kinetic_chain_score": 30.0,
+        "mean_keypoint_conf": 0.79,
+        "valid_keypoints": 15,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.884,
+        "bbox": [
+          512,
+          231,
+          681,
+          422
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              577,
+              336,
+              657,
+              408
+            ],
+            "pixel_area": 743,
+            "area_cm2": 2972.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 136,
+    "timestamp_s": 2.269,
+    "subjects": [
+      {
+        "theta_trunk_deg": 82.2,
+        "theta_knee_left_deg": 148.6,
+        "theta_knee_right_deg": 153.1,
+        "theta_elbow_left_deg": 152.7,
+        "theta_elbow_right_deg": 157.4,
+        "theta_cva_neck_deg": 1.9,
+        "l5_s1_moment_nm": 914.4,
+        "l5_s1_compression_n": 19121.0,
+        "is_stoop_hazard": true,
+        "is_posture_slouch": true,
+        "com_x": 585.6,
+        "com_y": 297.9,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 61.3,
+        "kinetic_chain_score": 30.0,
+        "mean_keypoint_conf": 0.79,
+        "valid_keypoints": 15,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.923,
+        "bbox": [
+          512,
+          234,
+          679,
+          421
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              575,
+              336,
+              655,
+              408
+            ],
+            "pixel_area": 715,
+            "area_cm2": 2860.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 137,
+    "timestamp_s": 2.286,
+    "subjects": [
+      {
+        "theta_trunk_deg": 85.8,
+        "theta_knee_left_deg": 143.1,
+        "theta_knee_right_deg": 149.4,
+        "theta_elbow_left_deg": 159.5,
+        "theta_elbow_right_deg": 157.2,
+        "theta_cva_neck_deg": 3.3,
+        "l5_s1_moment_nm": 968.6,
+        "l5_s1_compression_n": 20206.5,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": true,
+        "com_x": 586.1,
+        "com_y": 299.8,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 27.0,
+        "kinetic_chain_score": 65.0,
+        "mean_keypoint_conf": 0.8,
+        "valid_keypoints": 15,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.141,
+        "bbox": [
+          512,
+          237,
+          679,
+          421
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              580,
+              342,
+              660,
+              414
+            ],
+            "pixel_area": 714,
+            "area_cm2": 2856.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 138,
+    "timestamp_s": 2.302,
+    "subjects": [
+      {
+        "theta_trunk_deg": 87.6,
+        "theta_knee_left_deg": 141.2,
+        "theta_knee_right_deg": 148.4,
+        "theta_elbow_left_deg": 163.9,
+        "theta_elbow_right_deg": 155.7,
+        "theta_cva_neck_deg": 3.6,
+        "l5_s1_moment_nm": 962.9,
+        "l5_s1_compression_n": 20092.5,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": true,
+        "com_x": 587.6,
+        "com_y": 300.7,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 13.8,
+        "kinetic_chain_score": 65.0,
+        "mean_keypoint_conf": 0.8,
+        "valid_keypoints": 15,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.935,
+        "bbox": [
+          512,
+          239,
+          678,
+          420
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              580,
+              345,
+              660,
+              417
+            ],
+            "pixel_area": 680,
+            "area_cm2": 2720.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 139,
+    "timestamp_s": 2.319,
+    "subjects": [
+      {
+        "theta_trunk_deg": 89.3,
+        "theta_knee_left_deg": 140.3,
+        "theta_knee_right_deg": 148.2,
+        "theta_elbow_left_deg": 163.4,
+        "theta_elbow_right_deg": 154.3,
+        "theta_cva_neck_deg": 8.5,
+        "l5_s1_moment_nm": 975.5,
+        "l5_s1_compression_n": 20342.6,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": true,
+        "com_x": 587.0,
+        "com_y": 302.9,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 13.6,
+        "kinetic_chain_score": 65.0,
+        "mean_keypoint_conf": 0.82,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.791,
+        "bbox": [
+          511,
+          240,
+          678,
+          419
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              581,
+              348,
+              661,
+              420
+            ],
+            "pixel_area": 612,
+            "area_cm2": 2448.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 140,
+    "timestamp_s": 2.336,
+    "subjects": [
+      {
+        "theta_trunk_deg": 90.6,
+        "theta_knee_left_deg": 138.6,
+        "theta_knee_right_deg": 146.4,
+        "theta_elbow_left_deg": 166.1,
+        "theta_elbow_right_deg": 155.3,
+        "theta_cva_neck_deg": 4.9,
+        "l5_s1_moment_nm": 1003.9,
+        "l5_s1_compression_n": 20911.9,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": true,
+        "com_x": 586.3,
+        "com_y": 303.5,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 15.6,
+        "kinetic_chain_score": 65.0,
+        "mean_keypoint_conf": 0.8,
+        "valid_keypoints": 15,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.983,
+        "bbox": [
+          511,
+          242,
+          677,
+          421
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              582,
+              352,
+              662,
+              424
+            ],
+            "pixel_area": 555,
+            "area_cm2": 2220.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 141,
+    "timestamp_s": 2.352,
+    "subjects": [
+      {
+        "theta_trunk_deg": 91.8,
+        "theta_knee_left_deg": 145.7,
+        "theta_knee_right_deg": 151.6,
+        "theta_elbow_left_deg": 172.1,
+        "theta_elbow_right_deg": 160.0,
+        "theta_cva_neck_deg": 7.9,
+        "l5_s1_moment_nm": 1001.3,
+        "l5_s1_compression_n": 20858.6,
+        "is_stoop_hazard": true,
+        "is_posture_slouch": true,
+        "com_x": 586.4,
+        "com_y": 306.0,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 56.2,
+        "kinetic_chain_score": 30.0,
+        "mean_keypoint_conf": 0.82,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.885,
+        "bbox": [
+          511,
+          244,
+          676,
+          419
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              582,
+              353,
+              662,
+              425
+            ],
+            "pixel_area": 587,
+            "area_cm2": 2348.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 142,
+    "timestamp_s": 2.369,
+    "subjects": [
+      {
+        "theta_trunk_deg": 95.4,
+        "theta_knee_left_deg": 143.6,
+        "theta_knee_right_deg": 150.3,
+        "theta_elbow_left_deg": 170.1,
+        "theta_elbow_right_deg": 164.9,
+        "theta_cva_neck_deg": 9.0,
+        "l5_s1_moment_nm": 1022.7,
+        "l5_s1_compression_n": 21288.2,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": true,
+        "com_x": 585.8,
+        "com_y": 307.4,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 50.1,
+        "kinetic_chain_score": 65.0,
+        "mean_keypoint_conf": 0.8,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.826,
+        "bbox": [
+          511,
+          246,
+          675,
+          420
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              582,
+              360,
+              662,
+              432
+            ],
+            "pixel_area": 619,
+            "area_cm2": 2476.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 143,
+    "timestamp_s": 2.386,
+    "subjects": [
+      {
+        "theta_trunk_deg": 96.8,
+        "theta_knee_left_deg": 140.9,
+        "theta_knee_right_deg": 148.2,
+        "theta_elbow_left_deg": 168.6,
+        "theta_elbow_right_deg": 168.7,
+        "theta_cva_neck_deg": 3.9,
+        "l5_s1_moment_nm": 1010.6,
+        "l5_s1_compression_n": 21045.2,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": true,
+        "com_x": 586.7,
+        "com_y": 308.6,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 97.9,
+        "kinetic_chain_score": 65.0,
+        "mean_keypoint_conf": 0.8,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 1.026,
+        "bbox": [
+          511,
+          248,
+          675,
+          420
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              581,
+              362,
+              661,
+              434
+            ],
+            "pixel_area": 695,
+            "area_cm2": 2780.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 144,
+    "timestamp_s": 2.402,
+    "subjects": [
+      {
+        "theta_trunk_deg": 96.6,
+        "theta_knee_left_deg": 140.8,
+        "theta_knee_right_deg": 149.2,
+        "theta_elbow_left_deg": 169.5,
+        "theta_elbow_right_deg": 170.5,
+        "theta_cva_neck_deg": 4.4,
+        "l5_s1_moment_nm": 987.4,
+        "l5_s1_compression_n": 20581.6,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": true,
+        "com_x": 586.7,
+        "com_y": 310.4,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 99.6,
+        "kinetic_chain_score": 65.0,
+        "mean_keypoint_conf": 0.8,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.976,
+        "bbox": [
+          511,
+          250,
+          675,
+          420
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              580,
+              366,
+              660,
+              438
+            ],
+            "pixel_area": 835,
+            "area_cm2": 3340.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 145,
+    "timestamp_s": 2.419,
+    "subjects": [
+      {
+        "theta_trunk_deg": 95.8,
+        "theta_knee_left_deg": 135.4,
+        "theta_knee_right_deg": 145.4,
+        "theta_elbow_left_deg": 173.2,
+        "theta_elbow_right_deg": 173.8,
+        "theta_cva_neck_deg": 6.5,
+        "l5_s1_moment_nm": 970.9,
+        "l5_s1_compression_n": 20250.9,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": true,
+        "com_x": 586.6,
+        "com_y": 312.5,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 94.6,
+        "kinetic_chain_score": 65.0,
+        "mean_keypoint_conf": 0.8,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.971,
+        "bbox": [
+          511,
+          252,
+          674,
+          420
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              579,
+              370,
+              659,
+              442
+            ],
+            "pixel_area": 935,
+            "area_cm2": 3740.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 146,
+    "timestamp_s": 2.436,
+    "subjects": [
+      {
+        "theta_trunk_deg": 96.2,
+        "theta_knee_left_deg": 134.2,
+        "theta_knee_right_deg": 146.8,
+        "theta_elbow_left_deg": 176.0,
+        "theta_elbow_right_deg": 174.3,
+        "theta_cva_neck_deg": 9.1,
+        "l5_s1_moment_nm": 913.0,
+        "l5_s1_compression_n": 19092.8,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": true,
+        "com_x": 589.0,
+        "com_y": 313.9,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 24.8,
+        "kinetic_chain_score": 65.0,
+        "mean_keypoint_conf": 0.81,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.902,
+        "bbox": [
+          512,
+          253,
+          674,
+          421
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              577,
+              371,
+              657,
+              443
+            ],
+            "pixel_area": 1002,
+            "area_cm2": 4008.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 147,
+    "timestamp_s": 2.452,
+    "subjects": [
+      {
+        "theta_trunk_deg": 95.7,
+        "theta_knee_left_deg": 129.9,
+        "theta_knee_right_deg": 143.2,
+        "theta_elbow_left_deg": 175.4,
+        "theta_elbow_right_deg": 176.8,
+        "theta_cva_neck_deg": 6.5,
+        "l5_s1_moment_nm": 918.3,
+        "l5_s1_compression_n": 19199.9,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": true,
+        "com_x": 589.6,
+        "com_y": 315.1,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 10.3,
+        "kinetic_chain_score": 65.0,
+        "mean_keypoint_conf": 0.8,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.949,
+        "bbox": [
+          512,
+          256,
+          674,
+          422
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              578,
+              367,
+              658,
+              439
+            ],
+            "pixel_area": 882,
+            "area_cm2": 3528.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 148,
+    "timestamp_s": 2.469,
+    "subjects": [
+      {
+        "theta_trunk_deg": 97.5,
+        "theta_knee_left_deg": 128.5,
+        "theta_knee_right_deg": 142.4,
+        "theta_elbow_left_deg": 176.3,
+        "theta_elbow_right_deg": 177.3,
+        "theta_cva_neck_deg": 5.7,
+        "l5_s1_moment_nm": 922.8,
+        "l5_s1_compression_n": 19289.0,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": true,
+        "com_x": 589.2,
+        "com_y": 315.2,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 3.6,
+        "kinetic_chain_score": 65.0,
+        "mean_keypoint_conf": 0.8,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.928,
+        "bbox": [
+          512,
+          257,
+          673,
+          422
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              578,
+              370,
+              658,
+              442
+            ],
+            "pixel_area": 987,
+            "area_cm2": 3948.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 149,
+    "timestamp_s": 2.486,
+    "subjects": [
+      {
+        "theta_trunk_deg": 96.9,
+        "theta_knee_left_deg": 123.8,
+        "theta_knee_right_deg": 139.2,
+        "theta_elbow_left_deg": 177.4,
+        "theta_elbow_right_deg": 176.7,
+        "theta_cva_neck_deg": 12.6,
+        "l5_s1_moment_nm": 885.9,
+        "l5_s1_compression_n": 18552.1,
+        "is_stoop_hazard": false,
+        "is_posture_slouch": true,
+        "com_x": 590.2,
+        "com_y": 318.3,
+        "com_margin_meters": 1.0,
+        "is_scaffold_hazard": false,
+        "delta_theta_coil_deg": 7.9,
+        "kinetic_chain_score": 65.0,
+        "mean_keypoint_conf": 0.81,
+        "valid_keypoints": 16,
+        "subject_id": 1,
+        "worker_name": "Skyler 'Frankly' (Yellow)",
+        "cuda_ms": 0.914,
+        "bbox": [
+          514,
+          259,
+          672,
+          423
+        ],
+        "interpolated": false,
+        "chunk_count": 1,
+        "measured_load_kg": 45.0,
+        "chunks": [
+          {
+            "hand": "both (two-handed lift)",
+            "bbox": [
+              579,
+              371,
+              659,
+              443
+            ],
+            "pixel_area": 989,
+            "area_cm2": 3956.0,
+            "est_mass_kg": 45.0
+          }
+        ]
+      }
+    ]
+  }
+]

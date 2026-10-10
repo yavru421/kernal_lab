@@ -1,0 +1,18 @@
+{
+  "run_id": "test_rotoscope",
+  "kernel_id": "cu_dense_rotoscope",
+  "caller": "kernel_lab",
+  "subject": "stosh_dense_rotoscope",
+  "status": "success",
+  "ok": true,
+  "frames": 5,
+  "fps": 30,
+  "gpu_ms": 266.634,
+  "wall_ms": 266.74,
+  "fps_throughput": 18.7448,
+  "outputs": [
+    "C:\dev\kernel_lab\runs\test_rotoscope\outputs\stosh_dense_rotoscope_with_audio_5f.mp4",
+    "C:\dev\kernel_lab\runs\test_rotoscope\outputs\stosh_dense_rotoscope_side_by_side_5f.mp4",
+    "C:\dev\kernel_lab\runs\test_rotoscope\outputs\stosh_dense_rotoscope_contact_sheet.png"
+  ]
+}

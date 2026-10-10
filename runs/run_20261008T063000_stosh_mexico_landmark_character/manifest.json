@@ -1,0 +1,45 @@
+{
+  "run_id": "run_20261008T063000_stosh_mexico_landmark_character",
+  "kernel_id": "cu_landmark_character",
+  "caller": "kernel_lab",
+  "subject": "stosh_mexico_landmark_character",
+  "input_path": "B:/stosh/stosh_south/stosh_mexico_crossing_border.mp4",
+  "input_sha256": "3797f11c9f5b8e211417f9b28a4bbcb598aee11cf959651f550e447d9a89b623",
+  "tracks_source": "C:/dev/kernel_lab/runs/run_20261007T055330_stosh_skeleton_face_tracker/outputs/face_tracks.json",
+  "params": {
+    "frames": 404,
+    "render_mode": 0,
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "metrics": {
+    "ok": true,
+    "processed_frames": 404,
+    "gpu_ms": 3655.02,
+    "wall_ms": 3655.07,
+    "avg_gpu_ms_per_frame": 9.047,
+    "fps_throughput": 110.5,
+    "gpu_state": "NVIDIA GeForce RTX 4060 Laptop GPU, Driver 616.92, 49C, 1452 MiB / 8188 MiB"
+  },
+  "outputs": [
+    {
+      "file": "stosh_landmark_character_with_audio_404f.mp4",
+      "kind": "video",
+      "bytes": 28051360,
+      "sha256": "1a59ce21642cf9866ae23f5af71b0341e54de655b35e7cef7faf4e35ac0d26bd"
+    },
+    {
+      "file": "stosh_landmark_character_side_by_side_404f.mp4",
+      "kind": "video",
+      "bytes": 23111401,
+      "sha256": "aa6915e33adc4900d8c584bf9a5016894306b44692d77592c31a95c66bd77472"
+    },
+    {
+      "file": "stosh_landmark_character_contact_sheet.png",
+      "kind": "image",
+      "bytes": 3028887,
+      "sha256": "1225bf36c1d24bf454f3663ca1098026de2ef6d078c926c12b1262e331c42231"
+    }
+  ]
+}
